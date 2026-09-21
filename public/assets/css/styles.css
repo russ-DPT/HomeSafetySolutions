@@ -330,6 +330,7 @@ td.num, th.num { text-align: right; white-space: nowrap; font-weight: 700; }
 .breadcrumb { font-size: 1rem; margin-bottom: var(--space-2); }
 .breadcrumb a { color: var(--ink-soft); }
 .page-body { padding-block: var(--space-5); }
+.pledge-note { border-left: 8px solid var(--seagrass); border-radius: var(--radius-s); background: var(--seagrass-soft); padding: 1.25rem 1.5rem; }
 .prose { max-width: var(--measure); }
 .prose h2 { margin-top: var(--space-4); }
 .prose h2:first-child { margin-top: 0; }
