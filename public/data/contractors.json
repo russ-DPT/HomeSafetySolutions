@@ -1,0 +1,384 @@
+{
+  "_readme": "Contractor directory. published=true shows on the site. vetted=true means the company completed all five vetting steps; vetted=false shows it in the 'Not yet vetted' group with a disclaimer. tier: handyman, contractor, trades, specialty, unconfirmed. zones: for vetted partners, zones served; for unvetted, the zone where the company is based. capsListed: shown as CAPS listed in a public directory, not confirmed. When a company passes vetting, set vetted=true, caps=true only after confirming in the NAHB directory, and fill license, phone, website, and verified (month and year).",
+  "contractors": [
+    {
+      "published": false,
+      "vetted": true,
+      "name": "Example Aging-in-Place Builders LLC",
+      "tier": "contractor",
+      "caps": true,
+      "zones": [
+        1,
+        2
+      ],
+      "services": "Roll-in showers, ramps, door widening, bathroom remodels.",
+      "license": "CBC0000000",
+      "phone": "(813) 555-0100",
+      "website": "",
+      "verified": "January 2027"
+    },
+    {
+      "published": true,
+      "vetted": false,
+      "name": "Tam Bay ADA Renovations",
+      "tier": "contractor",
+      "caps": false,
+      "capsListed": true,
+      "zones": [
+        2
+      ],
+      "basedIn": "Tampa",
+      "services": "Residential passenger lifts; ADA home modifications including widened doorways, ramps, grab bars, roll-in showers",
+      "license": "",
+      "phone": "(813) 778-7311",
+      "website": "",
+      "source": "SeniorResource Tampa aging-in-place directory, September 2026",
+      "verified": "",
+      "address": "333 N Falkenburg Rd, Unit C-307, Tampa, FL 33619",
+      "email": "",
+      "contactName": ""
+    },
+    {
+      "published": true,
+      "vetted": false,
+      "name": "Paul J. Sierra Construction",
+      "tier": "contractor",
+      "caps": false,
+      "capsListed": true,
+      "zones": [
+        2
+      ],
+      "basedIn": "Tampa",
+      "services": "Aging-in-place construction and remodeling",
+      "license": "",
+      "phone": "(813) 228-6661",
+      "website": "",
+      "source": "SeniorResource Tampa aging-in-place directory, September 2026",
+      "verified": "",
+      "address": "912 W Dr. Martin Luther King Jr. Blvd, Tampa, FL 33603",
+      "email": "",
+      "contactName": ""
+    },
+    {
+      "published": true,
+      "vetted": false,
+      "name": "Keystone Home Solutions LLC (Lifestyle Remodeling)",
+      "tier": "contractor",
+      "caps": false,
+      "capsListed": false,
+      "zones": [
+        2
+      ],
+      "basedIn": "Tampa",
+      "services": "Sunrooms, patio enclosures, walk-in tubs, replacement windows. Describes itself as a state-certified general contractor.",
+      "license": "",
+      "phone": "(813) 448-3711",
+      "website": "",
+      "source": "NAHB CAPS directory, checked September 21, 2026; company listings",
+      "verified": "",
+      "capsConfirmed": "2010",
+      "address": "4897 W Waters Ave, Suite B, Tampa, FL 33634",
+      "email": "jstavish@lifestyleremodeling.com",
+      "contactName": ""
+    },
+    {
+      "published": true,
+      "vetted": false,
+      "name": "Sam Manna",
+      "tier": "unconfirmed",
+      "caps": false,
+      "capsListed": false,
+      "zones": [
+        2
+      ],
+      "basedIn": "Tampa",
+      "services": "",
+      "license": "",
+      "phone": "",
+      "website": "",
+      "source": "NAHB CAPS directory, checked September 21, 2026",
+      "verified": "",
+      "capsConfirmed": "2012",
+      "address": "Tampa, FL (street address to be confirmed)",
+      "email": "",
+      "contactName": ""
+    },
+    {
+      "published": true,
+      "vetted": false,
+      "name": "Tampa Dwellings",
+      "tier": "unconfirmed",
+      "caps": false,
+      "capsListed": false,
+      "capsConfirmed": "2024",
+      "zones": [
+        2
+      ],
+      "basedIn": "Tampa",
+      "services": "",
+      "license": "",
+      "phone": "(813) 380-6583",
+      "website": "",
+      "source": "NAHB CAPS directory, checked September 21, 2026",
+      "verified": "",
+      "address": "Tampa, FL (street address to be confirmed)",
+      "email": "colette@tampadwellings.com",
+      "contactName": "Colette Hughes"
+    },
+    {
+      "published": true,
+      "vetted": false,
+      "name": "SO Unique Concierge LLC",
+      "tier": "unconfirmed",
+      "caps": false,
+      "capsListed": false,
+      "capsConfirmed": "2022",
+      "zones": [
+        2
+      ],
+      "basedIn": "Location to be confirmed",
+      "services": "",
+      "license": "",
+      "phone": "(443) 434-0982",
+      "website": "",
+      "source": "NAHB CAPS directory, checked September 21, 2026",
+      "verified": "",
+      "address": "Location to be confirmed",
+      "email": "concierge@souconcierge.com",
+      "contactName": "Sulena Long Reece"
+    },
+    {
+      "published": true,
+      "vetted": false,
+      "name": "Home Safe LLC",
+      "tier": "unconfirmed",
+      "caps": false,
+      "capsListed": false,
+      "zones": [
+        2
+      ],
+      "basedIn": "Tampa",
+      "services": "",
+      "license": "",
+      "phone": "",
+      "website": "",
+      "source": "Public aging-in-place directories and company websites, September 2026",
+      "verified": "",
+      "address": "Tampa, FL 33618 (street address to be confirmed)",
+      "email": "",
+      "contactName": ""
+    },
+    {
+      "published": true,
+      "vetted": false,
+      "name": "Greaves Construction, Inc.",
+      "tier": "contractor",
+      "caps": false,
+      "capsListed": false,
+      "zones": [
+        2
+      ],
+      "basedIn": "Temple Terrace",
+      "services": "Design-build remodeling: kitchens and baths, additions, whole-house and historic renovations, universal design. Family owned since 1986.",
+      "license": "",
+      "phone": "(813) 985-2739",
+      "website": "",
+      "source": "NAHB CAPS directory, checked September 21, 2026; company listings",
+      "verified": "",
+      "capsConfirmed": "2007",
+      "address": "109 N Burlingame Ave, Temple Terrace, FL 33617",
+      "email": "jgreaves5@aol.com",
+      "contactName": ""
+    },
+    {
+      "published": true,
+      "vetted": false,
+      "name": "Call Harry Enterprises",
+      "tier": "unconfirmed",
+      "caps": false,
+      "capsListed": false,
+      "zones": [
+        2
+      ],
+      "basedIn": "Lutz",
+      "services": "",
+      "license": "",
+      "phone": "",
+      "website": "",
+      "source": "Public aging-in-place directories and company websites, September 2026",
+      "verified": "",
+      "address": "",
+      "email": "",
+      "contactName": ""
+    },
+    {
+      "published": true,
+      "vetted": false,
+      "name": "S&W Kitchens (Tampa showroom)",
+      "tier": "contractor",
+      "caps": false,
+      "capsListed": true,
+      "zones": [
+        2
+      ],
+      "basedIn": "Tampa",
+      "services": "Curbless showers, walk-in tubs, grab bars, comfort-height toilets, doorway widening, ramps",
+      "license": "",
+      "phone": "(813) 489-9372",
+      "website": "",
+      "source": "Company website, September 2026",
+      "verified": "",
+      "address": "3215 S MacDill Ave, Tampa, FL 33629",
+      "email": "",
+      "contactName": ""
+    },
+    {
+      "published": true,
+      "vetted": false,
+      "name": "Next Day Access (Tampa)",
+      "tier": "specialty",
+      "caps": false,
+      "capsListed": false,
+      "zones": [
+        2
+      ],
+      "basedIn": "Tampa",
+      "services": "Wheelchair ramps, stair lifts, platform lifts, grab bars. Local franchise of a national accessibility company.",
+      "license": "",
+      "phone": "(724) 272-4499",
+      "website": "",
+      "source": "NAHB CAPS directory, checked September 21, 2026; company listings",
+      "verified": "",
+      "capsConfirmed": "2023",
+      "address": "Tampa, FL (street address to be confirmed)",
+      "email": "josh.kearns@nextdayaccess.com",
+      "contactName": ""
+    },
+    {
+      "published": true,
+      "vetted": false,
+      "name": "Gilbert Design Build",
+      "tier": "contractor",
+      "caps": false,
+      "capsListed": false,
+      "zones": [
+        2
+      ],
+      "basedIn": "Lakewood Ranch",
+      "services": "Design-build kitchen, bath, and interior remodeling. Family owned since 2001.",
+      "license": "",
+      "phone": "(941) 757-3395",
+      "website": "",
+      "source": "Public aging-in-place directories and company websites, September 2026",
+      "verified": "",
+      "address": "6924 Professional Pkwy E, Lakewood Ranch, FL 34240",
+      "email": "",
+      "contactName": ""
+    },
+    {
+      "published": true,
+      "vetted": false,
+      "name": "Safe To Stay: Home Modifications",
+      "tier": "unconfirmed",
+      "caps": false,
+      "capsListed": false,
+      "zones": [
+        2
+      ],
+      "basedIn": "Bradenton",
+      "services": "Home modifications; type of work to be confirmed",
+      "license": "",
+      "phone": "",
+      "website": "",
+      "source": "Public aging-in-place directories and company websites, September 2026",
+      "verified": "",
+      "address": "",
+      "email": "",
+      "contactName": ""
+    },
+    {
+      "published": true,
+      "vetted": false,
+      "name": "CMK Construction, Inc.",
+      "tier": "contractor",
+      "caps": false,
+      "capsListed": false,
+      "zones": [
+        2
+      ],
+      "basedIn": "Tampa",
+      "services": "Kitchen and bathroom remodeling, additions. Founded 2004.",
+      "license": "",
+      "phone": "(813) 379-2116",
+      "website": "",
+      "source": "Public aging-in-place directories and company websites, September 2026",
+      "verified": "",
+      "address": "13329 W Hillsborough Ave, Suite 104, Tampa, FL 33635",
+      "email": "",
+      "contactName": ""
+    },
+    {
+      "published": true,
+      "vetted": false,
+      "name": "MITS at Custom Mobility",
+      "tier": "specialty",
+      "caps": false,
+      "capsListed": false,
+      "zones": [
+        3
+      ],
+      "basedIn": "Largo",
+      "services": "Wheelchair-accessible vans and vehicle adaptations; home modification services not confirmed",
+      "license": "",
+      "phone": "",
+      "website": "",
+      "source": "Public aging-in-place directories and company websites, September 2026",
+      "verified": "",
+      "address": "Bryan Dairy Rd, Largo, FL (street number to be confirmed)",
+      "email": "",
+      "contactName": ""
+    },
+    {
+      "published": true,
+      "vetted": false,
+      "name": "M and D Enterprises of Florida",
+      "tier": "unconfirmed",
+      "caps": false,
+      "capsListed": false,
+      "zones": [
+        3
+      ],
+      "basedIn": "St. Petersburg",
+      "services": "",
+      "license": "",
+      "phone": "",
+      "website": "",
+      "source": "Public aging-in-place directories and company websites, September 2026",
+      "verified": "",
+      "address": "",
+      "email": "",
+      "contactName": ""
+    },
+    {
+      "published": true,
+      "vetted": false,
+      "name": "Terry G. Perkins Construction",
+      "tier": "contractor",
+      "caps": false,
+      "capsListed": false,
+      "zones": [
+        3
+      ],
+      "basedIn": "Madeira Beach",
+      "services": "Aging-in-place construction",
+      "license": "",
+      "phone": "",
+      "website": "",
+      "source": "Public aging-in-place directories and company websites, September 2026",
+      "verified": "",
+      "address": "",
+      "email": "",
+      "contactName": ""
+    }
+  ]
+}
