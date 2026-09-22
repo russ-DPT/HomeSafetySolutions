@@ -137,6 +137,17 @@ h3 .icon { width: 1.7rem; height: 1.7rem; }
 .brand-name { font-weight: 700; font-size: 1.3rem; line-height: 1.1; color: var(--gulf-deep); }
 .brand-sub { display: block; font-size: .85rem; font-weight: 400; color: var(--ink-soft); }
 
+.cred-strip { list-style: none; margin: 1.25rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: .6rem; }
+.cred-strip li { display: flex; align-items: baseline; gap: .5rem; background: var(--seaglass); border: 1px solid var(--line); border-radius: var(--radius-s); padding: .55rem .8rem; }
+.cred-key { font-family: var(--font-head); font-weight: 700; color: var(--gulf-deep); font-size: 1rem; white-space: nowrap; }
+.cred-val { color: var(--ink-soft); font-size: .9rem; }
+.cred-strip li:nth-child(2) { background: var(--seagrass-soft); border-color: #BFE2C1; }
+.cred-strip li:nth-child(2) .cred-key { color: var(--seagrass); }
+.cred-strip li:nth-child(3) { background: var(--stripe-soft); border-color: #F1DFA0; }
+.cred-strip li:nth-child(3) .cred-key { color: var(--ready-yellow); }
+
+.anchor-target { display: block; position: relative; top: -6rem; visibility: hidden; }
+
 .nav { display: flex; align-items: center; gap: .25rem; }
 .nav > ul { display: flex; list-style: none; margin: 0; padding: 0; gap: .15rem; max-width: none; }
 .nav li + li { margin: 0; }
