@@ -21,7 +21,8 @@ window.HSS_CONFIG = {
      any visit booked within 30 days. Card payments are taken by phone for now. */
   calendly: {
     consultation:     "https://calendly.com/docrusspt/dr-russ-l-hommedieu-30-minute-phone-meeting",  // $50 Initial Consultation, 30 min, phone
-    visit:            "",  // Home Safety Visit, $250 (consultation credit applied as a Calendly coupon)
+    visit:            "",  // Home Safety Visit: In-Home, $250 (consultation credit applied as a Calendly coupon)
+ hsvVirtual:       "",  // Home Safety Visit: Virtual, $175
     rfdVirtual:       "",  // Ready for Discharge: Virtual, $175
     rfdRush:          "",  // Ready for Discharge: Virtual, Rush within 24 hours, $225
  rfdInHome:        "",  // Ready for Discharge: In-Home, $250
