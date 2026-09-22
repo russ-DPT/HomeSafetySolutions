@@ -21,21 +21,22 @@ window.HSS_CONFIG = {
      any visit booked within 30 days. Card payments are taken by phone for now. */
   calendly: {
     consultation:     "https://calendly.com/docrusspt/dr-russ-l-hommedieu-30-minute-phone-meeting",  // $50 Initial Consultation, 30 min, phone
-    visit:            "",  // Home Safety Visit, $250 (consultation credit applied as a Calendly coupon)
+    visit:            "",  // Home Safety Visit: In-Home, $250 (consultation credit applied as a Calendly coupon)
+ hsvVirtual:       "",  // Home Safety Visit: Virtual, $175
     rfdVirtual:       "",  // Ready for Discharge: Virtual, $175
     rfdRush:          "",  // Ready for Discharge: Virtual, Rush within 24 hours, $225
-    rfdInHome:        "",  // Ready for Discharge: In-Home, $300
-    storm:            "",  // Storm Ready Audit, $175
-    atVirtual:        "",  // Assistive Technology Consultation: Virtual, $150
+ rfdInHome:        "",  // Ready for Discharge: In-Home, $250
+ storm:            "",  // Storm Ready Audit, $250
+ atVirtual:        "",  // Assistive Technology Consultation: Virtual, $175
     atInHome:         "",  // Assistive Technology Consultation: In-Home, $250
-    atAddon:          "",  // Assistive Technology Add-on to a visit, $100
-    rcVirtual:        "",  // Remote Caregiving Plan: Virtual, $325
-    rcInHome:         "",  // Remote Caregiving Plan: In-Home, $450 (includes a Home Safety Visit)
-    rcAddon:          "",  // Remote Caregiving Plan Add-on to a visit, $200
-    rcReview:         "",  // Remote Caregiving Plan Review, $150 (included in Membership)
-    stormAddon:       "",  // Storm Ready Audit added to a visit, same trip, $125
+ atAddon:          "",  // Assistive Technology Add-on to a visit, from $100 ($100 first add-on, $50 second)
+ rcVirtual:        "",  // Remote Caregiving Plan: Virtual, $175
+ rcInHome:         "",  // Remote Caregiving Plan: In-Home, $250 (includes a Home Safety Visit)
+ rcAddon:          "",  // Remote Caregiving Plan Add-on to a visit, from $100 ($100 first add-on, $50 second)
+ rcReview:         "",  // Remote Caregiving Plan Review, $150 (included in Membership)
+ stormAddon:       "",  // Storm Ready Audit added to a visit, same trip, from $100 ($100 first add-on, $50 second)
     comingHomeSafe:   "",  // Coming Home Safe: Ready for Discharge: In-Home plus a Remote Caregiving Plan, $500
-    rightHome:        "",  // Right Home Assessment, $275
+    rightHome:        "",  // Right Home Assessment, $250
     buildVerify:      "",  // Build Verify Visit, $100
     contractorCall:   "",  // Contractor follow-up call (booked after the Contractor Consultation is paid)
     partnerIntro:     "",  // Free 20 minute call for physicians, therapists, and discharge planners
@@ -48,7 +49,7 @@ window.HSS_CONFIG = {
     contractorConsult: "",  // $150
     travelZone2:       "",  // $25
     travelZone3:       "",  // $50
-    stormAddOn:        "",  // $125 Storm Ready Audit added to a visit, same trip
+    stormAddOn:        "",  // from $100 Storm Ready Audit added to a visit, same trip ($100 first add-on, $50 second)
     facilityCase:      "",  // $150 per case
     facilityPack:      "",  // $1,400 ten-case pack
     giftCertificate:   "",  // customer chooses amount
