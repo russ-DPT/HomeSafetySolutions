@@ -26,6 +26,15 @@ window.HSS_CONFIG = {
     rfdRush:          "",  // Ready for Discharge: Virtual, Rush within 24 hours, $225
     rfdInHome:        "",  // Ready for Discharge: In-Home, $300
     storm:            "",  // Storm Ready Audit, $175
+    atVirtual:        "",  // Assistive Technology Consultation: Virtual, $150
+    atInHome:         "",  // Assistive Technology Consultation: In-Home, $250
+    atAddon:          "",  // Assistive Technology Add-on to a visit, $100
+    rcVirtual:        "",  // Remote Caregiving Plan: Virtual, $325
+    rcInHome:         "",  // Remote Caregiving Plan: In-Home, $450 (includes a Home Safety Visit)
+    rcAddon:          "",  // Remote Caregiving Plan Add-on to a visit, $200
+    rcReview:         "",  // Remote Caregiving Plan Review, $150 (included in Membership)
+    stormAddon:       "",  // Storm Ready Audit added to a visit, same trip, $125
+    comingHomeSafe:   "",  // Coming Home Safe: Ready for Discharge: In-Home plus a Remote Caregiving Plan, $500
     rightHome:        "",  // Right Home Assessment, $275
     buildVerify:      "",  // Build Verify Visit, $100
     contractorCall:   "",  // Contractor follow-up call (booked after the Contractor Consultation is paid)
@@ -39,7 +48,7 @@ window.HSS_CONFIG = {
     contractorConsult: "",  // $150
     travelZone2:       "",  // $25
     travelZone3:       "",  // $50
-    stormAddOn:        "",  // $125 Storm Ready combined with another visit ($175 less $50 discount)
+    stormAddOn:        "",  // $125 Storm Ready Audit added to a visit, same trip
     facilityCase:      "",  // $150 per case
     facilityPack:      "",  // $1,400 ten-case pack
     giftCertificate:   "",  // customer chooses amount
