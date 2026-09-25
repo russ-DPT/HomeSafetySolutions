@@ -16,7 +16,8 @@ const VARIANT_PREFIX = "before-you-book-"
 function replaceRegion(html, name, content) {
   const re = new RegExp(`(<!-- bfb:${name} -->)[\\s\\S]*?(<!-- /bfb:${name} -->)`)
   if (!re.test(html)) throw new Error(`Missing region bfb:${name} in ${TEMPLATE}`)
-  return html.replace(re, `$1\n${content}\n$2`)
+  // Function form: a string replacement would read prices like "$175" as capture group $1.
+  return html.replace(re, (_, open, close) => `${open}\n${content}\n${close}`)
 }
 
 function buildVariants() {
