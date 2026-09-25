@@ -1,6 +1,6 @@
 (function () {
   "use strict";
-  var C = window.HSS_CONFIG || { calendly: {}, stripe: {} };
+  var C = window.HSS_CONFIG || { stripe: {} };
   var doc = document.documentElement;
   doc.classList.add("js");
 
@@ -45,14 +45,10 @@
     window.addEventListener("scroll", onScroll, { passive: true }); onScroll();
   }
 
-  /* Booking and payment links from config */
-  $$("[data-book]").forEach(function (a) {
-    var url = C.calendly && C.calendly[a.dataset.book];
-    if (url) { a.href = url; a.target = "_blank"; a.rel = "noopener"; }
-  });
+  /* Payment links from config (booking links are plain PracticeQ hrefs, same tab) */
   $$("[data-pay]").forEach(function (a) {
     var url = C.stripe && C.stripe[a.dataset.pay];
-    if (url) { a.href = url; a.target = "_blank"; a.rel = "noopener"; }
+    if (url) { a.href = url; }
     else {
       a.href = C.phoneHref || "tel:+18138673372";
       var t = a.querySelector(".label") || a;
@@ -88,66 +84,6 @@
       }
     });
   });
-
-  /* Booking page: pick a service, load the Calendly scheduler inline */
-  var host = $("#calendly-host");
-  var calendlyLoaded = false;
-  function loadCalendlyScript(cb) {
-    if (calendlyLoaded && window.Calendly) return cb();
-    var s = document.createElement("script");
-    s.src = "https://assets.calendly.com/assets/external/widget.js"; s.async = true;
-    s.onload = function () { calendlyLoaded = true; cb(); };
-    s.onerror = function () { showEmbedStatus(null, true); };
-    document.head.appendChild(s);
-  }
-  function showEmbedStatus(opt, failed) {
-    host.innerHTML = "";
-    var box = document.createElement("div"); box.className = "embed-status";
-    var name = opt ? opt.dataset.name : "this service";
-    box.innerHTML = "<h3>" + (failed ? "The scheduler did not load" : "Online booking for " + name + " opens soon") + "</h3>" +
-      "<p>Call <a href=\"" + C.phoneHref + "\">" + C.phoneDisplay + "</a> and we will book it with you on the phone. " +
-      "If you prefer email, write to <a href=\"mailto:" + C.email + "\">" + C.email + "</a> with your name, phone number, and a good time to call. Please do not include health details in email.</p>";
-    host.appendChild(box);
-  }
-  function showOrientationPrompt(opt) {
-    host.innerHTML = "";
-    var box = document.createElement("div"); box.className = "embed-status orientation-prompt";
-    box.innerHTML = "<h3>Start your " + opt.dataset.name + " with a $50 Initial Consultation</h3>" +
-      "<p>Every service begins with a 30 minute Initial Consultation by phone with Dr. L'HommeDieu. You talk through the person, the home, and your goals, and he confirms that the " + opt.dataset.name + " is the right service and schedules it with you.</p>" +
-      "<p><strong>Your $50 is credited toward any visit you book within 30 days.</strong> For now, we take card payments by phone after you book.</p>" +
-      "<div class=\"btn-row\"><button type=\"button\" class=\"btn btn-primary\" data-open-orientation>Book the $50 Initial Consultation</button>" +
-      "<a class=\"btn btn-call\" href=\"" + C.phoneHref + "\">Call " + C.phoneDisplay + "</a></div>";
-    host.appendChild(box);
-    box.querySelector("[data-open-orientation]").addEventListener("click", function () {
-      var c = $(".book-option[data-event=\"consultation\"]"); if (c) openScheduler(c);
-    });
-  }
-  function openScheduler(opt) {
-    $$(".book-option").forEach(function (o) { o.setAttribute("aria-pressed", String(o === opt)); });
-    var url = C.calendly[opt.dataset.event];
-    host.hidden = false;
-    if (!url && ["consultation", "partnerIntro", "facilityIntro"].indexOf(opt.dataset.event) === -1 && C.calendly.consultation) {
-      showOrientationPrompt(opt); host.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" }); return;
-    }
-    if (!url) { showEmbedStatus(opt); host.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" }); return; }
-    var t = C.calendlyTheme || {};
-    var full = url + (url.indexOf("?") > -1 ? "&" : "?") + "hide_gdpr_banner=1&primary_color=" + (t.primary || "0f4c5c") + "&text_color=" + (t.text || "13313b") + "&background_color=" + (t.background || "ffffff");
-    host.innerHTML = "<p class=\"embed-status\" role=\"status\">Loading the scheduler for " + opt.dataset.name + ".</p>";
-    loadCalendlyScript(function () {
-      host.innerHTML = "";
-      var div = document.createElement("div"); div.className = "calendly-inline-widget"; host.appendChild(div);
-      window.Calendly.initInlineWidget({ url: full, parentElement: div });
-      var fallback = document.createElement("p"); fallback.className = "embed-status";
-      fallback.innerHTML = "Trouble with the calendar? <a href=\"" + url + "\" target=\"_blank\" rel=\"noopener\">Open it in a new tab</a> or call <a href=\"" + C.phoneHref + "\">" + C.phoneDisplay + "</a>.";
-      host.appendChild(fallback);
-    });
-    host.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
-  }
-  $$(".book-option").forEach(function (opt) { opt.addEventListener("click", function () { openScheduler(opt); }); });
-  if (host && location.hash) {
-    var pre = $(".book-option[data-event=\"" + location.hash.slice(1) + "\"]");
-    if (pre && !pre.closest("[data-gated]")) openScheduler(pre);
-  }
 
   /* Ready for Discharge location screen (no health information collected) */
   var screen = $("#rfd-screen");
@@ -185,7 +121,7 @@
       if (score >= 4) {
         r.className = "status status-warn";
         r.innerHTML = "Your score is " + score + " out of 14. A score of 4 or more means you may be at risk for falling. Talk with your doctor about it, and consider a Home Safety Visit so we can look at your home and how you move through it. " +
-          "<a href=\"/book#consultation\">Book a consultation</a> or call <a href=\"" + C.phoneHref + "\">" + C.phoneDisplay + "</a>.";
+          "<a href=\"" + ((document.querySelector("a[data-link=CONSULT]") || {}).href || "/book#consultation") + "\">Book a consultation</a> or call <a href=\"" + C.phoneHref + "\">" + C.phoneDisplay + "</a>.";
       } else {
         r.className = "status status-ok";
         r.innerHTML = "Your score is " + score + " out of 14. That is below the level that suggests higher fall risk. Keep your home clear and well lit, and check again if anything changes, such as a hospital stay, a new medicine, or a fall.";

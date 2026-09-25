@@ -411,10 +411,28 @@ td.num, th.num { text-align: right; white-space: nowrap; font-weight: 700; }
 .book-option .title { font-weight: 700; font-size: 1.3rem; color: var(--gulf-deep); }
 .book-option .meta { font-size: 1.05rem; color: var(--ink-soft); }
 .book-option .amount { font-weight: 700; font-size: 1.4rem; color: var(--gulf-deep); margin-top: auto; }
-.calendly-host { margin-top: var(--space-3); background: #fff; border: 1px solid var(--line); border-radius: var(--radius-m); min-height: 10rem; }
-.orientation-prompt { border-left: 8px solid var(--stripe); background: var(--stripe-soft); border-radius: var(--radius-m); }
-.calendly-inline-widget { min-width: 320px; height: 760px; }
-.embed-status { padding: var(--space-3); }
+a.book-option { text-decoration: none; }
+.book-option .cue { font-family: var(--font-head); font-weight: 700; font-size: 1.05rem; color: var(--gulf); text-decoration: underline; text-underline-offset: 3px; }
+.book-option:hover .cue, .book-option:focus-visible .cue { color: var(--gulf-deep); }
+.btn-large { min-height: 64px; padding: 1rem 2rem; font-size: 1.3rem; }
+
+/* ---------- Before You Book and Consultation Credit ---------- */
+.bfb-why { max-width: var(--measure); }
+.bfb-why h2 { margin-top: var(--space-3); }
+.bfb-urgent { max-width: var(--measure); margin-top: var(--space-3); padding: 1.1rem 1.4rem; background: var(--stripe-soft); border: 2px solid #F1DFA0; border-radius: var(--radius-m); }
+.bfb-urgent p { margin: 0; }
+.bfb-options { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-block: var(--space-4) var(--space-3); align-items: stretch; }
+.bfb-card { flex: 1 1 22rem; display: flex; flex-direction: column; gap: .75rem; padding: 1.75rem; background: var(--paper); border: 3px solid var(--line); border-radius: var(--radius-m); }
+.bfb-card h2 { margin: 0; font-size: 1.45rem; color: var(--gulf-deep); }
+.bfb-card p { margin: 0; }
+.bfb-card-a { border-color: var(--gulf); box-shadow: inset 0 8px 0 var(--stripe); padding-top: 2.25rem; }
+.bfb-card:only-child { max-width: 36rem; }
+.bfb-badge { align-self: flex-start; padding: .3rem .8rem; border-radius: 999px; background: var(--stripe); color: var(--ink); font-family: var(--font-head); font-weight: 700; font-size: .95rem; }
+.bfb-buttons { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: auto; padding-top: .5rem; }
+.bfb-small { font-size: .95rem; color: var(--ink-soft); }
+.bfb-still { font-size: 1.1rem; }
+.credit-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); gap: var(--space-3); margin-block: var(--space-3); }
+.credit-grid .bfb-card { flex: none; }
 
 fieldset { border: 2px solid var(--line); border-radius: var(--radius-m); padding: 1.25rem 1.5rem; margin: 0 0 var(--space-2); }
 legend { font-weight: 700; font-size: 1.25rem; padding: 0 .4rem; color: var(--gulf-deep); }
@@ -610,3 +628,6 @@ legend { font-weight: 700; font-size: 1.25rem; padding: 0 .4rem; color: var(--gu
   .btn { border: 2px solid ButtonText; }
   .choice[aria-expanded="true"], .book-option[aria-pressed="true"] { outline: 3px solid Highlight; }
 }
+
+/* Small helper line under a button row */
+.link-note { margin-top: .75rem; font-size: .9375rem; color: var(--ink-soft); }
