@@ -22,7 +22,17 @@ const nextConfig = {
   },
   async rewrites() {
     return {
-      beforeFiles: [{ source: "/", destination: "/index.html" }],
+      beforeFiles: [
+        { source: "/", destination: "/index.html" },
+        // /before-you-book?service=<key> serves the static page generated for that
+        // service by scripts/sync-booking-links.mjs. Unknown or missing keys fall
+        // through to the generic /before-you-book page.
+        {
+          source: "/before-you-book",
+          has: [{ type: "query", key: "service", value: "(?<svc>home-safety-visit|ready-for-discharge|coming-home-safe|assistive-technology|remote-caregiving|storm-ready|right-home)" }],
+          destination: "/before-you-book-:svc.html",
+        },
+      ],
       // Runs only for paths not matched by a public file or a route handler,
       // so real assets (/assets/..., /data/..., /api/...) are untouched.
       // Single-segment: every page HTML file lives at the top level of /public.
