@@ -96,7 +96,7 @@
       if (p === "other" || h === "other") {
         gated.hidden = true;
         out.className = "status status-stop";
-        out.innerHTML = "We can only provide this service when both the patient and the home are in Florida, because that is where we practice. Call " +
+        out.innerHTML = "We can only provide this service when both the patient and the home are in Florida, New York, or Ohio, because those are the states where we are licensed. Call " +
           "<a href=\"" + C.phoneHref + "\">" + C.phoneDisplay + "</a> and we will help you find someone who can.";
       } else {
         gated.hidden = false;
