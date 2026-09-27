@@ -17,7 +17,14 @@ const nextConfig = {
     return [
       { source: "/:path*", headers: securityHeaders },
       { source: "/data/:path*", headers: [{ key: "Cache-Control", value: "no-store" }] },
-      { source: "/forms/:path*", headers: [{ key: "Content-Disposition", value: "attachment" }] },
+    ]
+  },
+  async redirects() {
+    return [
+      { source: "/pricing", destination: "/services", permanent: true },
+      { source: "/pricing.html", destination: "/services", permanent: true },
+      { source: "/caregivers", destination: "/for-family", permanent: true },
+      { source: "/caregivers.html", destination: "/for-family", permanent: true },
     ]
   },
   async rewrites() {
