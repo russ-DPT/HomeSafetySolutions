@@ -128,7 +128,7 @@
       if (score >= 4) {
         r.className = "status status-warn";
         r.innerHTML = "Your score is " + score + " out of 14. A score of 4 or more means you may be at risk for falling. Talk with your doctor about it, and consider a Home Safety Visit so we can look at your home and how you move through it. " +
-          "<a href=\"" + ((document.querySelector("a[data-link=CONSULT]") || {}).href || "/book#consultation") + "\">Book a consultation</a> or call <a href=\"" + C.phoneHref + "\">" + C.phoneDisplay + "</a>.";
+          "<a href=\"" + ((document.querySelector("a[data-link=CONSULT]") || {}).href || "/book#consultation") + "\">Book a consultation</a> and talk to Dr. L'HommeDieu about becoming safer.";
       } else {
         r.className = "status status-ok";
         r.innerHTML = "Your score is " + score + " out of 14. That is below the level that suggests higher fall risk. Keep your home clear and well lit, and check again if anything changes, such as a hospital stay, a new medicine, or a fall.";
