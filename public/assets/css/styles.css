@@ -191,6 +191,15 @@ h3 .icon { width: 1.7rem; height: 1.7rem; }
 .btn-call { background: var(--stripe); color: var(--ink); }
 .btn-call:hover { background: #FFC933; color: var(--ink); }
 .btn-small { min-height: 3rem; padding: .45rem 1rem; font-size: 1.05rem; }
+.header-phone { color: var(--ink-soft); font-size: 1rem; text-decoration: none; white-space: nowrap; padding: .5rem .25rem; }
+.header-phone:hover { color: var(--gulf); text-decoration: underline; }
+.phone-alt { align-self: center; color: var(--ink-soft); font-size: 1.05rem; }
+.section-deep .phone-alt, .section-deep .phone-alt a { color: #fff; }
+.after-call { list-style: none; padding: 0; margin: var(--space-3) 0 0; max-width: 46rem; border-top: 1px solid var(--line); }
+.after-call li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .25rem 1.5rem; padding: .85rem 0; border-bottom: 1px solid var(--line); scroll-margin-top: 6rem; }
+.after-call a { font-weight: 700; color: var(--gulf-deep); }
+.after-call span { color: var(--ink-soft); }
+.bfb-prices { margin: 0; padding-left: 1.25rem; }
 .btn-row { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: var(--space-3); }
 
 /* ---------- Sections ---------- */
@@ -612,7 +621,8 @@ legend { font-weight: 700; font-size: 1.25rem; padding: 0 .4rem; color: var(--gu
   .site-header .wrap { gap: .5rem; width: min(100% - 1.5rem, var(--wrap)); }
   .header-actions { gap: .4rem; }
   .header-actions .btn-small { padding: .45rem .7rem; }
-  .header-actions .btn-call .label { display: none; }
+  .header-actions .header-phone { display: none; }
+  .phone-alt { width: 100%; text-align: center; }
   .doc, .qc-item { grid-template-columns: 1fr; }
   .utility .wrap { justify-content: center; }
   .utility .utility-area { display: none; }
@@ -628,6 +638,28 @@ legend { font-weight: 700; font-size: 1.25rem; padding: 0 .4rem; color: var(--gu
   .btn { border: 2px solid ButtonText; }
   .choice[aria-expanded="true"], .book-option[aria-pressed="true"] { outline: 3px solid Highlight; }
 }
+
+/* Service area address checker */
+.area-check { background: var(--seaglass); border: 1px solid var(--line); border-radius: var(--radius-l); padding: var(--space-3); margin-bottom: var(--space-4); }
+.area-check h2 { margin-top: 0; }
+.area-check-intro { font-size: 1.15rem; max-width: var(--measure); }
+.area-check-row { display: flex; flex-wrap: wrap; gap: .75rem; }
+.area-check-row input { flex: 1 1 18rem; min-width: 0; }
+.area-check-row .btn { flex: 0 0 auto; }
+.area-result { margin-top: var(--space-3); border: 2px solid; border-radius: var(--radius-m); padding: 1.25rem 1.5rem; background: #fff; }
+.area-result h3 { margin: .25rem 0 .5rem; font-size: 1.35rem; }
+.area-result p { margin: 0 0 .4rem; }
+.area-result p:last-child { margin-bottom: 0; }
+.area-result-status { display: inline-flex; align-items: center; gap: .5rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; font-size: .95rem; }
+.area-result-meta { color: var(--ink-soft); font-size: 1rem; }
+.area-result-in { border-color: var(--ready-green); background: var(--ready-green-bg); }
+.area-result-in .area-result-status { color: var(--ready-green); }
+.area-result-edge { border-color: var(--ready-yellow); background: var(--ready-yellow-bg); }
+.area-result-edge .area-result-status { color: var(--ready-yellow); }
+.area-result-out { border-color: var(--gulf); background: var(--sky-soft); }
+.area-result-out .area-result-status { color: var(--gulf); }
+.area-result-none { border-color: var(--line); }
+.area-result-none .area-result-status { color: var(--ink-soft); }
 
 /* Small helper line under a button row */
 .link-note { margin-top: .75rem; font-size: .9375rem; color: var(--ink-soft); }
