@@ -16,8 +16,6 @@ window.HSS_CONFIG = {
     membershipAnnual:  "",  // $600 per year
     membershipMonthly: "",  // $55 per month
     contractorConsult: "",  // $150
-    travelZone2:       "",  // $25
-    travelZone3:       "",  // $50
     stormAddOn:        "",  // from $100 Storm Ready Audit added to a visit, same trip ($100 first add-on, $50 second)
     facilityCase:      "",  // $150 per case
     facilityPack:      "",  // $1,400 ten-case pack
@@ -28,5 +26,5 @@ window.HSS_CONFIG = {
   /* GOOGLE MAPS: paste the embed URL of your Google My Maps service-area map
      (My Maps > Share > Embed on my site > copy only the src="..." address).
      Leave blank to show the standard Google Map centered on Apollo Beach. */
-  serviceAreaMap: ""
+  serviceAreaMap: "https://www.google.com/maps/d/embed?mid=1eoxElL87MX7xGun_tQIjHh8NVc71AdE"
 };
