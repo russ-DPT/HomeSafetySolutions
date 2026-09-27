@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Your $50 Initial Consultation | Home Safety Solutions</title>
-<meta name="description" content="Book a $50 Initial Consultation to start any service, or a free partner call for professionals.">
+<title>Service area map and address check | Home Safety Solutions</title>
+<meta name="description" content="Check whether your address is inside the Home Safety Solutions in-person service area around Tampa Bay, and open the full interactive map.">
 <meta name="theme-color" content="#0B3D62">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Your $50 Initial Consultation | Home Safety Solutions">
-<meta property="og:description" content="Book a $50 Initial Consultation to start any service, or a free partner call for professionals.">
+<meta property="og:title" content="Service area map and address check | Home Safety Solutions">
+<meta property="og:description" content="Check whether your address is inside the Home Safety Solutions in-person service area around Tampa Bay, and open the full interactive map.">
 <meta property="og:image" content="https://homesafety.solutions/assets/img/og-image.png">
-<meta property="og:url" content="https://homesafety.solutions/book">
-<link rel="canonical" href="https://homesafety.solutions/book">
+<meta property="og:url" content="https://homesafety.solutions/service-area-map">
+<link rel="canonical" href="https://homesafety.solutions/service-area-map">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/assets/img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="/assets/img/favicon-64.png" sizes="64x64" type="image/png">
@@ -72,59 +72,48 @@
 </header>
 
 <main id="main" tabindex="-1">
-<section class="page-head"><div class="wrap"><p class="breadcrumb"><a href="/">Home</a> / Book</p><div class="stripe-rule" aria-hidden="true"></div><h1>Your $50 Initial Consultation</h1><p class="lede">Every service starts here. A 30-minute phone call with Dr. L'HommeDieu to work through what is going on, gather the important details about the person and the home, and find the right next step.</p>
-  <div class="btn-stack" style="margin-top:1.5rem">
-    <a class="btn btn-primary btn-large" data-link="CONSULT" href="https://intakeq.com/booking/zm1cyz?serviceId=7c400002-9dcd-4689-a8e5-1e075c4c5d9c">Book a $50 consultation</a>
-    <p class="btn-sub">30-minute phone call. $50, credited toward any visit within 30 days.</p>
-  </div>
-</div></section>
+<section class="page-head"><div class="wrap"><p class="breadcrumb"><a href="/">Home</a> / <a href="/service-area">Service area</a> / Map and address check</p><div class="stripe-rule" aria-hidden="true"></div><h1>Service area map</h1><p class="lede">Check the address of the home that needs the visit, or explore the full map. Inside the shaded area, visits can be in person. Everywhere else in Florida, New York, or Ohio, visits are by telehealth.</p></div></section>
 <section class="page-body"><div class="wrap">
-  <h2 id="after-you-book">What happens after you book</h2>
-  <ol class="steps steps--stacked" style="margin-bottom:2.5rem">
-    <li><h3>Pick a 30-minute time and provide your credit card</h3><p>Nothing is charged until after the call, unless the <a href="/policies#initial-consultation">cancellation or no-show policy</a> applies.</p></li>
-    <li><h3>Dr. L'HommeDieu calls you at that time</h3><p>Family can join, and more than one number is fine.</p></li>
-    <li><h3>If a visit makes sense, all stakeholders will discuss which service is best and Dr. L'HommeDieu schedules it with you on the call</h3><p>Your $50 is credited toward it. If you do not need a visit, he will tell you honestly.</p></li>
-  </ol>
-
-  <div class="grid-2" style="margin-bottom:2rem">
-    <div class="panel">
-      <h3><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/img/icons.svg#i-check"></use></svg>What it is</h3>
-      <ul class="checklist">
-        <li>A 30 minute phone call with Russ L'HommeDieu, DPT, ATP</li>
-        <li>A conversation about the person, the home, the people who help, and what worries you</li>
-        <li>A clear recommendation for the right next step, or an honest answer that you do not need one</li>
-        <li>Open to the person themselves, family members, and caregivers; more than one person can join</li>
-        <li>$50, credited toward any visit you book within 30 days</li>
-        <li>No obligation to book anything else</li>
-      </ul>
+<section class="area-check" aria-labelledby="area-check-h">
+  <h2 id="area-check-h">Check your address</h2>
+  <p class="area-check-intro">Enter the address of the home that needs the visit. We will tell you if an in-person visit is available there.</p>
+  <form id="area-check-form" class="area-check-form" autocomplete="on">
+    <div class="field">
+      <label for="area-check-q">Address, ZIP code, or town <span class="hint">Include your ZIP code for the most accurate answer.</span></label>
+      <div class="area-check-row">
+        <input id="area-check-q" name="address" type="text" autocomplete="street-address" placeholder="123 Main St, Brandon, FL 33511">
+        <button type="submit" class="btn btn-primary">Check</button>
+      </div>
     </div>
-    <div class="panel">
-      <h3><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/img/icons.svg#i-alert"></use></svg>What it is not</h3>
-      <ul>
-        <li><strong>Not a home assessment.</strong> We do not see the home, so there is no photo report, hazard list, or readiness rating. Those come with a visit.</li>
-        <li><strong>Not a medical visit.</strong> There is no examination, diagnosis, treatment, or physical therapy, and it does not replace your doctor or therapist.</li>
-        <li><strong>Not billed to insurance.</strong> It is a private-pay service and is not billed to Medicare or other insurance.</li>
-        <li><strong>Not a delay for urgent discharges.</strong> If someone is leaving the hospital or rehab soon, book the earliest time you see. We schedule the discharge visit on that call.</li>
-        <li><strong>Not for emergencies.</strong> If someone has fallen and is hurt, call 911.</li>
-      </ul>
-    </div>
-  </div>
+  </form>
+  <div id="area-check-result" class="area-result" aria-live="polite" hidden></div>
+  <p class="source-note">This check uses the center of your ZIP code and the approximate one-hour drive boundary shown on the map below. If you are near the edge, call (813) 867-3372 and we will confirm.</p>
+</section>
 
-  <div class="panel-callout" style="margin-bottom:2rem">
-    <p><strong>Please keep health details out of the booking form.</strong> We only need your name, how to reach you, and the ZIP code of the home. We collect clinical information later, in our secure portal.</p>
+<figure class="zone-map">
+  <div class="map-frame">
+    <iframe id="service-map" src="https://www.google.com/maps/d/embed?mid=1eoxElL87MX7xGun_tQIjHh8NVc71AdE" title="Map of the Home Safety Solutions in-person service area: about a 60-minute drive from Apollo Beach, Florida" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
   </div>
-
-  <p>Not sure which service you need? That is what the call is for. You can see <a href="/services">every service and price</a> ahead of time, but you do not have to choose one before you book.</p>
-  <p><strong>Referring a patient?</strong> Physicians, therapists, discharge planners and facilities can book a free call on the <a href="/for-professionals">For Professionals</a> page.</p>
-
-  <div class="btn-stack" style="margin-top:2rem">
-    <a class="btn btn-primary btn-large" data-link="CONSULT" href="https://intakeq.com/booking/zm1cyz?serviceId=7c400002-9dcd-4689-a8e5-1e075c4c5d9c">Book a $50 consultation</a>
-    <p class="btn-sub">30-minute phone call. $50, credited toward any visit within 30 days.</p>
-  </div>
-  <p class="reschedule-note" style="margin-top:1.5rem">Free rescheduling with 24 hours' notice, using the link in your confirmation email. See our <a href="/policies#cancellation">Cancellation Policy</a>.</p>
+  <figcaption>
+    <p>The shaded area is where we offer in-person visits. Its edge is approximate; if your home is close to the line, call (813) 867-3372 and we will tell you.</p>
+    <p><a href="https://www.google.com/maps/d/viewer?mid=1eoxElL87MX7xGun_tQIjHh8NVc71AdE" target="_blank" rel="noopener">Open the map in Google Maps</a></p>
+  </figcaption>
+</figure>
+<p><a href="/service-area">Back to service area details</a></p>
 </div></section>
 
 </main>
+
+<section class="cta-band" aria-labelledby="cta-h">
+  <div class="wrap">
+    <h2 id="cta-h">Start with a $50 Initial Consultation</h2>
+    <p>Every journey starts with a $50 Initial Consultation. We work through what you need, gather the important details about the person and the home, and match you to the right service. The $50 is credited toward any visit you book within 30 days.</p>
+    <div class="btn-row">
+      <a data-link="CONSULT" class="btn btn-primary" href="https://intakeq.com/booking/zm1cyz?serviceId=7c400002-9dcd-4689-a8e5-1e075c4c5d9c"><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/img/icons.svg#i-calendar"></use></svg>Book a $50 consultation</a>
+      <span class="phone-alt">or call <a href="tel:+18138673372">(813) 867-3372</a></span>
+    </div>
+  </div>
+</section>
 
 
 <footer class="site-footer">
@@ -191,5 +180,6 @@
 
 <script src="/assets/js/config.js"></script>
 <script src="/assets/js/site.js" defer></script>
+<script src="/assets/js/service-area-check.js" defer></script>
 </body>
 </html>
