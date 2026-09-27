@@ -27,9 +27,16 @@
       var open = toggle.getAttribute("aria-expanded") === "true";
       toggle.setAttribute("aria-expanded", String(!open));
       nav.classList.toggle("is-open", !open);
+      document.body.classList.toggle("menu-open", !open);
       toggle.querySelector(".label").textContent = open ? "Menu" : "Close";
     });
   }
+
+  /* The header is identical on every page, so the current page is marked here */
+  var here = location.pathname.replace(/\.html$/, "").replace(/\/$/, "") || "/";
+  $$("#site-nav a[href^='/']").forEach(function (a) {
+    if (a.getAttribute("href") === here) a.setAttribute("aria-current", "page");
+  });
   document.addEventListener("keydown", function (e) {
     if (e.key !== "Escape") return;
     $$(".nav details[open]").forEach(function (d) { d.removeAttribute("open"); d.querySelector("summary").focus(); });
@@ -163,8 +170,8 @@
       var vetted = list.filter(function (c) { return c.vetted; }), notYet = list.filter(function (c) { return !c.vetted; });
       count.textContent = vetted.length + " vetted " + (vetted.length === 1 ? "partner" : "partners") + ", " + notYet.length + " not yet vetted";
       dir.innerHTML = vetted.length ? vetted.map(card).join("") :
-        "<div class=\"empty\"><h3>No partners have completed vetting yet" + (t ? " for this filter" : "") + "</h3>" +
-        "<p>We mark a partner vetted only after a license check, insurance certificates, references, and a supervised trial job. Call <a href=\"" + C.phoneHref + "\">" + C.phoneDisplay + "</a> and we will tell you who is available for your job and area today.</p></div>";
+        "<div class=\"empty\"><p>" + (t ? "No vetted partners for this type of work yet. " : "We are vetting our first partners now. ") +
+        "Check back soon, or ask Dr. L'HommeDieu on your consultation call.</p></div>";
       if (pending) pending.innerHTML = notYet.length ? notYet.map(card).join("") :
         "<div class=\"empty\"><p>No companies in this group match these filters.</p></div>";
     }

@@ -267,7 +267,7 @@ h3 .icon { width: 1.7rem; height: 1.7rem; }
 .js .choice-panel { animation: panel-in .25s ease; }
 @keyframes panel-in { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
 .choice-panel h3 { margin-bottom: .75rem; }
-.path-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: .8rem; list-style: none; padding: 0; margin: 0; max-width: none; }
+.path-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr)); gap: .8rem; list-style: none; padding: 0; margin: 0; max-width: none; }
 .path-links li { margin: 0; }
 .path-link {
   display: flex; gap: .8rem; align-items: center; min-height: 4.25rem; padding: .8rem 1rem;
@@ -595,9 +595,9 @@ legend { font-weight: 700; font-size: 1.25rem; padding: 0 .4rem; color: var(--gu
   .nav.is-open { display: flex; }
   .nav > ul { flex-direction: column; }
   .nav .menu { position: static; box-shadow: none; border: 0; padding: 0 0 0 1rem; min-width: 0; }
-  .header-actions .btn-book-top { display: none; }
-  .nav .nav-book { display: block; margin-top: .5rem; }
+  .nav .nav-book { display: block; margin-bottom: .5rem; }
   .nav .nav-book a { background: var(--gulf); color: #fff; justify-content: center; }
+  .nav .nav-book a:hover { background: var(--gulf-deep); color: #fff; }
 }
 @media (max-width: 900px) {
   .hero .wrap, .split, .founder, .grid-2 { grid-template-columns: 1fr; }
@@ -729,3 +729,49 @@ legend { font-weight: 700; font-size: 1.25rem; padding: 0 .4rem; color: var(--gu
   .start-card__main { flex-direction: column; gap: 0; }
 }
 @media (prefers-reduced-motion: reduce) { .service-card:hover, .service-card:focus-within { transform: none; } }
+
+/* ---------- Mobile quick-action bar ---------- */
+.mobile-bar { display: none; }
+@media (max-width: 759.98px) {
+  .header-actions .btn-book-top { display: none; }
+  .mobile-bar {
+    display: grid; grid-template-columns: 1fr 1fr; gap: .5rem;
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+    padding: .5rem .75rem calc(.5rem + env(safe-area-inset-bottom));
+    background: #fff; border-top: 1px solid var(--line); box-shadow: 0 -10px 24px -18px rgba(8,47,77,.6);
+  }
+  .mobile-bar .btn { min-height: var(--tap); width: 100%; padding: .5rem .75rem; font-size: 1.05rem; }
+  body { padding-bottom: calc(var(--tap) + 1rem + env(safe-area-inset-bottom)); }
+  body.menu-open .mobile-bar { display: none; }
+}
+@media print { .mobile-bar { display: none !important; } }
+
+/* Product deep-dive pages: one shared layout */
+.service-name { font-family: var(--font-head); font-size: .85rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--gulf); margin: 0 0 .5rem; }
+.page-head .price-chips { margin-top: var(--space-3); }
+.steps.steps--stacked { grid-template-columns: 1fr; gap: 1.5rem; }
+.rating-demo.rating-demo--stacked { grid-template-columns: 1fr; margin-top: 1.5rem; }
+.price-callout { margin-bottom: var(--space-2); }
+.price-callout p { margin: 0; font-size: 1.1rem; }
+.price-box { display: flex; flex-direction: column; gap: .75rem; }
+.price-box > * { margin: 0; }
+.price-box__title { display: flex; gap: .6rem; align-items: center; font-size: 1.35rem; }
+.price-box__title .icon { color: var(--seagrass); width: 1.8rem; height: 1.8rem; flex: none; }
+.price-box .price-note { margin-top: 0; }
+.price-table { font-size: 1rem; }
+.price-table th, .price-table td { padding: .6rem 0; }
+.price-table td.num { padding-left: 1rem; }
+.price-box__label { font-family: var(--font-head); font-weight: 700; color: var(--gulf-deep); }
+.price-box .checklist { margin: 0; }
+.price-box .btn-stack { margin-top: .5rem; }
+.price-box .btn { width: 100%; justify-content: center; }
+.page-body--faq { padding-top: 0; }
+.page-body--faq .faq { max-width: 48rem; }
+.cta-band .btn-stack { align-items: flex-start; margin-top: var(--space-3); }
+.cta-band__more { margin-top: var(--space-3); }
+.cta-band__more a { color: #fff; font-weight: 700; text-underline-offset: .2em; }
+
+/* Home "What we do" row and button sub-lines inside horizontal button rows */
+.service-grid--four { grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr)); }
+.btn-row > .btn-sub { flex-basis: 100%; }
+.hero-cta { align-items: flex-start; margin-block: 1.5rem; }
