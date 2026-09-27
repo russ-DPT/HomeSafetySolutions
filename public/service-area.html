@@ -80,6 +80,21 @@
 </a>
 </div></section>
 <section class="page-body"><div class="wrap">
+<section class="area-check" aria-labelledby="area-check-h">
+  <h2 id="area-check-h">Check your address</h2>
+  <p class="area-check-intro">Enter the address of the home that needs the visit. We will tell you if an in-person visit is available there.</p>
+  <form id="area-check-form" class="area-check-form" autocomplete="on">
+    <div class="field">
+      <label for="area-check-q">Address, ZIP code, or town <span class="hint">Include your ZIP code for the most accurate answer.</span></label>
+      <div class="area-check-row">
+        <input id="area-check-q" name="address" type="text" autocomplete="street-address" placeholder="123 Main St, Brandon, FL 33511">
+        <button type="submit" class="btn btn-primary">Check</button>
+      </div>
+    </div>
+  </form>
+  <div id="area-check-result" class="area-result" aria-live="polite" hidden></div>
+  <p class="source-note">This check uses the center of your ZIP code and the approximate one-hour drive boundary shown on the map. If you are near the edge, call (813) 867-3372 and we will confirm.</p>
+</section>
 
 <div>
   <div class="table-wrap">
