@@ -17,7 +17,6 @@ const nextConfig = {
     return [
       { source: "/:path*", headers: securityHeaders },
       { source: "/data/:path*", headers: [{ key: "Cache-Control", value: "no-store" }] },
-      { source: "/forms/:path*", headers: [{ key: "Content-Disposition", value: "attachment" }] },
     ]
   },
   async redirects() {
