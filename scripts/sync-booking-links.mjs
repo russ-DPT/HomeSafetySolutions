@@ -39,7 +39,7 @@ function buildVariants() {
       <ul class="bfb-prices">
         ${prices}
       </ul>
-      <p class="bfb-small">Your $50 is credited toward the visit when it takes place within 30 days. We take payment by phone.</p>
+      <p class="bfb-small">Your $50 is credited toward this visit when you book it within 30 days of your call. We take payment by phone.</p>
     </article>`)
     html = replaceRegion(html, "allservices", "")
     writeFileSync(join(PUBLIC, `${VARIANT_PREFIX}${key}.html`), html)
