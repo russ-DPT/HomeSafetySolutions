@@ -134,7 +134,7 @@
   /* Contractor directory: vetted partners first, then companies not yet vetted */
   var dir = $("#directory");
   if (dir) {
-    var tierSel = $("#f-tier"), zoneSel = $("#f-zone"), count = $("#dir-count"), pending = $("#directory-pending"), all = [];
+    var tierSel = $("#f-tier"), count = $("#dir-count"), pending = $("#directory-pending"), all = [];
     var TIER = { handyman: "Handyman", contractor: "Licensed contractor (to confirm)", trades: "Licensed trades", specialty: "Specialty equipment", unconfirmed: "Type of work to be confirmed" };
     var TIER_V = { handyman: "Handyman", contractor: "Licensed contractor", trades: "Licensed trades", specialty: "Specialty equipment" };
     function esc(s) { var d = document.createElement("div"); d.textContent = s == null ? "" : String(s); return d.innerHTML; }
@@ -147,8 +147,7 @@
         (v && c.caps ? "<span class=\"tag tag-caps\">CAPS certified</span>" : "") +
         (!v && c.capsConfirmed ? "<span class=\"tag tag-caps\">CAPS since " + esc(c.capsConfirmed) + " (NAHB directory)</span>" : "") +
         (!v && !c.capsConfirmed && c.capsListed ? "<span class=\"tag\">Listed as CAPS in a directory (unconfirmed)</span>" : "") +
-        (v ? (c.zones || []).map(function (n) { return "<span class=\"tag\">Zone " + esc(n) + "</span>"; }).join("")
-           : "<span class=\"tag\">" + (/confirm/.test(c.basedIn) ? esc(c.basedIn) : "Based in " + esc(c.basedIn) + ", Zone " + esc((c.zones || [])[0])) + "</span>") + "</p>" +
+        (c.basedIn ? "<span class=\"tag\">" + (/confirm/.test(c.basedIn) ? esc(c.basedIn) : "Based in " + esc(c.basedIn)) + "</span>" : "") + "</p>" +
         (c.services ? "<p>" + esc(c.services) + "</p>" : "") +
         (c.contactName ? "<p><strong>Contact:</strong> " + esc(c.contactName) + "</p>" : "") +
         (c.address ? "<p><strong>Address:</strong> " + esc(c.address) + "</p>" : "") +
@@ -159,12 +158,12 @@
         "<p class=\"price-note\">" + (v ? "Vetted " + esc(c.verified) : "Source: " + esc(c.source)) + "</p></article>";
     }
     function render() {
-      var t = tierSel.value, z = zoneSel.value;
-      var list = all.filter(function (c) { return (!t || c.tier === t) && (!z || (c.zones || []).indexOf(Number(z)) > -1); });
+      var t = tierSel.value;
+      var list = all.filter(function (c) { return !t || c.tier === t; });
       var vetted = list.filter(function (c) { return c.vetted; }), notYet = list.filter(function (c) { return !c.vetted; });
       count.textContent = vetted.length + " vetted " + (vetted.length === 1 ? "partner" : "partners") + ", " + notYet.length + " not yet vetted";
       dir.innerHTML = vetted.length ? vetted.map(card).join("") :
-        "<div class=\"empty\"><h3>No partners have completed vetting yet" + (t || z ? " for these filters" : "") + "</h3>" +
+        "<div class=\"empty\"><h3>No partners have completed vetting yet" + (t ? " for this filter" : "") + "</h3>" +
         "<p>We mark a partner vetted only after a license check, insurance certificates, references, and a supervised trial job. Call <a href=\"" + C.phoneHref + "\">" + C.phoneDisplay + "</a> and we will tell you who is available for your job and area today.</p></div>";
       if (pending) pending.innerHTML = notYet.length ? notYet.map(card).join("") :
         "<div class=\"empty\"><p>No companies in this group match these filters.</p></div>";
@@ -173,7 +172,7 @@
     (fromPage ? Promise.resolve(fromPage) : fetch("/data/contractors.json", { cache: "no-store" }).then(function (r) { return r.json(); }))
       .then(function (d) { all = (d.contractors || []).filter(function (c) { return c.published; }); render(); })
       .catch(function () { all = []; render(); });
-    tierSel.addEventListener("change", render); zoneSel.addEventListener("change", render);
+    tierSel.addEventListener("change", render);
   }
 
   /* Contractor application */
