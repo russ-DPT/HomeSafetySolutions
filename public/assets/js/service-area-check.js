@@ -43,13 +43,30 @@
   });
   function titleCase(s) { return s.replace(/\b\w/g, function (m) { return m.toUpperCase(); }); }
 
+  function telehealthStateForZip(z) {
+    var p = parseInt(z.slice(0, 3), 10);
+    if (p === 5 || p === 63 || (p >= 100 && p <= 149)) return "New York";
+    if (p >= 430 && p <= 459) return "Ohio";
+    return null;
+  }
+
+  function telehealthStateForText(q) {
+    if (/,\s*ny\b|\bnew york\b/i.test(q)) return "New York";
+    if (/,\s*oh\b|\bohio\b/i.test(q)) return "Ohio";
+    return null;
+  }
+
   function find(q) {
     var zipMatches = q.match(/\b\d{5}\b/g);
     if (zipMatches) {
       var z = zipMatches[zipMatches.length - 1];
       if (ZIPS[z]) return { label: ZIPS[z][0] + ", FL " + z, lat: ZIPS[z][1], lon: ZIPS[z][2], kind: "zip" };
+      var zipState = telehealthStateForZip(z);
+      if (zipState) return { telehealthState: zipState, zip: z };
       return { missing: z };
     }
+    var textState = telehealthStateForText(q);
+    if (textState) return { telehealthState: textState };
     var parts = q.split(",").map(function (p) { return norm(p.replace(/\bfl(orida)?\b/ig, "")); }).filter(Boolean).reverse();
     for (var i = 0; i < parts.length; i++) {
       var cand = byCity[parts[i]];
@@ -66,7 +83,8 @@
     in: '<path d="M20 6 9 17l-5-5"/>',
     edge: '<path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/>',
     out: '<rect x="2" y="6" width="14" height="12" rx="2"/><path d="m22 8-6 4 6 4V8z"/>',
-    none: '<circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>'
+    none: '<circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>',
+    stop: '<circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/>'
   };
 
   function init() {
@@ -94,7 +112,11 @@
       if (!q) { show("none", "Enter a location", "Type your address, ZIP code, or town", "Including your 5-digit ZIP code gives the most accurate answer."); return; }
       var r = find(q);
       if (!r) { show("none", "Not found", "We could not find that location", "Try adding your 5-digit ZIP code, for example 33511. Or call " + PHONE + " and we will check for you."); return; }
-      if (r.missing) { show("out", "Not a Florida ZIP code", "ZIP " + r.missing + " is not in Florida", "We can only see patients who are in Florida during the visit. If you think this is a mistake, call " + PHONE + "."); return; }
+      if (r.telehealthState) {
+        show("out", "Telehealth only", "Telehealth visits are available in " + r.telehealthState, "Your visit will be by telehealth. It is the same assessment and report, done by video with you or your family walking us through the home. In-person visits are offered only in the Tampa Bay area of Florida.", r.zip ? "ZIP " + r.zip + " \u00b7 " + r.telehealthState : r.telehealthState);
+        return;
+      }
+      if (r.missing) { show("stop", "Outside our states", "ZIP " + r.missing + " is not in Florida, New York, or Ohio", "We can only see patients who are in Florida, New York, or Ohio during the visit, because those are the states where we are licensed. If you think this is a mistake, call " + PHONE + "."); return; }
 
       var isInside = inside(r.lon, r.lat), edge = edgeDist(r.lon, r.lat);
       var meta = r.label + " \u00b7 about " + Math.round(milesFromHome(r.lon, r.lat)) + " miles from Apollo Beach (straight line)";
