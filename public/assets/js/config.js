@@ -16,7 +16,7 @@ window.HSS_CONFIG = {
     membershipAnnual:  "",  // $600 per year
     membershipMonthly: "",  // $55 per month
     contractorConsult: "",  // $150
-    stormAddOn:        "",  // from $100 Storm Ready Audit added to a visit, same trip ($100 first add-on, $50 second)
+    deepDive:          "",  // $75 deep dive added to a core assessment
     facilityCase:      "",  // $150 per case
     facilityPack:      "",  // $1,400 ten-case pack
     giftCertificate:   "",  // customer chooses amount
