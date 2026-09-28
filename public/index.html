@@ -53,15 +53,19 @@
 {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Remote Caregiving Plan",
-  "serviceType": "Remote caregiving technology plan",
+  "name": "Home safety assessments",
+  "serviceType": "In-home safety assessment by a physical therapist",
   "provider": { "@type": "Organization", "name": "Home Safety Solutions" },
   "areaServed": { "@type": "State", "name": "Florida" },
   "offers": [
-    { "@type": "Offer", "name": "Remote Caregiving Plan: In-Home", "price": "250", "priceCurrency": "USD" },
-    { "@type": "Offer", "name": "Remote Caregiving Plan: Virtual", "price": "175", "priceCurrency": "USD" },
-    { "@type": "Offer", "name": "Remote Caregiving Plan Add-on", "price": "100", "priceCurrency": "USD" },
-    { "@type": "Offer", "name": "Remote Caregiving Plan Review", "price": "150", "priceCurrency": "USD" }
+    { "@type": "Offer", "name": "Home Safety Visit", "price": "250", "priceCurrency": "USD" },
+    { "@type": "Offer", "name": "Home Safety Visit: By video", "price": "175", "priceCurrency": "USD" },
+    { "@type": "Offer", "name": "Ready for Discharge", "price": "250", "priceCurrency": "USD" },
+    { "@type": "Offer", "name": "Ready for Discharge: By video", "price": "175", "priceCurrency": "USD" },
+    { "@type": "Offer", "name": "Right Home Assessment", "price": "250", "priceCurrency": "USD" },
+    { "@type": "Offer", "name": "Remote Caregiving Plan deep dive", "price": "75", "priceCurrency": "USD" },
+    { "@type": "Offer", "name": "Storm Ready Audit deep dive", "price": "75", "priceCurrency": "USD" },
+    { "@type": "Offer", "name": "Assistive Technology Consultation deep dive", "price": "75", "priceCurrency": "USD" }
   ]
 }
 </script>
@@ -338,17 +342,9 @@
     <div class="section-head">
       <div class="stripe-rule" aria-hidden="true"></div>
       <h2 id="what-h">What we do</h2>
-      <p>Four of the ways we help. Not sure which fits? The $50 consultation sorts that out.</p>
+      <p>Three core assessments. Not sure which fits? The $50 consultation sorts that out.</p>
     </div>
-    <div class="service-grid service-grid--four">
-      <article class="service-card">
-        <div class="service-card__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/img/icons.svg#i-discharge"></use></svg></div>
-        <p class="service-card__kicker">Coming home from the hospital or rehab</p>
-        <h3>Ready for Discharge</h3>
-        <p>We check the home before the patient leaves, and give one clear Green, Yellow or Red readiness rating.</p>
-        <div class="price-chips"><span class="price-chip">$250 in your home</span><span class="price-chip">$175 by video</span></div>
-        <div class="service-card__actions"><a class="text-link" href="/ready-for-discharge">Learn more<span class="visually-hidden"> about Ready for Discharge</span></a></div>
-      </article>
+    <div class="service-grid">
       <article class="service-card">
         <div class="service-card__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/img/icons.svg#i-home"></use></svg></div>
         <p class="service-card__kicker">Staying safe at home</p>
@@ -358,22 +354,23 @@
         <div class="service-card__actions"><a class="text-link" href="/home-safety-visit">Learn more<span class="visually-hidden"> about the Home Safety Visit</span></a></div>
       </article>
       <article class="service-card">
-        <div class="service-card__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/img/icons.svg#i-walker"></use></svg></div>
-        <p class="service-card__kicker">Choosing equipment or technology</p>
-        <h3>Assistive Technology</h3>
-        <p>An independent review of the equipment a person uses or needs, matched to how they actually move.</p>
+        <div class="service-card__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/img/icons.svg#i-discharge"></use></svg></div>
+        <p class="service-card__kicker">Coming home from the hospital or rehab</p>
+        <h3>Ready for Discharge</h3>
+        <p>We check the home before the patient leaves, and give one clear Green, Yellow or Red readiness rating.</p>
         <div class="price-chips"><span class="price-chip">$250 in your home</span><span class="price-chip">$175 by video</span></div>
-        <div class="service-card__actions"><a class="text-link" href="/assistive-technology">Learn more<span class="visually-hidden"> about Assistive Technology</span></a></div>
+        <div class="service-card__actions"><a class="text-link" href="/ready-for-discharge">Learn more<span class="visually-hidden"> about Ready for Discharge</span></a></div>
       </article>
       <article class="service-card">
-        <div class="service-card__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/img/icons.svg#i-family"></use></svg></div>
-        <p class="service-card__kicker">Caring from a distance</p>
-        <h3>Remote Caregiving</h3>
-        <p>A complete plan for supporting a loved one from far away, with training for your family.</p>
-        <div class="price-chips"><span class="price-chip">$250 in your home</span><span class="price-chip">$175 by video</span></div>
-        <div class="service-card__actions"><a class="text-link" href="/remote-caregiving">Learn more<span class="visually-hidden"> about Remote Caregiving</span></a></div>
+        <div class="service-card__icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/img/icons.svg#i-key"></use></svg></div>
+        <p class="service-card__kicker">Buying, renting or moving</p>
+        <h3>Right Home Assessment</h3>
+        <p>Will this house work for the person who will live there, now and in ten years? We assess it before you commit.</p>
+        <div class="price-chips"><span class="price-chip">$250 in your home</span><span class="price-chip price-chip--muted">In person only</span></div>
+        <div class="service-card__actions"><a class="text-link" href="/right-home">Learn more<span class="visually-hidden"> about the Right Home Assessment</span></a></div>
       </article>
     </div>
+    <p class="deep-line">Add a <a href="/services#deep-dives">deep dive for caregiving technology, storm readiness or equipment</a>: $75 each.</p>
     <p style="margin-top:1.5rem"><a class="btn btn-secondary" href="/services">See all services and prices</a></p>
   </div>
 </section>

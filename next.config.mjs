@@ -36,7 +36,7 @@ const nextConfig = {
         // through to the generic /before-you-book page.
         {
           source: "/before-you-book",
-          has: [{ type: "query", key: "service", value: "(?<svc>home-safety-visit|ready-for-discharge|coming-home-safe|assistive-technology|remote-caregiving|storm-ready|right-home)" }],
+          has: [{ type: "query", key: "service", value: "(?<svc>home-safety-visit|ready-for-discharge|right-home)" }],
           destination: "/before-you-book-:svc.html",
         },
       ],
