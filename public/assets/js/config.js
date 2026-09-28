@@ -16,7 +16,8 @@ window.HSS_CONFIG = {
     membershipAnnual:  "",  // $600 per year
     membershipMonthly: "",  // $55 per month
     contractorConsult: "",  // $150
-    deepDive:          "",  // $75 deep dive added to a core assessment
+    deepDive:          "",  // $75 Storm Ready or Assistive Technology deep dive
+    remoteCaregivingPlan: "",  // $150 Remote Caregiving Plan deep dive
     facilityCase:      "",  // $150 per case
     facilityPack:      "",  // $1,400 ten-case pack
     giftCertificate:   "",  // customer chooses amount

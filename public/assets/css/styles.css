@@ -828,7 +828,7 @@ legend { font-weight: 700; font-size: 1.25rem; padding: 0 .4rem; color: var(--gu
 .service-card .price-receipt__row--total, .price-receipt__row--total { border-top: 1px solid var(--line); margin-top: .35rem; padding-top: .6rem; font-weight: 700; color: var(--ink); }
 .price-receipt__row--total span:last-child { font-family: var(--font-head); font-size: 2.125rem; line-height: 1; color: var(--gulf); }
 .service-card .price-receipt__alt, .price-receipt__alt { border-top: 1px dashed var(--line); margin: .6rem 0 0; padding-top: .6rem; font-size: .95rem; color: var(--ink-soft); }
-.rush-line { text-align: center; font-size: .9375rem; color: var(--ink-soft); margin: 20px auto 0; max-width: none; }
+.rush-line { text-align: center; font-size: 1rem; color: var(--ink); margin: 20px auto 0; max-width: none; }
 
 .deep-dives { background: var(--stripe-soft); border-radius: 20px; padding: var(--space-4); }
 .deep-dives .deep-dives__eyebrow { color: #7A5200; }
@@ -890,3 +890,14 @@ legend { font-weight: 700; font-size: 1.25rem; padding: 0 .4rem; color: var(--gu
 /* Home: deep-dive line under What we do; Book: call-value spacing */
 .deep-line { margin-top: 1.25rem; color: var(--ink-soft); }
 .book-value { margin-bottom: 2rem; }
+
+/* Phone line inside the dark closing band */
+.cta-band .phone-alt, .cta-band .phone-alt a { color: #fff; }
+.cta-band .phone-alt a { text-decoration: underline; font-weight: 600; }
+
+/* Services, phones: core assessments before the call-value panel */
+@media (max-width: 760px) {
+  .svc-flow { display: flex; flex-direction: column; }
+  .svc-flow > #core { order: -1; }
+  .svc-flow > .svc-section:last-child { margin-bottom: 0; }
+}
