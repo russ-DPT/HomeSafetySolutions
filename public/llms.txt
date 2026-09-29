@@ -1,0 +1,63 @@
+# Home Safety Solutions
+
+> Clinician-led home safety assessment and hospital discharge readiness in the Tampa Bay area of Florida. Every assessment is done personally by Dr. Russ L'HommeDieu, DPT, ATP, who looks at the person, their equipment and the home together. In person around Tampa Bay; by video for homes in Florida, New York and Ohio. Private pay. Tagline: Safer Homes. Brighter Tomorrows.
+
+Home Safety Solutions is a registered fictitious name and product line of Practical Innovations, Inc.
+
+## Clinician
+
+- Dr. Russ L'HommeDieu, DPT, ATP: Doctor of Physical Therapy and RESNA Assistive Technology Professional (ATP).
+- More than 35 years of physical therapy practice, including service as a VA Home Safety Coordinator on a home-based primary care team.
+- Trained in aging-in-place design and modification through the National Association of Home Builders. Teaches in Doctor of Physical Therapy programs.
+- Licensed physical therapist in Florida (PT39370), New York (011600) and Ohio (PT020959).
+
+## Services and prices (USD)
+
+- Initial Consultation: $50. A 30-minute phone call. Every service starts here. The $50 is credited toward any visit booked within 30 days.
+- Home Safety Visit: $250 in the home, $175 by video. Fall-risk and home safety assessment, 60 to 120 minutes, photo report within 48 hours, fall risk screening using the CDC STEADI approach, debrief call.
+- Ready for Discharge: $250 in the home, $175 by video. Checks whether the home can support a patient leaving the hospital or rehab. Ends with one readiness rating: Green, Yellow or Red.
+- Right Home Assessment: $250, in person only. Checks whether a house fits the person who will live there, before buying, renting or moving.
+- Deep dives, added to a core assessment: Storm Ready Audit $75 (in person only), Assistive Technology Consultation $75, Remote Caregiving Plan $150 (does not include a Contractor Consultation).
+- Contractor Consultation: $150. A contractor-ready prescription and one call with the client's contractor.
+- Build Verify Visit: $150. Checks that finished work matches the specifications.
+- Rush scheduling within 48 hours: add $50.
+- Membership: $600 per year, or $55 per month with a 12-month commitment. Only for people who have had a core assessment, and only for homes inside the in-person service area.
+
+## Payment
+
+Private pay only. Home Safety Solutions does not bill or accept Medicare, Medicaid, the VA or any insurance.
+
+## Service area
+
+- In person: about a 60-minute drive from Apollo Beach, Florida, including Sun City Center and the surrounding Tampa Bay area. Address checker: https://www.homesafety.solutions/service-area
+- By video: homes anywhere in Florida, New York or Ohio, where Dr. L'HommeDieu is licensed. The patient must be in one of those states during the session. Family can join from anywhere.
+
+## Independence policy
+
+Independent. No referral fees, no commissions and no payments from contractors, installers, suppliers, equipment companies or device makers. Home Safety Solutions assesses and recommends; it does not sell equipment or do construction or installation. It follows a "Nothing About Me...Without Me" policy: nothing is changed, recommended or set in motion without the person's say.
+
+## Contact
+
+- Phone: (813) 867-3372
+- Email: info@homesafety.solutions
+- Website: https://www.homesafety.solutions/
+- Booking is online through IntakeQ, starting with the $50 Initial Consultation: https://www.homesafety.solutions/book
+
+## Key pages
+
+- [Home](https://www.homesafety.solutions/): What Home Safety Solutions does and who it helps.
+- [Services and pricing](https://www.homesafety.solutions/services): Every service and price in one place.
+- [Home Safety Visit](https://www.homesafety.solutions/home-safety-visit): Fall-risk and home safety assessment.
+- [Ready for Discharge](https://www.homesafety.solutions/ready-for-discharge): Home readiness check before a hospital or rehab discharge.
+- [Right Home Assessment](https://www.homesafety.solutions/right-home): Will this house work for this person, now and in ten years.
+- [Storm Ready Audit](https://www.homesafety.solutions/storm-ready): Hurricane and power outage plan for homes with oxygen, powered beds or refrigerated medicine.
+- [Assistive Technology Consultation](https://www.homesafety.solutions/assistive-technology): Independent equipment review by an ATP.
+- [Remote Caregiving Plan](https://www.homesafety.solutions/remote-caregiving): Technology plan for family supporting someone from a distance.
+- [Membership](https://www.homesafety.solutions/membership): Yearly visit, check-ins and priority scheduling.
+- [For myself](https://www.homesafety.solutions/for-myself), [For family](https://www.homesafety.solutions/for-family), [For caregivers](https://www.homesafety.solutions/for-caregivers), [For veterans](https://www.homesafety.solutions/for-veterans), [For professionals](https://www.homesafety.solutions/for-professionals), [For facilities](https://www.homesafety.solutions/for-facilities): Pages for each audience.
+- [Comparisons](https://www.homesafety.solutions/compare): Clinician-led assessment vs a contractor's free check, and Ready for Discharge vs Home Safety Visit.
+- [Service area](https://www.homesafety.solutions/service-area): Map, address checker and local notes for Tampa Bay communities.
+- [About](https://www.homesafety.solutions/about): Dr. L'HommeDieu's background and credentials.
+- [FAQ](https://www.homesafety.solutions/faq): Questions and answers on cost, insurance, the VA, discharge and storms.
+- [Articles](https://www.homesafety.solutions/articles): Articles by Dr. L'HommeDieu.
+- [Full text for AI tools](https://www.homesafety.solutions/llms-full.txt): The core pages in plain Markdown.
