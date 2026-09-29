@@ -904,3 +904,16 @@ legend { font-weight: 700; font-size: 1.25rem; padding: 0 .4rem; color: var(--gu
   .svc-flow > #core { order: -1; }
   .svc-flow > .svc-section:last-child { margin-bottom: 0; }
 }
+
+/* Answer-first summary and key facts (service and audience pages) */
+.in-short { border-left: 8px solid var(--seagrass); background: var(--seagrass-soft); border-radius: var(--radius-s); padding: 1.25rem 1.5rem; margin-bottom: 2rem; }
+.in-short p { margin: 0; }
+.in-short p + p { margin-top: .5rem; }
+.in-short__label { font-family: var(--font-head); font-weight: 700; color: var(--ready-green); text-transform: uppercase; letter-spacing: .06em; font-size: .9rem; }
+.key-facts { border: 1px solid var(--line); border-radius: var(--radius-m); padding: 1.25rem 1.5rem; margin-bottom: 2rem; }
+.key-facts h2 { margin-top: 0; }
+.key-facts dl { margin: 0; display: flex; flex-direction: column; }
+.key-facts dl > div { display: flex; flex-wrap: wrap; gap: .25rem 1rem; padding: .75rem 0; border-top: 1px solid var(--line); }
+.key-facts dt { flex: 0 0 9rem; font-family: var(--font-head); font-weight: 700; color: var(--gulf-deep); }
+.key-facts dd { flex: 1 1 18rem; margin: 0; }
+@media print { .in-short, .key-facts { break-inside: avoid; } }
