@@ -385,6 +385,7 @@ h3 .icon { width: 1.7rem; height: 1.7rem; }
 .service-price { text-align: right; min-width: 12rem; }
 .price { font-family: var(--font-head); font-size: 2rem; font-weight: 700; color: var(--gulf-deep); line-height: 1; }
 .price-note { display: block; font-size: 1rem; color: var(--ink-soft); margin-top: .35rem; }
+.price-box__after { margin-top: 1rem; padding-inline: .25rem; }
 .service .btn { margin-top: 1rem; }
 
 /* ---------- Tables ---------- */
