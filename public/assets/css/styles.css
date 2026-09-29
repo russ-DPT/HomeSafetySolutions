@@ -317,6 +317,8 @@ h3 .icon { width: 1.7rem; height: 1.7rem; }
 .media-card:hover, .media-card:focus-within { box-shadow: 0 8px 22px rgba(11, 58, 86, .12); transform: translateY(-3px); }
 .media-card .media-thumb { display: block; aspect-ratio: 16 / 9; overflow: hidden; background: var(--seaglass); border-bottom: 1px solid var(--line); }
 .media-card .media-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.media-card .media-thumb--contain { background: #fff; }
+.media-card .media-thumb--contain img { object-fit: contain; }
 .media-card .media-body { display: flex; flex-direction: column; flex: 1; padding: var(--space-3); }
 .media-kicker { font-family: var(--font-head); font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--gulf); margin-bottom: .5rem; }
 .media-card h3 { font-size: 1.35rem; line-height: 1.25; margin-bottom: .5rem; }
