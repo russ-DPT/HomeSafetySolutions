@@ -916,4 +916,6 @@ legend { font-weight: 700; font-size: 1.25rem; padding: 0 .4rem; color: var(--gu
 .key-facts dl > div { display: flex; flex-wrap: wrap; gap: .25rem 1rem; padding: .75rem 0; border-top: 1px solid var(--line); }
 .key-facts dt { flex: 0 0 9rem; font-family: var(--font-head); font-weight: 700; color: var(--gulf-deep); }
 .key-facts dd { flex: 1 1 18rem; margin: 0; }
+.reviewed-by { margin: -1rem 0 2rem; font-size: .95rem; color: var(--ink-soft, inherit); }
+.in-short dfn, .prose dfn { font-style: normal; font-weight: 700; }
 @media print { .in-short, .key-facts { break-inside: avoid; } }
