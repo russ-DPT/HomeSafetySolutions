@@ -1,5 +1,67 @@
 User-agent: *
 Allow: /
 Disallow: /api/
+Disallow: /pay
 
-Sitemap: https://homesafety.solutions/sitemap.xml
+# AI search and assistant crawlers are welcome.
+User-agent: GPTBot
+Allow: /
+Disallow: /api/
+Disallow: /pay
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /api/
+Disallow: /pay
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /api/
+Disallow: /pay
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /api/
+Disallow: /pay
+
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /api/
+Disallow: /pay
+
+User-agent: Claude-User
+Allow: /
+Disallow: /api/
+Disallow: /pay
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /api/
+Disallow: /pay
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /api/
+Disallow: /pay
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /api/
+Disallow: /pay
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /api/
+Disallow: /pay
+
+User-agent: Bingbot
+Allow: /
+Disallow: /api/
+Disallow: /pay
+
+User-agent: CCBot
+Allow: /
+Disallow: /api/
+Disallow: /pay
+
+Sitemap: https://www.homesafety.solutions/sitemap.xml
