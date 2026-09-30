@@ -25,7 +25,7 @@ Home Safety Solutions is a registered fictitious name and product line of Practi
 
 ## Payment
 
-Private pay only. Home Safety Solutions does not bill or accept Medicare, Medicaid, the VA or any insurance.
+Our home safety consultations are not a Medicare-covered service, so clients are charged directly. If someone needs physical therapy treatment, Home Safety Solutions helps them find a Medicare provider.
 
 ## Service area
 
@@ -60,4 +60,20 @@ Independent. No referral fees, no commissions and no payments from contractors, 
 - [About](https://www.homesafety.solutions/about): Dr. L'HommeDieu's background and credentials.
 - [FAQ](https://www.homesafety.solutions/faq): Questions and answers on cost, insurance, the VA, discharge and storms.
 - [Articles](https://www.homesafety.solutions/articles): Articles by Dr. L'HommeDieu.
+<!-- articles:begin -->
+  - [What should the house have ready before a hospital discharge?](https://www.homesafety.solutions/house-ready-before-hospital-discharge)
+  - [Who does a home safety assessment, and is a PT or OT the right person?](https://www.homesafety.solutions/who-does-a-home-safety-assessment)
+  - [How do I make a sunken living room safe for a walker?](https://www.homesafety.solutions/sunken-living-room-walker-safety)
+  - [Is a lanai sliding door a fall risk?](https://www.homesafety.solutions/lanai-sliding-door-fall-risk)
+  - [How do I keep a power wheelchair or oxygen working in a hurricane?](https://www.homesafety.solutions/hurricane-power-wheelchair-oxygen)
+  - [What grab bars do I actually need in the bathroom?](https://www.homesafety.solutions/bathroom-grab-bars)
+  - [Can my parent age in place in their current home?](https://www.homesafety.solutions/can-my-parent-age-in-place)
+  - [What happens during a home safety visit?](https://www.homesafety.solutions/what-happens-during-a-home-safety-visit)
+  - [Is a free contractor home safety check really free?](https://www.homesafety.solutions/free-contractor-home-safety-check)
+  - [How can I check on a parent's safety from another state?](https://www.homesafety.solutions/check-on-parent-safety-from-another-state)
+  - [What's the difference between a ramp, a threshold ramp and a lift?](https://www.homesafety.solutions/ramp-vs-threshold-ramp-vs-lift)
+  - [How do I prevent falls at night?](https://www.homesafety.solutions/prevent-falls-at-night)
+  - [Should we buy a one-story home before retiring in Florida?](https://www.homesafety.solutions/one-story-home-retiring-florida)
+  - [Does Medicare pay for a home safety assessment?](https://www.homesafety.solutions/does-medicare-pay-for-home-safety-assessment)
+<!-- articles:end -->
 - [Full text for AI tools](https://www.homesafety.solutions/llms-full.txt): The core pages in plain Markdown.

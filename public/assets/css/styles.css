@@ -919,3 +919,12 @@ legend { font-weight: 700; font-size: 1.25rem; padding: 0 .4rem; color: var(--gu
 .reviewed-by { margin: -1rem 0 2rem; font-size: .95rem; color: var(--ink-soft, inherit); }
 .in-short dfn, .prose dfn { font-style: normal; font-weight: 700; }
 @media print { .in-short, .key-facts { break-inside: avoid; } }
+
+/* Articles library: long-form article pages built by scripts/build-articles.mjs */
+.article-body h2 { font-family: var(--font-head); color: var(--gulf); margin-top: var(--space-4); }
+.article-body h3 { margin-top: var(--space-3); }
+.article-body .table-wrap { margin: var(--space-3) 0; }
+.article-body th, .article-body td { padding: .6rem .8rem; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+.article-body .article-sources { margin-top: var(--space-4); padding-top: var(--space-3); border-top: 1px solid var(--line); font-size: 1rem; color: var(--ink-soft); }
+.article-body .article-sources h2 { font-size: 1.25rem; margin-top: 0; }
+.article-body .article-sources li { margin-bottom: .4rem; }
