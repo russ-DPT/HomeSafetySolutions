@@ -334,6 +334,7 @@ h3 .icon { width: 1.7rem; height: 1.7rem; }
 /* ---------- Article page ---------- */
 .article-hero { margin: 0 0 var(--space-4); }
 .article-hero img { width: 100%; height: auto; display: block; border-radius: var(--radius-m); border: 1px solid var(--line); }
+.article-hero--square { max-width: 640px; margin-inline: auto; }
 .article-byline { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .9rem; margin: 0 0 var(--space-3); padding-bottom: var(--space-3); border-bottom: 1px solid var(--line); color: var(--ink-soft); font-size: 1.05rem; }
 .article-byline .author { font-weight: 700; color: var(--ink); }
 .article-body { max-width: var(--measure); }
