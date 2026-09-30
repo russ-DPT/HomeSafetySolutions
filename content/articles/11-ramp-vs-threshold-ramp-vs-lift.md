@@ -35,6 +35,10 @@ The ADA standard for public buildings is a slope no steeper than 1:12. That mean
 | 21 in (three steps) | 21 ft | 28 ft | 35 ft |
 | 30 in | 30 ft | 40 ft | 50 ft |
 
+### Work out your own ramp
+
+The free [Ramp Calculator at ramp.engineer](https://ramp.engineer/) does this math for your exact rise. It has two modes. One lays out an ADA-style ramp into a home or building, with landings, switchbacks and the total footprint, at slopes from 1:12 to gentler. The other solves ramp length, ground run, angle and grade for loading equipment into a vehicle. Use it to see how much space a ramp will take before you get quotes, then confirm the result on site. Disclosure: we built this calculator ourselves, and it is free to use.
+
 ### Gentler is better when you have room
 
 1:12 is the steepest allowed, not the best. The U.S. Access Board notes that gentler slopes work for more people. Rehabilitation guidance points out that some people find 1:12 hard and do better at 1:16 or 1:20. That matters for anyone self-propelling a manual wheelchair or a caregiver pushing one.
@@ -70,7 +74,7 @@ You do not always need a custom-built ramp. Several companies sell ready-made ra
 4. **Count the landings.** A ramp needs a level landing at the top, the bottom and every turn. Platforms add most of the cost to a modular system.
 5. **Ask about permits and your HOA.** Ask the installer whether your city or county requires a permit, and check whether your homeowners association must approve an exterior ramp.
 
-Brands are listed as examples. Home Safety Solutions does not sell ramps and accepts no payments from ramp companies or installers.
+Brands are listed as examples. Home Safety Solutions does not sell ramps and accepts no payments from ramp companies or installers. The Ramp Calculator at ramp.engineer is our own free tool.
 
 ## Lifts
 
@@ -90,6 +94,7 @@ Before you spend thousands on a ramp or lift, make sure it fits the person and t
 
 - U.S. Access Board. [Guide to the ADA Standards: ramps and curb ramps](https://www.access-board.gov/ada/guides/chapter-4-ramps-and-curb-ramps/)
 - U.S. Access Board. [Guide to the ADA Standards: floor and ground surfaces](https://www.access-board.gov/ada/guides/chapter-3-floor-and-ground-surfaces/)
+- [Ramp Calculator: Loading and Access Geometry](https://ramp.engineer/) (free online tool, built by Home Safety Solutions)
 - University Health Network, Toronto Rehab. [Ramps for home access](https://www.uhn.ca/TorontoRehab/Spinal-Cord-Rehab/Spinal-Cord-Essentials/Documents/Community-Living/SCE2-Cd3-Ramps-For-Home-Access.pdf)
 - Angi. [Cost of a wheelchair ramp](https://www.angi.com/articles/how-much-does-it-cost-build-handicap-ramp.htm), [wheelchair lift cost](https://www.angi.com/articles/wheelchair-lift-for-house-cost.htm) and [stair lift cost](https://www.angi.com/articles/how-much-stair-lift-cost.htm)
 - National Council on Aging. [Medicare and stair lifts](https://www.ncoa.org/article/medicare-and-stair-lifts/)
