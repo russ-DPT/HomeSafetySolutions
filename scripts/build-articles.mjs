@@ -2,7 +2,7 @@
 // Runs automatically before every build (see "prebuild" in package.json),
 // so Vercel regenerates the pages on each deploy. No dependencies.
 //
-//   content/articles/articles.json   titles, card text, alt text, publish date
+//   content/articles/articles.json   titles, card text, alt text, per-article publish date ("published", falls back to the top-level one)
 //   content/articles/NN-slug.md      one Markdown file per article
 //   public/assets/img/articles/<slug>.webp   1280x720 thumbnail per article
 //
@@ -23,7 +23,7 @@ const SITE = "https://www.homesafety.solutions"
 const CONSULT = "https://intakeq.com/booking/zm1cyz?serviceId=7c400002-9dcd-4689-a8e5-1e075c4c5d9c"
 
 const data = JSON.parse(readFileSync(join(CONTENT, "articles.json"), "utf8"))
-const PUBLISHED = data.published
+const DEFAULT_PUBLISHED = data.published
 const ARTICLES = [...data.articles].sort((a, b) => a.n - b.n)
 
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;")
@@ -131,6 +131,7 @@ for (const a of ARTICLES) {
   const imgRel = `/assets/img/articles/${a.slug}.webp`
   const imgAbs = SITE + imgRel
   const mins = readMinutes(body)
+  const PUBLISHED = a.published || DEFAULT_PUBLISHED
   if (!existsSync(join(PUB, imgRel))) console.warn(`build-articles: missing thumbnail ${imgRel}`)
 
   // Head: swap the template page's title, description, URL and image.
@@ -219,7 +220,10 @@ const smPath = join(PUB, "sitemap.xml")
 let sm = readFileSync(smPath, "utf8")
 for (const a of ARTICLES) {
   const loc = `${SITE}/${a.slug}`
-  if (!sm.includes(`<loc>${loc}</loc>`)) sm = sm.replace("</urlset>", `  <url><loc>${loc}</loc><lastmod>${PUBLISHED}</lastmod></url>\n</urlset>`)
+  const date = a.published || DEFAULT_PUBLISHED
+  const entry = new RegExp(`(<loc>${loc.replace(/[.*+?^${}()|[\]\\/]/g, "\\$&")}</loc>\\s*<lastmod>)[^<]*(</lastmod>)`)
+  if (entry.test(sm)) sm = sm.replace(entry, `$1${date}$2`)
+  else if (!sm.includes(`<loc>${loc}</loc>`)) sm = sm.replace("</urlset>", `  <url><loc>${loc}</loc><lastmod>${date}</lastmod></url>\n</urlset>`)
 }
 writeFileSync(smPath, sm)
 
