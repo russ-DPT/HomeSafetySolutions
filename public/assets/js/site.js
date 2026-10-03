@@ -57,9 +57,9 @@
     var url = C.stripe && C.stripe[a.dataset.pay];
     if (url) { a.href = url; }
     else {
-      a.href = C.phoneHref || "tel:+18138673372";
+      a.href = C.phoneHref || "tel:+18133659171";
       var t = a.querySelector(".label") || a;
-      if (!a.dataset.keepLabel) t.textContent = "Call to pay: " + (C.phoneDisplay || "(813) 867-3372");
+      if (!a.dataset.keepLabel) t.textContent = "Call to pay: " + (C.phoneDisplay || "(813) 365-9171");
     }
   });
 
