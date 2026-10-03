@@ -8,8 +8,8 @@
    it is ready; a blank link falls back to calling us. */
 
 window.HSS_CONFIG = {
-  phoneDisplay: "(813) 867-3372",
-  phoneHref: "tel:+18138673372",
+  phoneDisplay: "(813) 365-9171",
+  phoneHref: "tel:+18133659171",
   email: "info@homesafety.solutions",
 
   stripe: {
