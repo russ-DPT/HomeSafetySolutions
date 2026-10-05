@@ -929,3 +929,28 @@ legend { font-weight: 700; font-size: 1.25rem; padding: 0 .4rem; color: var(--gu
 .article-body .article-sources { margin-top: var(--space-4); padding-top: var(--space-3); border-top: 1px solid var(--line); font-size: 1rem; color: var(--ink-soft); }
 .article-body .article-sources h2 { font-size: 1.25rem; margin-top: 0; }
 .article-body .article-sources li { margin-bottom: .4rem; }
+
+/* PACE resource page (/resources/pace) */
+.pace-narrow { max-width: var(--measure); }
+.pace-cover { grid-template-columns: repeat(4, 1fr); }
+.pace-cover .icon { color: var(--sky); }
+.pace-note { color: var(--slate); font-size: 1rem; }
+.pace-qualify { align-items: center; }
+.pace-callout { background: var(--sky-soft); border-left-color: var(--gulf); }
+.pace-links { list-style: none; padding: 0; }
+.pace-links li { margin-bottom: .6rem; }
+.pace-links a { font-weight: 600; }
+.pace-ext { display: inline-block; width: 1em; height: 1em; margin-left: .35em; vertical-align: -.1em; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.pace-help .panel p { margin-bottom: 0; }
+.pace-actions { margin-top: var(--space-4); align-items: center; }
+.btn-green { background: var(--seagrass); color: #fff; }
+.btn-green:hover { background: #1F5E23; color: #fff; }
+.pace-band { background: var(--sky-soft); }
+.pace-band .panel { border-color: #BCD6EC; }
+.pace-lead .btn { margin-top: var(--space-2); }
+.pace-tagline { font-family: var(--font-head); color: var(--gulf); font-weight: 600; font-size: 1.5rem; text-align: center; margin: var(--space-4) 0 0; }
+.resource-card h4 { font-size: 1.1rem; margin: 0 0 .35rem; }
+.resource-card p { font-size: 1rem; color: var(--ink-soft); margin: 0 0 .5rem; }
+.resource-card { border-top: 1px solid var(--line); padding-top: var(--space-2); margin-top: var(--space-2); }
+@media (max-width: 900px) { .pace-cover { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .pace-cover { grid-template-columns: 1fr; } }
