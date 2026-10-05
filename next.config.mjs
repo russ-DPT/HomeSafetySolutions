@@ -25,6 +25,8 @@ const nextConfig = {
       { source: "/pricing.html", destination: "/services", permanent: true },
       { source: "/caregivers", destination: "/for-family", permanent: true },
       { source: "/caregivers.html", destination: "/for-family", permanent: true },
+      { source: "/resources-pace", destination: "/resources/pace", permanent: true },
+      { source: "/resources-pace.html", destination: "/resources/pace", permanent: true },
     ]
   },
   async rewrites() {
@@ -43,7 +45,10 @@ const nextConfig = {
       // Runs only for paths not matched by a public file or a route handler,
       // so real assets (/assets/..., /data/..., /api/...) are untouched.
       // Single-segment: every page HTML file lives at the top level of /public.
-      afterFiles: [{ source: "/:path", destination: "/:path.html" }],
+      afterFiles: [
+        { source: "/resources/pace", destination: "/resources-pace.html" },
+        { source: "/:path", destination: "/:path.html" },
+      ],
     }
   },
 }
