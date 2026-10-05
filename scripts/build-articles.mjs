@@ -24,7 +24,8 @@ const CONSULT = "https://intakeq.com/booking/zm1cyz?serviceId=7c400002-9dcd-4689
 
 const data = JSON.parse(readFileSync(join(CONTENT, "articles.json"), "utf8"))
 const DEFAULT_PUBLISHED = data.published
-const ARTICLES = [...data.articles].sort((a, b) => a.n - b.n)
+const publishedOf = (a) => a.published || DEFAULT_PUBLISHED
+const ARTICLES = [...data.articles].sort((a, b) => publishedOf(b).localeCompare(publishedOf(a)) || b.n - a.n)
 
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;")
 const pad = (n) => String(n).padStart(2, "0")
