@@ -75,5 +75,8 @@ Independent. No referral fees, no commissions and no payments from contractors, 
   - [How do I prevent falls at night?](https://www.homesafety.solutions/prevent-falls-at-night)
   - [Should we buy a one-story home before retiring in Florida?](https://www.homesafety.solutions/one-story-home-retiring-florida)
   - [Does Medicare pay for a home safety assessment?](https://www.homesafety.solutions/does-medicare-pay-for-home-safety-assessment)
+  - [Five ways your home can help a parent stay independent](https://www.homesafety.solutions/help-parent-stay-independent-at-home)
+  - [Aging in place in Tampa Bay: the benefits, and is the house ready?](https://www.homesafety.solutions/benefits-of-aging-in-place-tampa-bay)
+  - [Safety squad: getting grandkids involved in keeping a grandparent's home safe](https://www.homesafety.solutions/grandkids-home-safety-jobs)
 <!-- articles:end -->
 - [Full text for AI tools](https://www.homesafety.solutions/llms-full.txt): The core pages in plain Markdown.
