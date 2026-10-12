@@ -187,6 +187,17 @@
       "thumb": "A 10-year-old grandchild kneeling in a sunny Florida hallway, pressing a motion-sensor night light into a wall outlet near the floor, while the grandfather stands beside them smiling; a small handwritten checklist on a clipboard beside them. No text. Palette: Deep Blue #0B3D62 with Sky Blue #5B9BD5 and Sun Yellow #F4B400 accents.",
       "alt": "A grandfather and grandchild plugging a motion-sensor night light into a hallway outlet together.",
       "published": "2026-10-05"
+    },
+    {
+      "n": 18,
+      "slug": "ive-fallen-and-i-cant-get-up",
+      "kicker": "Fall detection",
+      "card": "Why the button on a pendant so often goes unpressed, and how radar, Wi-Fi sensing and LiDAR let the home itself notice a fall.",
+      "meta": "Falls, the long lie, and why PERS buttons fail. A physical therapist explains passive fall detection with micro-Doppler radar, Wi-Fi sensing and LiDAR.",
+      "abstract": "Falls are the leading cause of injury for adults 65 and older, and being stuck on the floor for an hour or more (the long lie) is linked to serious injury, hospitalization and long-term care. Personal Emergency Response Systems fail at four points: accepting, charging, wearing and pressing the device. This article explains passive fall detection with micro-Doppler radar, Wi-Fi Channel State Information sensing (including a DIY ESP32-S3 demo) and LiDAR, the privacy trade-offs of each, and commercial radar systems such as Cherish Health.",
+      "thumb": "Supplied by the author: older woman on a bathroom floor reaching for a dropped emergency call button, with the title text.",
+      "alt": "An older woman lying on a bathroom floor, reaching for an emergency call button that has fallen out of reach, under the headline I have fallen and I can not get up.",
+      "published": "2026-10-12"
     }
   ]
 }
