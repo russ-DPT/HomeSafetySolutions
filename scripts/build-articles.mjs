@@ -37,7 +37,8 @@ function longDate(iso) {
 }
 
 // ---- Minimal Markdown for the article files: headings, paragraphs,
-// bullet and numbered lists, pipe tables, **bold**, *italic*, [links](url).
+// bullet and numbered lists, pipe tables, **bold**, *italic*, [links](url),
+// and a YouTube embed on its own line: {{youtube:VIDEO_ID|Caption}}.
 function inline(text) {
   let s = esc(text)
   s = s.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (_, label, href) => {
@@ -58,6 +59,14 @@ function mdToHtml(md) {
     const line = lines[i]
     if (!line.trim()) { i++; continue }
     let m
+    if ((m = line.trim().match(/^\{\{youtube:([A-Za-z0-9_-]{11})\|([^}]+)\}\}$/))) {
+      const [, id, label] = m
+      out.push(`<figure class="article-video">
+  <div class="article-video-frame"><iframe src="https://www.youtube-nocookie.com/embed/${id}" title="${esc(label)}" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+  <figcaption>${esc(label)}. <a href="https://www.youtube.com/watch?v=${id}" rel="noopener">Watch on YouTube</a></figcaption>
+</figure>`)
+      i++; continue
+    }
     if ((m = line.match(/^(#{2,4})\s+(.*)$/))) {
       const lvl = m[1].length
       out.push(`<h${lvl}>${inline(m[2])}</h${lvl}>`); i++; continue

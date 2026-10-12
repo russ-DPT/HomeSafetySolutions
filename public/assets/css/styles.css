@@ -335,6 +335,10 @@ h3 .icon { width: 1.7rem; height: 1.7rem; }
 .article-hero { margin: 0 0 var(--space-4); }
 .article-hero img { width: 100%; height: auto; display: block; border-radius: var(--radius-m); border: 1px solid var(--line); }
 .article-hero--square { max-width: 640px; margin-inline: auto; }
+.article-video { margin: 0 0 var(--space-4); }
+.article-video-frame { position: relative; aspect-ratio: 16 / 9; border-radius: var(--radius-m); overflow: hidden; border: 1px solid var(--line); background: var(--seaglass); }
+.article-video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.article-video figcaption { padding-top: .5rem; font-size: .95rem; }
 .article-byline { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .9rem; margin: 0 0 var(--space-3); padding-bottom: var(--space-3); border-bottom: 1px solid var(--line); color: var(--ink-soft); font-size: 1.05rem; }
 .article-byline .author { font-weight: 700; color: var(--ink); }
 .article-body { max-width: var(--measure); }
