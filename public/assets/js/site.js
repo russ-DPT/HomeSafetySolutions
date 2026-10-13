@@ -214,4 +214,5 @@
   $$("[data-print]").forEach(function (b) { b.addEventListener("click", function () { window.print(); }); });
 
   var y = $("#year"); if (y) y.textContent = new Date().getFullYear();
+
 })();
