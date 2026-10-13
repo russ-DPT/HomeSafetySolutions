@@ -257,16 +257,17 @@ const FOOTER = '<footer class="site-footer">'
 function featuredBlock(currentSlug) {
   const picks = ARTICLES.filter((a) => a.slug !== currentSlug).slice(0, FEATURED_COUNT)
   const slides = picks.map((a) => {
-    const title = loadArticle(a).title
+    const { title, body } = loadArticle(a)
     return `      <li class="featured-slide">
-        <article class="media-card">
-          <a class="media-thumb" href="/${a.slug}" tabindex="-1" aria-hidden="true">
+        <article class="writing-card">
+          <a class="writing-thumb" href="/${a.slug}" tabindex="-1" aria-hidden="true">
             <img src="/assets/img/articles/${a.slug}.webp" alt="" width="1280" height="720" loading="lazy" decoding="async">
           </a>
-          <div class="media-body">
-            <p class="media-kicker">${esc(a.kicker)}</p>
+          <div class="writing-body">
+            <p class="writing-tags"><span>${esc(a.kicker)}</span></p>
             <h3><a href="/${a.slug}">${esc(title)}</a></h3>
-            <p class="media-meta"><span><time datetime="${publishedOf(a)}">${longDate(publishedOf(a))}</time></span></p>
+            <p class="writing-meta"><time datetime="${publishedOf(a)}">${longDate(publishedOf(a))}</time> &middot; ${readMinutes(body)} min read</p>
+            <p class="writing-excerpt">${esc(a.card)}</p>
           </div>
         </article>
       </li>`
@@ -275,16 +276,21 @@ function featuredBlock(currentSlug) {
 <section class="featured-articles no-print" aria-labelledby="featured-h">
   <div class="wrap">
     <div class="featured-head">
-      <h2 id="featured-h">Featured articles</h2>
-      <div class="featured-controls">
-        <button type="button" class="featured-btn" data-dir="-1" aria-label="Previous articles" aria-controls="featured-track">&larr;</button>
-        <button type="button" class="featured-btn" data-dir="1" aria-label="Next articles" aria-controls="featured-track">&rarr;</button>
+      <div>
+        <p class="featured-eyebrow">Latest</p>
+        <h2 id="featured-h">Articles</h2>
+      </div>
+      <div class="featured-actions">
+        <a class="featured-all" href="/articles">View all articles <span aria-hidden="true">&rarr;</span></a>
+        <div class="featured-controls">
+          <button type="button" class="featured-btn" data-dir="-1" aria-label="Previous articles" aria-controls="featured-track">&larr;</button>
+          <button type="button" class="featured-btn" data-dir="1" aria-label="Next articles" aria-controls="featured-track">&rarr;</button>
+        </div>
       </div>
     </div>
-    <ul class="featured-track" id="featured-track" tabindex="0" aria-label="Featured articles, scroll sideways for more">
+    <ul class="featured-track" id="featured-track" tabindex="0" aria-label="Recent articles, scroll sideways for more">
 ${slides}
     </ul>
-    <p class="featured-all"><a href="/articles">See all articles and videos &rarr;</a></p>
   </div>
 </section>
 <script src="/assets/js/carousel.js" defer></script>
