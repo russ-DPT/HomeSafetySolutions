@@ -976,3 +976,23 @@ legend { font-weight: 700; font-size: 1.25rem; padding: 0 .4rem; color: var(--gu
 .narrate-status { color: var(--ink-soft); font-size: 1rem; }
 .section-deep .narrate-status { color: #D3E3F1; }
 @media print { .narrate { display: none !important; } }
+
+/* Featured articles carousel (injected above the footer by scripts/build-articles.mjs) */
+.featured-articles { padding-block: var(--space-5); background: var(--seaglass); border-top: 1px solid var(--line); }
+.featured-head { display: flex; align-items: center; justify-content: space-between; gap: var(--space-2); margin-bottom: var(--space-3); }
+.featured-head h2 { margin: 0; }
+.featured-controls { display: flex; gap: var(--space-1); }
+.featured-btn { width: var(--tap); height: var(--tap); border-radius: 50%; border: 2px solid var(--gulf); background: var(--paper); color: var(--gulf); font-size: 1.4rem; line-height: 1; cursor: pointer; }
+.featured-btn:hover:not(:disabled) { background: var(--gulf); color: var(--paper); }
+.featured-btn:focus-visible, .featured-track:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+.featured-btn:disabled { opacity: .35; cursor: default; }
+.featured-track { list-style: none; margin: 0; padding: 0 0 var(--space-2); display: grid; grid-auto-flow: column; grid-auto-columns: 85%; gap: var(--space-3); overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; overscroll-behavior-x: contain; scrollbar-width: thin; }
+.featured-slide { scroll-snap-align: start; display: flex; }
+.featured-slide .media-card { width: 100%; }
+.featured-slide .media-card h3 { font-size: 1.15rem; }
+.featured-all { margin: var(--space-2) 0 0; font-weight: 600; }
+.featured-all a { color: var(--gulf); }
+@media (min-width: 640px) { .featured-track { grid-auto-columns: calc((100% - var(--space-3)) / 2); } }
+@media (min-width: 1000px) { .featured-track { grid-auto-columns: calc((100% - 2 * var(--space-3)) / 3); } }
+@media (min-width: 1240px) { .featured-track { grid-auto-columns: calc((100% - 3 * var(--space-3)) / 4); } }
+@media (prefers-reduced-motion: reduce) { .featured-track { scroll-behavior: auto; } }
