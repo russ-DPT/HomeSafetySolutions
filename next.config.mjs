@@ -13,6 +13,8 @@ const securityHeaders = [
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // The narration route reads page text straight from the static HTML files.
+  outputFileTracingIncludes: { "/api/narrate": ["./public/*.html"] },
   async headers() {
     return [
       { source: "/:path*", headers: securityHeaders },

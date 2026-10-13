@@ -958,3 +958,21 @@ legend { font-weight: 700; font-size: 1.25rem; padding: 0 .4rem; color: var(--gu
 .resource-card { border-top: 1px solid var(--line); padding-top: var(--space-2); margin-top: var(--space-2); }
 @media (max-width: 900px) { .pace-cover { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 600px) { .pace-cover { grid-template-columns: 1fr; } }
+
+/* ---------- Listen to this page (narration player, injected by site.js) ---------- */
+.narrate { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; margin-block: var(--space-2); }
+.narrate button {
+  font-family: var(--font-head); font-weight: 700; font-size: 1.05rem; line-height: 1.2;
+  display: inline-flex; align-items: center; gap: .5rem; min-height: 3rem; padding: .45rem 1.1rem;
+  border-radius: 999px; border: 3px solid var(--gulf); background: var(--paper); color: var(--gulf); cursor: pointer;
+}
+.narrate button:hover { background: var(--seaglass); color: var(--gulf-deep); }
+.narrate .narrate-play { background: var(--gulf); color: #fff; }
+.narrate .narrate-play:hover { background: var(--gulf-deep); color: #fff; }
+.narrate .narrate-play[aria-pressed="true"] { background: var(--stripe); border-color: var(--stripe); color: var(--ink); }
+.narrate button[disabled] { opacity: .7; cursor: progress; }
+.narrate button[hidden] { display: none; }
+.narrate .narrate-speed { min-width: 4.2rem; justify-content: center; }
+.narrate-status { color: var(--ink-soft); font-size: 1rem; }
+.section-deep .narrate-status { color: #D3E3F1; }
+@media print { .narrate { display: none !important; } }
