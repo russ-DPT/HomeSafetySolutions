@@ -294,10 +294,17 @@ ${FE}
 
 let featuredPages = 0
 for (const file of readdirSync(PUB)) {
-  if (!file.endsWith(".html") || file === "articles.html" || file === "404.html") continue
+  if (!file.endsWith(".html")) continue
   const path = join(PUB, file)
   let html = readFileSync(path, "utf8")
-  const block = featuredBlock(file.replace(/\.html$/, ""))
+  const block = file === "index.html" ? featuredBlock("index") : ""
+  if (!block) {
+    if (html.includes(FB)) {
+      html = html.slice(0, html.indexOf(FB)) + html.slice(html.indexOf(FE) + FE.length).replace(/^\n/, "")
+      writeFileSync(path, html)
+    }
+    continue
+  }
   if (html.includes(FB)) {
     html = html.slice(0, html.indexOf(FB)) + block + html.slice(html.indexOf(FE) + FE.length).replace(/^\n/, "")
   } else if (html.includes(FOOTER)) {
@@ -307,4 +314,4 @@ for (const file of readdirSync(PUB)) {
   featuredPages++
 }
 
-console.log(`build-articles: built ${ARTICLES.length} article pages, featured carousel on ${featuredPages} pages`)
+console.log(`build-articles: built ${ARTICLES.length} article pages, featured carousel on ${featuredPages} page(s)`)
