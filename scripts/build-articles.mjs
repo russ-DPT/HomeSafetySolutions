@@ -12,7 +12,7 @@
 // Rules: no prices in article text (the pricing link points to /services),
 // no em dashes, credential line "Russ L'HommeDieu, DPT, ATP".
 
-import { readFileSync, writeFileSync, existsSync } from "node:fs"
+import { readFileSync, writeFileSync, existsSync, readdirSync } from "node:fs"
 import { join, dirname } from "node:path"
 import { fileURLToPath } from "node:url"
 
@@ -249,4 +249,62 @@ if (ll.includes(LB)) {
 }
 writeFileSync(llPath, ll)
 
-console.log(`build-articles: built ${ARTICLES.length} article pages`)
+// ---- Featured articles carousel, just above the footer on every page ----
+const FB = "<!-- BEGIN:hss-featured -->", FE = "<!-- END:hss-featured -->"
+const FEATURED_COUNT = 8
+const FOOTER = '<footer class="site-footer">'
+
+function featuredBlock(currentSlug) {
+  const picks = ARTICLES.filter((a) => a.slug !== currentSlug).slice(0, FEATURED_COUNT)
+  const slides = picks.map((a) => {
+    const title = loadArticle(a).title
+    return `      <li class="featured-slide">
+        <article class="media-card">
+          <a class="media-thumb" href="/${a.slug}" tabindex="-1" aria-hidden="true">
+            <img src="/assets/img/articles/${a.slug}.webp" alt="" width="1280" height="720" loading="lazy" decoding="async">
+          </a>
+          <div class="media-body">
+            <p class="media-kicker">${esc(a.kicker)}</p>
+            <h3><a href="/${a.slug}">${esc(title)}</a></h3>
+            <p class="media-meta"><span><time datetime="${publishedOf(a)}">${longDate(publishedOf(a))}</time></span></p>
+          </div>
+        </article>
+      </li>`
+  }).join("\n")
+  return `${FB}
+<section class="featured-articles no-print" aria-labelledby="featured-h">
+  <div class="wrap">
+    <div class="featured-head">
+      <h2 id="featured-h">Featured articles</h2>
+      <div class="featured-controls">
+        <button type="button" class="featured-btn" data-dir="-1" aria-label="Previous articles" aria-controls="featured-track">&larr;</button>
+        <button type="button" class="featured-btn" data-dir="1" aria-label="Next articles" aria-controls="featured-track">&rarr;</button>
+      </div>
+    </div>
+    <ul class="featured-track" id="featured-track" tabindex="0" aria-label="Featured articles, scroll sideways for more">
+${slides}
+    </ul>
+    <p class="featured-all"><a href="/articles">See all articles and videos &rarr;</a></p>
+  </div>
+</section>
+<script src="/assets/js/carousel.js" defer></script>
+${FE}
+`
+}
+
+let featuredPages = 0
+for (const file of readdirSync(PUB)) {
+  if (!file.endsWith(".html") || file === "articles.html" || file === "404.html") continue
+  const path = join(PUB, file)
+  let html = readFileSync(path, "utf8")
+  const block = featuredBlock(file.replace(/\.html$/, ""))
+  if (html.includes(FB)) {
+    html = html.slice(0, html.indexOf(FB)) + block + html.slice(html.indexOf(FE) + FE.length).replace(/^\n/, "")
+  } else if (html.includes(FOOTER)) {
+    html = html.replace(FOOTER, block + "\n" + FOOTER)
+  } else continue
+  writeFileSync(path, html)
+  featuredPages++
+}
+
+console.log(`build-articles: built ${ARTICLES.length} article pages, featured carousel on ${featuredPages} pages`)
