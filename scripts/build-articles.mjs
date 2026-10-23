@@ -85,6 +85,17 @@ function mdToHtml(md) {
       i += 2
       const rows = []
       while (i < lines.length && /^\s*\|/.test(lines[i])) { rows.push(cells(lines[i])); i++ }
+      if (head.length >= 5) {
+        // Too many columns to read side by side in the article column, so each row
+        // renders as a card. Explicit roles keep table semantics after CSS sets display:block.
+        const label = (c) => inline(c).replace(/<[^>]+>/g, "").replace(/"/g, "&quot;")
+        out.push('<div class="table-cards" role="table" aria-label="' + label(head[0]) + ' by program">\n<div class="table-cards-head" role="rowgroup"><div role="row">' +
+          head.map((c) => `<span role="columnheader">${inline(c)}</span>`).join("") + "</div></div>\n<div role=\"rowgroup\">\n" +
+          rows.map((r) => '<section class="table-card" role="row"><h3 class="table-card-title" role="rowheader">' + inline(r[0] || "") + '</h3><dl class="table-card-list">' +
+            r.slice(1).map((c, ci) => `<div role="cell"><dt>${inline(head[ci + 1] || "")}</dt><dd>${inline(c)}</dd></div>`).join("") + "</dl></section>").join("\n") +
+          "\n</div></div>")
+        continue
+      }
       out.push('<div class="table-wrap"><table>\n<thead><tr>' + head.map((c) => `<th>${inline(c)}</th>`).join("") + "</tr></thead>\n<tbody>\n" +
         rows.map((r) => "<tr>" + r.map((c) => `<td>${inline(c)}</td>`).join("") + "</tr>").join("\n") + "\n</tbody>\n</table></div>")
       continue
