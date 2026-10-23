@@ -51,9 +51,12 @@ function inline(text) {
   return s
 }
 
+const slugify = (s) => s.toLowerCase().replace(/<[^>]+>/g, "").replace(/&[a-z]+;/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "")
+
 function mdToHtml(md) {
   const lines = md.split("\n")
   const out = []
+  const usedIds = new Set()
   let i = 0
   while (i < lines.length) {
     const line = lines[i]
@@ -69,7 +72,12 @@ function mdToHtml(md) {
     }
     if ((m = line.match(/^(#{2,4})\s+(.*)$/))) {
       const lvl = m[1].length
-      out.push(`<h${lvl}>${inline(m[2])}</h${lvl}>`); i++; continue
+      const text = m[2].trim()
+      if (lvl > 3 || text === "Sources") { out.push(`<h${lvl}>${inline(text)}</h${lvl}>`); i++; continue }
+      let id = slugify(text) || "section", k = 2
+      while (usedIds.has(id)) id = `${slugify(text)}-${k++}`
+      usedIds.add(id)
+      out.push(`<h${lvl} id="${id}">${inline(text)}</h${lvl}>`); i++; continue
     }
     if (/^\s*\|/.test(line) && i + 1 < lines.length && /^\s*\|\s*:?-{3,}/.test(lines[i + 1])) {
       const cells = (l) => l.trim().replace(/^\|/, "").replace(/\|$/, "").split("|").map((c) => c.trim())
@@ -113,8 +121,29 @@ function loadArticle(a) {
   return { title, body }
 }
 
-function renderBody(md) {
+// Articles flagged "toc": true in articles.json get an "In this guide" contents
+// list (sticky sidebar on wide screens) and a "Back to contents" link at the end
+// of each section. Both are .no-narrate so Listen skips them.
+function tocFor(html) {
+  const sections = [...html.matchAll(/<h2 id="([^"]+)">([\s\S]*?)<\/h2>/g)].map(([, id, label]) => ({ id, label: label.replace(/<[^>]+>/g, "") }))
+  if (sections.length < 3) return ""
+  return `<nav class="article-toc no-narrate no-print" id="contents" aria-labelledby="toc-h">
+  <p class="article-toc-title" id="toc-h">In this guide</p>
+  <ol>
+${sections.map((s) => `    <li><a href="#${s.id}">${s.label}</a></li>`).join("\n")}
+  </ol>
+</nav>`
+}
+
+function addBackLinks(html) {
+  const back = '<p class="toc-back no-narrate no-print"><a href="#contents">Back to contents</a></p>\n'
+  let seen = 0
+  return html.replace(/<h2( id="[^"]+")?>/g, (tag) => (seen++ === 0 ? tag : back + tag))
+}
+
+function renderBody(md, withToc = false) {
   let html = mdToHtml(md)
+  if (withToc) html = addBackLinks(html)
   if (html.includes("<h2>Sources</h2>")) {
     html = html.replace("<h2>Sources</h2>", '<section class="article-sources" aria-labelledby="sources-h"><h2 id="sources-h">Sources</h2>') + "\n</section>"
   }
@@ -167,9 +196,14 @@ for (const a of ARTICLES) {
 
 <p class="article-byline"><span class="author">By Russ L'HommeDieu, DPT, ATP</span> <span>Doctor of Physical Therapy and RESNA Assistive Technology Professional</span> <span><time datetime="${PUBLISHED}">${longDate(PUBLISHED)}</time></span> <span>${mins} min read</span></p>
 
+${a.toc ? (() => { const html = renderBody(body, true); return `<div class="article-layout has-toc">
+${tocFor(html)}
 <article class="article-body">
-${renderBody(body)}
+${html}
 </article>
+</div>` })() : `<article class="article-body">
+${renderBody(body)}
+</article>`}
 
 <p><a class="back-to-top" href="/articles">&larr; Back to articles and videos</a></p>
 
@@ -184,7 +218,9 @@ ${renderBody(body)}
   <p style="margin-top:1rem"><a class="btn btn-secondary" href="/services">See services and pricing</a></p>
 </div></section>
 `
-  writeFileSync(join(PUB, `${a.slug}.html`), head + main + template.slice(footStart))
+  let foot = template.slice(footStart)
+  if (a.toc) foot = foot.replace('<script src="/assets/js/narrate.js" defer></script>', '<script src="/assets/js/narrate.js" defer></script>\n<script src="/assets/js/toc.js" defer></script>')
+  writeFileSync(join(PUB, `${a.slug}.html`), head + main + foot)
 
   cards.push(`    <article class="media-card">
       <a class="media-thumb" href="/${a.slug}" aria-label="Read: ${esc(title)}">
