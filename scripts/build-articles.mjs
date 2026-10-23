@@ -161,6 +161,31 @@ const footStart = template.indexOf("</main>")
 if (headEnd < 0 || footStart < 0) throw new Error("build-articles: template markers not found in the-quiet-negotiation.html")
 
 const jsonStr = (s) => JSON.stringify(s).slice(1, -1)
+
+// Previous / next article links, in publishing order (article number).
+const BY_NUMBER = [...data.articles].sort((x, y) => x.n - y.n)
+function pagerFor(a) {
+  const i = BY_NUMBER.findIndex((x) => x.slug === a.slug)
+  const link = (x, dir) => {
+    if (!x) return ""
+    const label = dir === "prev" ? "&larr; Previous article" : "Next article &rarr;"
+    return `<a class="pager-${dir}" href="/${x.slug}" rel="${dir}"><span class="pager-label">${label}</span><span class="pager-title">${esc(loadArticle(x).title)}</span></a>`
+  }
+  const prev = link(BY_NUMBER[i - 1], "prev")
+  const next = link(BY_NUMBER[i + 1], "next")
+  if (!prev && !next) return ""
+  return `<nav class="article-pager no-narrate no-print" aria-label="More articles">${prev}${next}</nav>`
+}
+// Printable PDF per article, built by build-article-pdfs.mjs (runs first).
+const PDF_MANIFEST = join(PUB, "assets", "pdf", "manifest.json")
+const PDFS = existsSync(PDF_MANIFEST) ? JSON.parse(readFileSync(PDF_MANIFEST, "utf8")) : {}
+function pdfButton(slug) {
+  const p = PDFS[slug]
+  if (!p) { console.warn(`build-articles: no PDF for ${slug}`); return "" }
+  const size = p.kb >= 1024 ? `${(p.kb / 1024).toFixed(1)} MB` : `${p.kb} KB`
+  return `<p class="article-actions no-narrate no-print"><a class="btn btn-secondary" href="/assets/pdf/${slug}.pdf" download type="application/pdf"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>Download printable PDF</a> <span class="article-actions-meta">${p.pages} pages, ${size}</span></p>`
+}
+
 const cards = []
 const items = []
 
@@ -196,6 +221,8 @@ for (const a of ARTICLES) {
 
 <p class="article-byline"><span class="author">By Russ L'HommeDieu, DPT, ATP</span> <span>Doctor of Physical Therapy and RESNA Assistive Technology Professional</span> <span><time datetime="${PUBLISHED}">${longDate(PUBLISHED)}</time></span> <span>${mins} min read</span></p>
 
+${pdfButton(a.slug)}
+
 ${a.toc ? (() => { const html = renderBody(body, true); return `<div class="article-layout has-toc">
 ${tocFor(html)}
 <article class="article-body">
@@ -204,6 +231,8 @@ ${html}
 </div>` })() : `<article class="article-body">
 ${renderBody(body)}
 </article>`}
+
+${pagerFor(a)}
 
 <p><a class="back-to-top" href="/articles">&larr; Back to articles and videos</a></p>
 
