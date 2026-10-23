@@ -139,10 +139,11 @@ for (const a of ARTICLES) {
   const { title, body } = loadArticle(a)
   const url = `${SITE}/${a.slug}`
   const imgRel = `/assets/img/articles/${a.slug}.webp`
-  const imgAbs = SITE + imgRel
+  const imgSrc = a.thumbUrl || imgRel
+  const imgAbs = a.thumbUrl || SITE + imgRel
   const mins = readMinutes(body)
   const PUBLISHED = a.published || DEFAULT_PUBLISHED
-  if (!existsSync(join(PUB, imgRel))) console.warn(`build-articles: missing thumbnail ${imgRel}`)
+  if (!a.thumbUrl && !existsSync(join(PUB, imgRel))) console.warn(`build-articles: missing thumbnail ${imgRel}`)
 
   // Head: swap the template page's title, description, URL and image.
   // Inside JSON-LD blocks use JSON escaping; elsewhere use HTML escaping.
@@ -161,7 +162,7 @@ for (const a of ARTICLES) {
 <section class="page-body"><div class="wrap">
 
 <figure class="article-hero">
-  <img src="${imgRel}" alt="${esc(a.alt)}" width="1280" height="720">
+  <img src="${imgSrc}" alt="${esc(a.alt)}" width="1280" height="720">
 </figure>
 
 <p class="article-byline"><span class="author">By Russ L'HommeDieu, DPT, ATP</span> <span>Doctor of Physical Therapy and RESNA Assistive Technology Professional</span> <span><time datetime="${PUBLISHED}">${longDate(PUBLISHED)}</time></span> <span>${mins} min read</span></p>
@@ -187,7 +188,7 @@ ${renderBody(body)}
 
   cards.push(`    <article class="media-card">
       <a class="media-thumb" href="/${a.slug}" aria-label="Read: ${esc(title)}">
-        <img src="${imgRel}" alt="${esc(a.alt)}" width="1280" height="720" loading="lazy" decoding="async">
+        <img src="${imgSrc}" alt="${esc(a.alt)}" width="1280" height="720" loading="lazy" decoding="async">
       </a>
       <div class="media-body">
         <p class="media-kicker">${esc(a.kicker)}</p>
@@ -261,7 +262,7 @@ function featuredBlock(currentSlug) {
     return `      <li class="featured-slide">
         <article class="writing-card">
           <a class="writing-thumb" href="/${a.slug}" tabindex="-1" aria-hidden="true">
-            <img src="/assets/img/articles/${a.slug}.webp" alt="" width="1280" height="720" loading="lazy" decoding="async">
+            <img src="${a.thumbUrl || `/assets/img/articles/${a.slug}.webp`}" alt="" width="1280" height="720" loading="lazy" decoding="async">
           </a>
           <div class="writing-body">
             <p class="writing-tags"><span>${esc(a.kicker)}</span></p>
