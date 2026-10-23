@@ -161,6 +161,21 @@ const footStart = template.indexOf("</main>")
 if (headEnd < 0 || footStart < 0) throw new Error("build-articles: template markers not found in the-quiet-negotiation.html")
 
 const jsonStr = (s) => JSON.stringify(s).slice(1, -1)
+
+// Previous / next article links, in publishing order (article number).
+const BY_NUMBER = [...data.articles].sort((x, y) => x.n - y.n)
+function pagerFor(a) {
+  const i = BY_NUMBER.findIndex((x) => x.slug === a.slug)
+  const link = (x, dir) => {
+    if (!x) return ""
+    const label = dir === "prev" ? "&larr; Previous article" : "Next article &rarr;"
+    return `<a class="pager-${dir}" href="/${x.slug}" rel="${dir}"><span class="pager-label">${label}</span><span class="pager-title">${esc(loadArticle(x).title)}</span></a>`
+  }
+  const prev = link(BY_NUMBER[i - 1], "prev")
+  const next = link(BY_NUMBER[i + 1], "next")
+  if (!prev && !next) return ""
+  return `<nav class="article-pager no-narrate no-print" aria-label="More articles">${prev}${next}</nav>`
+}
 const cards = []
 const items = []
 
@@ -204,6 +219,8 @@ ${html}
 </div>` })() : `<article class="article-body">
 ${renderBody(body)}
 </article>`}
+
+${pagerFor(a)}
 
 <p><a class="back-to-top" href="/articles">&larr; Back to articles and videos</a></p>
 
