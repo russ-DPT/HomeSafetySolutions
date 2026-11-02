@@ -27,6 +27,10 @@ const DEFAULT_PUBLISHED = data.published
 const publishedOf = (a) => a.published || DEFAULT_PUBLISHED
 const ARTICLES = [...data.articles].sort((a, b) => publishedOf(b).localeCompare(publishedOf(a)) || b.n - a.n)
 
+const CATEGORIES = data.categories || []
+const catSlug = (c) => "cat-" + c.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")
+for (const a of ARTICLES) if (!CATEGORIES.includes(a.category)) console.warn(`build-articles: ${a.slug} has unknown category "${a.category}"`)
+
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;")
 const pad = (n) => String(n).padStart(2, "0")
 
@@ -215,7 +219,7 @@ for (const a of ARTICLES) {
   let head = template.slice(0, headEnd)
   head = head.replace(/(<script type="application\/ld\+json"[^>]*>)([\s\S]*?)(<\/script>)/g, (_, o, block, c) => {
     block = block.split(T_TITLE).join(jsonStr(title)).replace(T_DESC, jsonStr(a.meta))
-    block = block.replace('"mainEntityOfPage"', `"datePublished": "${PUBLISHED}",\n  "mainEntityOfPage"`)
+    block = block.replace('"mainEntityOfPage"', `"datePublished": "${PUBLISHED}",\n  "dateModified": "${PUBLISHED}",\n  "articleSection": ${jsonStr(a.category || "")},\n  "keywords": ${jsonStr([a.kicker, a.category, "home safety", "fall prevention", "aging in place", "Tampa Bay"].filter(Boolean).join(", "))},\n  "mainEntityOfPage"`)
     return o + block + c
   })
   head = head.split(T_TITLE).join(esc(title)).replace(T_DESC, esc(a.meta))
@@ -223,7 +227,7 @@ for (const a of ARTICLES) {
   head = head.split(`${SITE}/assets/img/quiet-negotiation.png`).join(imgAbs)
 
   const main = `<main id="main" tabindex="-1">
-<section class="page-head"><div class="wrap"><p class="breadcrumb"><a href="/">Home</a> / <a href="/articles">Articles and videos</a> / ${esc(a.kicker)}</p><div class="stripe-rule" aria-hidden="true"></div><h1>${esc(title)}</h1></div></section>
+<section class="page-head"><div class="wrap"><p class="breadcrumb"><a href="/">Home</a> / <a href="/articles">Articles and videos</a> / ${a.category ? `<a href="/articles#${catSlug(a.category)}">${esc(a.category)}</a>` : esc(a.kicker)}</p><div class="stripe-rule" aria-hidden="true"></div><h1>${esc(title)}</h1></div></section>
 <section class="page-body"><div class="wrap">
 
 <figure class="article-hero">
@@ -262,7 +266,7 @@ ${pagerFor(a)}
   if (a.toc) foot = foot.replace('<script src="/assets/js/narrate.js" defer></script>', '<script src="/assets/js/narrate.js" defer></script>\n<script src="/assets/js/toc.js" defer></script>')
   writeFileSync(join(PUB, `${a.slug}.html`), head + main + foot)
 
-  cards.push(`    <article class="media-card">
+  cards.push([a.category, `    <article class="media-card">
       <a class="media-thumb" href="/${a.slug}" aria-label="Read: ${esc(title)}">
         <img src="${imgSrc}" alt="${esc(a.alt)}" width="1280" height="720" loading="lazy" decoding="async">
       </a>
@@ -276,7 +280,7 @@ ${pagerFor(a)}
         </p>
       </div>
     </article>
-`)
+`])
   items.push({ headline: title, url, image: imgAbs, datePublished: PUBLISHED })
 }
 
@@ -284,7 +288,16 @@ ${pagerFor(a)}
 const apPath = join(PUB, "articles.html")
 let ap = readFileSync(apPath, "utf8")
 const BEGIN = "<!-- BEGIN:hss-articles -->", END = "<!-- END:hss-articles -->"
-const block = `${BEGIN}\n${cards.join("\n")}    ${END}\n`
+const groups = CATEGORIES.map((c) => [c, cards.filter(([k]) => k === c).map(([, h]) => h)]).filter(([, l]) => l.length)
+const loose = cards.filter(([k]) => !CATEGORIES.includes(k)).map(([, h]) => h)
+const catNav = groups.length ? `    <nav class="cat-nav no-print" aria-label="Article topics">
+      <p class="cat-nav-label">Browse by topic</p>
+      <ul>
+${groups.map(([c, l]) => `        <li><a href="#${catSlug(c)}">${esc(c)} <span class="cat-count">${l.length}</span></a></li>`).join("\n")}
+      </ul>
+    </nav>
+` : ""
+const block = `${BEGIN}\n${catNav}${groups.map(([c, l]) => `    <h3 class="cat-head" id="${catSlug(c)}">${esc(c)} <span class="cat-count">${l.length} article${l.length === 1 ? "" : "s"}</span></h3>\n${l.join("\n")}`).join("\n")}${loose.join("\n")}    ${END}\n`
 if (ap.includes(BEGIN)) {
   ap = ap.slice(0, ap.indexOf(BEGIN)) + block + ap.slice(ap.indexOf(END) + END.length).replace(/^\n/, "")
 } else {
@@ -318,7 +331,11 @@ writeFileSync(smPath, sm)
 const llPath = join(PUB, "llms.txt")
 let ll = readFileSync(llPath, "utf8")
 const LB = "<!-- articles:begin -->", LE = "<!-- articles:end -->"
-const lblock = `${LB}\n${ARTICLES.map((a) => `  - [${loadArticle(a).title}](${SITE}/${a.slug})`).join("\n")}\n${LE}`
+const llLine = (a) => `    - [${loadArticle(a).title}](${SITE}/${a.slug}): ${a.meta}`
+const lblock = `${LB}\n${CATEGORIES.map((c) => {
+  const list = ARTICLES.filter((a) => a.category === c)
+  return list.length ? `  - ${c}\n${list.map(llLine).join("\n")}` : ""
+}).filter(Boolean).join("\n")}${ARTICLES.some((a) => !CATEGORIES.includes(a.category)) ? "\n" + ARTICLES.filter((a) => !CATEGORIES.includes(a.category)).map(llLine).join("\n") : ""}\n${LE}`
 if (ll.includes(LB)) {
   ll = ll.slice(0, ll.indexOf(LB)) + lblock + ll.slice(ll.indexOf(LE) + LE.length)
 } else {
