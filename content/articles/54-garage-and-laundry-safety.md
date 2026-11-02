@@ -36,14 +36,22 @@ Wet entries are a common Tampa Bay issue in the rainy season. Wipe shoes and flo
 
 ## Laundry: lighter loads, safer trips
 
-- **Use smaller baskets.** Two light trips are safer than one heavy one.
-- **Use a basket with handles** you can hold close, or a rolling cart if the floor is level.
+- **Use a laundry cart with wheels and handles,** not a basket you have to carry. A cart you push gives you something steady to hold and keeps your view of the floor clear. A basket in your arms blocks your view of your feet and takes your hands away from rails.
+- **If you do have to carry, carry less.** Two light trips are safer than one heavy one. Hold the load close to your body.
 - **Keep a hand free** for a rail or the doorframe whenever you can.
 - **Light the laundry area** well, including inside dark cabinets.
-- **Keep the floor clear** of cords, detergent jugs and dropped clothing.
+- **Keep the floor clear** of cords, detergent jugs and dropped clothing, so the cart rolls freely.
 - **Store detergent at waist to shoulder height,** so you are not bending low or reaching high.
 
-If the laundry is down a staircase, add rails on both sides and paint the floor at the bottom of the stairs a contrasting color. When the last step matches the floor, it is easy to misjudge.
+If the laundry is down a staircase, a cart will not help on the stairs themselves. Add rails on both sides and paint the floor at the bottom of the stairs a contrasting color. When the last step matches the floor, it is easy to misjudge.
+
+### Bring the laundry closer
+
+In some homes, the right answer is to move the laundry itself. Clothes come off and get put away in the bedroom, so a washer and dryer on that same level, as close to the bedroom as possible, takes the stairs and the long carry out of the job entirely. A stackable washer and dryer can often fit in a closet or hall alcove. It is a bigger project that needs plumbing and electrical work, but for someone who does laundry every week on a basement or garage staircase, it can be one of the most worthwhile changes in the house.
+
+### Consider handing it off
+
+Laundry is also a reasonable chore to delegate. A family member, a neighbor, a home aide or a laundry pickup service can take it on. Handing off one heavy, risky job is not giving up independence. It saves your energy, and your balance, for the things that matter most to you, so you can keep doing them on your own.
 
 ## Watch your attention
 
