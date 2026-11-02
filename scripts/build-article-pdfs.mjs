@@ -173,7 +173,7 @@ function body(doc, md) {
       doc.moveDown(0.6); i++; continue
     }
     if ((m = line.match(/^(#{2,4})\s+(.*)$/))) {
-      inSources = m[2].trim() === "Sources"
+      inSources = /^(Sources|References)$/.test(m[2].trim())
       heading(doc, m[2].trim(), Math.min(m[1].length, 3)); i++; continue
     }
     if (/^\s*>/.test(line)) {
@@ -233,8 +233,8 @@ async function heroImage(a) {
 
 const LOGO = join(PUB, "assets", "img", "logo-horizontal.png")
 
-async function build(a) {
-  const { title, body: md } = loadArticle(a)
+async function build(a, src = loadArticle(a)) {
+  const { title, body: md } = src
   const published = a.published || data.published
   const url = `${SITE}/${a.slug}`
   const doc = new PDFDocument({
@@ -264,7 +264,7 @@ async function build(a) {
   doc.font("regular").fillColor(C.soft).text(`  ·  Doctor of Physical Therapy, RESNA Assistive Technology Professional, Certified Fall Prevention Specialist  ·  ${longDate(published)}`)
   doc.moveDown(0.8)
 
-  const img = await heroImage(a)
+  const img = a.noHero ? null : await heroImage(a)
   if (img) {
     const h = W * (720 / 1280)
     doc.image(img, PAGE.margin, doc.y, { width: W, height: h })
@@ -300,8 +300,87 @@ async function build(a) {
   return { pages: range.count, kb: Math.round(statSync(file).size / 1024) }
 }
 
+// White papers are hand-edited HTML pages (no Markdown source), so the PDF is
+// rebuilt from the page's <article> body. That keeps the download in step with
+// whatever is edited on the web page, and the page's "N pages, X MB" labels
+// are rewritten to match.
+const WHITE_PAPERS = [
+  { slug: "understanding-fall-risk-and-fall-prevention", kicker: "White paper", published: "2026-11-02", noHero: true },
+]
+
+const decode = (s) => s
+  .replace(/&nbsp;/g, " ").replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'")
+  .replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&")
+
+function inlineMd(html) {
+  return decode(html
+    .replace(/<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g, (_, h, t) => `[${t}](${h})`)
+    .replace(/<\/?strong>/g, "**")
+    .replace(/<\/?em>/g, "*")
+    .replace(/<br\s*\/?>/g, " ")
+    .replace(/<[^>]+>/g, "")
+    .replace(/\s+/g, " ")
+    .trim())
+}
+
+function whitePaperSource(slug) {
+  const html = readFileSync(join(PUB, `${slug}.html`), "utf8")
+  const title = decode(html.match(/<h1>([\s\S]*?)<\/h1>/)[1])
+  const meta = decode(html.match(/<p class="lede">([\s\S]*?)<\/p>/)?.[1] || "")
+  let art = html.slice(html.indexOf('<article class="article-body">'), html.indexOf("</article>"))
+  art = art.replace(/<div class="empty-note no-print">([\s\S]*?)<\/div>/g, (_, inner) => {
+    const lead = inner.match(/<p>([\s\S]*?)<\/p>/)
+    return lead ? `<blockquote>${lead[1]} <a href="/resources">Take the fall risk quick check at homesafety.solutions/resources</a></blockquote>` : ""
+  })
+  art = art.replace(/<p class="[^"]*no-print[^"]*">[\s\S]*?<\/p>/g, "")
+  const tokens = art
+    .replace(/(<\/?(?:ul|ol|li|section|article)\b[^>]*>)/g, "\n$1\n")
+    .split("\n").map((t) => t.trim()).filter(Boolean)
+  const out = []
+  const stack = []
+  for (let i = 0; i < tokens.length; i++) {
+    const t = tokens[i]
+    let m
+    if (/^<\/?(section|article)\b/.test(t) || t === "</li>") continue
+    if (/^<(ul|ol)\b[^>]*>$/.test(t)) { stack.push(t.slice(1, 3)); out.push(""); continue }
+    if (/^<\/(ul|ol)>$/.test(t)) { stack.pop(); out.push(""); continue }
+    if (t === "<li>") {
+      const text = tokens[i + 1] && !tokens[i + 1].startsWith("<li") && !/^<\/?(ul|ol)\b/.test(tokens[i + 1]) ? tokens[++i] : ""
+      // An item that wraps a nested list: the PDF renderer has no nesting, so
+      // the item's label becomes a bold lead-in and its sub-items follow.
+      if (/^<(ul|ol)\b/.test(tokens[i + 1] || "")) out.push("", `**${inlineMd(text).replace(/\*\*/g, "")}**`)
+      else out.push((stack.at(-1) === "ol" ? "1. " : "- ") + inlineMd(text))
+      continue
+    }
+    if ((m = t.match(/^<h([2-4])[^>]*>([\s\S]*?)<\/h\1>$/))) { out.push("", "#".repeat(+m[1]) + " " + inlineMd(m[2]), ""); continue }
+    if ((m = t.match(/^<blockquote>([\s\S]*?)<\/blockquote>$/))) { out.push("", "> " + inlineMd(m[1]), ""); continue }
+    if ((m = t.match(/^<p>([\s\S]*?)<\/p>$/))) { out.push(inlineMd(m[1]), ""); continue }
+    throw new Error(`build-article-pdfs: unhandled white paper markup in ${slug}: ${t.slice(0, 80)}`)
+  }
+  return { title, meta, body: out.join("\n").replace(/\n{3,}/g, "\n\n") }
+}
+
+function syncPageLabels(slug, { pages, kb }) {
+  const file = join(PUB, `${slug}.html`)
+  const size = kb >= 1024 ? `${(kb / 1024).toFixed(1)} MB` : `${kb} KB`
+  const html = readFileSync(file, "utf8")
+    .replace(/(<span class="article-actions-meta">)[^<]*(<\/span>)/, `$1${pages} pages, ${size}$2`)
+    .replace(/\(PDF, \d+ pages\)/g, `(PDF, ${pages} pages)`)
+  writeFileSync(file, html)
+}
+
+if (process.argv.includes("--white-paper-md")) {
+  for (const wp of WHITE_PAPERS) process.stdout.write(whitePaperSource(wp.slug).body)
+  process.exit(0)
+}
+
 mkdirSync(OUT, { recursive: true })
 const manifest = {}
 for (const a of data.articles) manifest[a.slug] = await build(a)
+for (const wp of WHITE_PAPERS) {
+  const src = whitePaperSource(wp.slug)
+  const result = await build({ ...wp, meta: src.meta }, src)
+  syncPageLabels(wp.slug, result)
+}
 writeFileSync(join(OUT, "manifest.json"), JSON.stringify(manifest, null, 2) + "\n")
 console.log(`build-article-pdfs: wrote ${Object.keys(manifest).length} PDFs to public/assets/pdf`)

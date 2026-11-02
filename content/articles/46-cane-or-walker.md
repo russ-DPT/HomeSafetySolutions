@@ -13,7 +13,7 @@ Many people put off a cane or walker because of how it looks or because they fee
 - **Cane (walking stick).** The lightest option, for people who need a little extra support.
 - **Lofstrand (forearm) crutches.** An alternative a therapist may suggest for some people.
 - **Two-wheel walker.** Wheels in front only, so it does not roll as freely as a four-wheel model.
-- **Four-wheel rollator.** Has a seat and hand brakes and rolls easily. That is also the risk: it can roll in many directions, and brakes are often not used or not working. The certification course cautions against four-wheel rollators for people with poor control.
+- **Four-wheel rollator.** Has a seat and hand brakes and rolls easily. That is also the risk: it can roll in many directions, and brakes are often not used or not working. They are often a poor choice for people with poor control.
 - **Rollator with locking rear legs.** A middle ground for some people.
 - **Stabilizing walkers,** such as the U-Step 2, with a U-shaped base and reverse braking. Some models add laser and sound cueing for people with Parkinson's freezing.
 

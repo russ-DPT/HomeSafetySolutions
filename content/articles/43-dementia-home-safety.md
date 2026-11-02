@@ -24,7 +24,7 @@ Routines, repetition, and cueing are core strategies for people with cognitive i
 - **Use rhythm.** Clapping, counting, or a favorite song can help time a movement.
 - **Practice sit-to-stand.** Standing up from a chair with cues, three times a day, builds leg strength that matters for every transfer.
 
-A helpful phrase from the PESI Fall Prevention Strategy Guide: "We're doing these moves the same way each day to help your body remember."
+A helpful phrase to use: "We're doing these moves the same way each day to help your body remember."
 
 ## Keep changes familiar
 
