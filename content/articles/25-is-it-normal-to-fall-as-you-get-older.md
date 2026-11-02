@@ -1,6 +1,6 @@
 # Is it normal to fall as you get older?
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Falls are common as people get older, but they are not a normal or expected part of aging. Most falls have causes that can be found and fixed, and usually there is more than one. If you or your parent has fallen or feels unsteady, treat it as a signal to look closer, not something to accept.
 

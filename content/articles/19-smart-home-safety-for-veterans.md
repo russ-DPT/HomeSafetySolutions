@@ -1,6 +1,6 @@
 # Keeping Veterans Safe at Home: What I Learned Putting Smart Technology to Work
 
-*By Russ L'HommeDieu, DPT, ATP | Physical therapist and former VA Home Safety Coordinator*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Physical therapist and former VA Home Safety Coordinator*
 
 Voice assistants, automated lighting, smart locks, video calling and radar-based fall detection can keep a veteran living independently. Getting that technology into the home is a clinical job, a procurement job and a human one.
 
@@ -112,7 +112,7 @@ If you are a veteran or a family member, you can:
 
 The best day in my job was not the day a device was installed. It was the follow-up visit, when a veteran told me they felt safe in their own home again. Smart technology, chosen carefully and delivered well, made more of those days possible.
 
-**About the author.** Russ L'HommeDieu, DPT, ATP, is a physical therapist, educator and healthcare consultant with more than 35 years of clinical experience, including a long tenure as a VA Home Safety Coordinator. He is a member of RESNA and the founder of Home Safety Solutions, a division of Practical Innovations, Inc.
+**About the author.** Russ L'HommeDieu, DPT, ATP, CFPS, is a physical therapist, educator and healthcare consultant with more than 35 years of clinical experience, including a long tenure as a VA Home Safety Coordinator. He is a member of RESNA and the founder of Home Safety Solutions, a division of Practical Innovations, Inc.
 
 ## Sources
 

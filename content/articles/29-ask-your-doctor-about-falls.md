@@ -1,6 +1,6 @@
 # What to ask your doctor about falls
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Your doctor may not ask about falls unless you bring them up, so plan to raise the topic yourself. Start with three simple screening questions, bring a full list of your medicines, and ask what the next step should be. The Medicare Annual Wellness Visit is a good time to do it.
 

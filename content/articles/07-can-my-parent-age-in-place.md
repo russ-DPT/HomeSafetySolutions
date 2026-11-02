@@ -1,6 +1,6 @@
 # Can my parent age in place in their current home?
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Often, yes, if the home can be adjusted to fit the person and the right help is in place. The answer depends less on age than on three things: how your parent moves and manages daily tasks, how well the house supports that, and who can step in when needed. An honest look at all three tells you whether to modify, add support, or start planning a move.
 

@@ -1,6 +1,6 @@
 # What should the house have ready before a hospital discharge?
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Before someone comes home from the hospital, four places need to work on day one: the bathroom, the bed, the path between them, and the way in the front door. Almost everything else can wait a week. The first two weeks home are when falls are most likely, so this short list matters more than a full renovation.
 

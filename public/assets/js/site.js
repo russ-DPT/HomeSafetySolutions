@@ -116,26 +116,92 @@
   /* Fall risk quick check (answers stay on this device, nothing is sent) */
   var qc = $("#quickcheck");
   if (qc) {
+    var step2 = $("#qc-step2"), step1Result = $("#qc-step1-result"), qcResult = $("#qc-result");
+    var answer = function (name) { var c = qc.querySelector("input[name=" + name + "]:checked"); return c ? c.value : null; };
+    var keyNames = ["k1", "k2", "k3"];
+    var keyPositive = function () { return keyNames.some(function (n) { return answer(n) === "yes"; }); };
+    var consultLink = function () {
+      return "<a href=\"" + ((document.querySelector("a[data-link=CONSULT]") || {}).href || "/book#consultation") + "\">Book a consultation</a>";
+    };
+    var showStep2 = function () {
+      step2.hidden = false;
+      // Step 1 questions match checklist statements 1, 3 and 5; fill only blanks so later edits are kept.
+      [["k1", "q1"], ["k2", "q3"], ["k3", "q5"]].forEach(function (pair) {
+        var v = answer(pair[0]);
+        if (v && !answer(pair[1])) qc.querySelector("input[name=" + pair[1] + "][value=" + v + "]").checked = true;
+      });
+      step2.querySelector("legend").focus();
+    };
+
+    $("#qc-next").addEventListener("click", function () {
+      var answered = keyNames.filter(answer).length;
+      if (answered < 3) {
+        step1Result.className = "status status-warn";
+        step1Result.textContent = "Answer all 3 questions to continue. You have answered " + answered + ".";
+        step1Result.focus();
+        return;
+      }
+      if (keyPositive()) {
+        step1Result.className = "status status-warn";
+        step1Result.textContent = "A yes to any of these questions means you may be at increased risk of falling. Mention it to your doctor. The statements below show what may be behind it.";
+        showStep2();
+      } else {
+        step1Result.className = "status status-ok";
+        step1Result.innerHTML = "You answered no to all three. That suggests average risk. It does not mean no risk, so ask these questions again each year and after any hospital stay, new medicine, or fall. " +
+          "<button class=\"btn btn-secondary btn-small\" type=\"button\" id=\"qc-anyway\">Take the 12-statement check anyway</button>";
+        $("#qc-anyway").addEventListener("click", showStep2);
+        step1Result.focus();
+      }
+    });
+
     qc.addEventListener("submit", function (e) {
       e.preventDefault();
-      var score = 0, answered = 0, total = $$(".qc-item", qc).length;
-      $$(".qc-item", qc).forEach(function (row) {
+      var rows = $$(".qc-item[data-points]", qc), score = 0, answered = 0, reasons = [];
+      rows.forEach(function (row) {
         var yes = row.querySelector("input[value=yes]:checked"), no = row.querySelector("input[value=no]:checked");
-        if (yes) { score += Number(row.dataset.points); answered++; } else if (no) answered++;
+        if (yes) {
+          score += Number(row.dataset.points); answered++;
+          if (reasons.indexOf(row.dataset.why) < 0) reasons.push(row.dataset.why);
+        } else if (no) answered++;
       });
-      var r = $("#qc-result");
-      if (answered < total) { r.className = "status status-warn"; r.textContent = "Answer all " + total + " statements to see your result. You have answered " + answered + "."; r.focus(); return; }
-      if (score >= 4) {
-        r.className = "status status-warn";
-        r.innerHTML = "Your score is " + score + " out of 14. A score of 4 or more means you may be at risk for falling. Talk with your doctor about it, and consider a Home Safety Visit so we can look at your home and how you move through it. " +
-          "<a href=\"" + ((document.querySelector("a[data-link=CONSULT]") || {}).href || "/book#consultation") + "\">Book a consultation</a> and talk to Dr. L'HommeDieu about becoming safer.";
-      } else {
-        r.className = "status status-ok";
-        r.innerHTML = "Your score is " + score + " out of 14. That is below the level that suggests higher fall risk. Keep your home clear and well lit, and check again if anything changes, such as a hospital stay, a new medicine, or a fall.";
+      if (answered < rows.length) {
+        qcResult.className = "status status-warn";
+        qcResult.textContent = "Answer all " + rows.length + " statements to see your result. You have answered " + answered + ".";
+        qcResult.focus();
+        return;
       }
-      r.focus();
+      var fell = answer("q1") === "yes";
+      var html;
+      if (score >= 4) {
+        qcResult.className = "status status-warn";
+        html = "<p>Your score is " + score + " out of 14. A score of 4 or more means you may be at increased risk of falling. Talk with your doctor about it, and consider a Home Safety Visit so we can look at your home and how you move through it.</p>";
+      } else if (fell) {
+        qcResult.className = "status status-warn";
+        html = "<p>Your score is " + score + " out of 14. That is under 4, but you have fallen in the past year, and one fall is the strongest sign of another. That still means increased risk. Talk with your doctor about it, even if the fall seemed minor.</p>";
+      } else if (keyPositive()) {
+        qcResult.className = "status status-warn";
+        html = "<p>Your score is " + score + " out of 14, which is under 4. You did answer yes in step 1, so still raise it with your doctor at your next visit.</p>";
+      } else {
+        qcResult.className = "status status-ok";
+        html = "<p>Your score is " + score + " out of 14. That suggests average risk. It does not mean no risk. Keep your home clear and well lit, and check again if anything changes, such as a hospital stay, a new medicine, or a fall.</p>";
+      }
+      if (answer("q3") === "yes" && answer("q4") === "yes") {
+        html += "<p>Feeling unsteady and holding onto furniture are good reasons to ask your doctor for a physical therapy referral now. You do not need to wait for more tests first.</p>";
+      }
+      if (reasons.length) {
+        html += "<p>What your yes answers point to:</p><ul>" + reasons.map(function (t) { return "<li>" + t + "</li>"; }).join("") + "</ul>";
+      }
+      if (qcResult.className.indexOf("warn") >= 0) {
+        html += "<p>Print this page and bring it to your Medicare Annual Wellness Visit. " + consultLink() + " to talk with Dr. L'HommeDieu about becoming safer at home.</p>";
+      }
+      qcResult.innerHTML = html;
+      qcResult.focus();
     });
-    qc.addEventListener("reset", function () { var r = $("#qc-result"); r.className = "qc-result"; r.textContent = ""; });
+
+    qc.addEventListener("reset", function () {
+      [step1Result, qcResult].forEach(function (r) { r.className = "qc-result"; r.textContent = ""; });
+      step2.hidden = true;
+    });
   }
 
   /* Contractor directory: vetted partners first, then companies not yet vetted */

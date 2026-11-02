@@ -1,6 +1,6 @@
 # Who does a home safety assessment, and is a PT or OT the right person?
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Many people offer home safety assessments: contractors, franchise companies, care agencies and therapists. For someone who has fallen or has trouble moving around, a licensed physical therapist or occupational therapist is usually the right person. They assess the person and the home together, which is what reduces falls.
 
@@ -42,7 +42,7 @@ The problem arises when the same company assesses the home and then sells the fi
 
 ## How we work
 
-Home Safety Solutions assessments are done by Russ L'HommeDieu, DPT, ATP, a physical therapist with more than 35 years of experience. He served as a home safety coordinator with the VA, holds the RESNA ATP credential, and is trained in aging-in-place design and modification through the National Association of Home Builders. We assess and recommend. You choose and pay your own contractor, and we accept no referral fees or payments from contractors. Start with an Initial Consultation, a 30-minute phone call. Current prices are on our [pricing page](https://www.homesafety.solutions/pricing).
+Home Safety Solutions assessments are done by Russ L'HommeDieu, DPT, ATP, CFPS, a physical therapist with more than 35 years of experience. He served as a home safety coordinator with the VA, holds the RESNA ATP credential, is a Certified Fall Prevention Specialist, and is trained in aging-in-place design and modification through the National Association of Home Builders. We assess and recommend. You choose and pay your own contractor, and we accept no referral fees or payments from contractors. Start with an Initial Consultation, a 30-minute phone call. Current prices are on our [pricing page](https://www.homesafety.solutions/pricing).
 
 ### Sources
 

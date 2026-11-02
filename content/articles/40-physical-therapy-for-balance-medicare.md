@@ -1,6 +1,6 @@
 # Physical therapy for balance: what it is and whether Medicare covers it
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 A physical therapist (PT) tests your strength, walking, and balance, finds what is driving your fall risk, and builds an exercise plan to fix it. Medicare Part B can cover physical therapy for balance, gait, and strength, subject to coinsurance. If you are homebound, Medicare home health can bring therapy to your door.
 

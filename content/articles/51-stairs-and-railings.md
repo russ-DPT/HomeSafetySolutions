@@ -1,6 +1,6 @@
 # How do I make stairs and steps safer?
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Most stair falls can be made less likely with a few changes: handrails on both sides for the full length, light switches at the top and bottom, and step edges that clearly stand out. How you use the stairs matters just as much as how they are built. Carry less, keep one hand free and never rush.
 

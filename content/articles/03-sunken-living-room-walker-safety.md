@@ -1,6 +1,6 @@
 # How do I make a sunken living room safe for a walker?
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 A sunken living room can be made safer for a walker user in three ways: add a sturdy railing and make the step easy to see, replace the step with a ramp, or move daily life to the upper level. Which one fits depends on the height of the step, the space around it, and how the person walks.
 

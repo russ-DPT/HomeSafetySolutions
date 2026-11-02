@@ -1,6 +1,6 @@
 # Afraid of falling? How fear raises your risk and how to rebuild confidence
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Some caution is healthy. But when worry about falling makes you move less, your muscles weaken, your walk changes, and your risk actually goes up. The good news: this kind of fear is treatable, and confidence can be rebuilt.
 

@@ -1,6 +1,6 @@
 # How do I keep a power wheelchair or oxygen working in a hurricane?
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Plan for the power to be out for days, and assume no one will restore yours first. Keep batteries charged, have backup oxygen that needs no electricity, know your evacuation zone, and register with your county's special needs program before hurricane season. Families who make these decisions in May have far fewer emergencies in September.
 

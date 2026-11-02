@@ -1,6 +1,6 @@
 # Parkinson's disease and falls: freezing, falling backward, and what helps
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Parkinson's disease raises fall risk in ways that are different from ordinary aging. About 25% of people fall in the first year after diagnosis. The good news is that the right exercise, a few movement tricks, and a home set up for the way Parkinson's moves can make a real difference.
 

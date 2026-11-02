@@ -1,6 +1,6 @@
 # Hearing loss and falls
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Yes, hearing loss and falls are linked. Hearing loss raises fall risk on its own, apart from age and other health problems. Getting your hearing checked and keeping your hearing aids working are simple steps that belong in every fall prevention plan.
 

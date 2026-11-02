@@ -1,6 +1,6 @@
 # Is a lanai sliding door a fall risk?
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Yes, for many people it is. A Florida lanai slider combines a raised track to step over, a heavy glass panel to push, and often a step down to a floor that can be wet. Each is manageable, but together they can trip a walker user or stop a wheelchair. The good news is that most fixes do not require replacing the door.
 

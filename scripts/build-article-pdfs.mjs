@@ -239,7 +239,7 @@ async function build(a) {
   const url = `${SITE}/${a.slug}`
   const doc = new PDFDocument({
     size: PAGE.size, margin: PAGE.margin, bufferPages: true,
-    info: { Title: title, Author: "Russ L'HommeDieu, DPT, ATP", Subject: a.meta || "", Creator: "Home Safety Solutions", CreationDate: new Date(`${published}T12:00:00Z`), ModDate: new Date(`${published}T12:00:00Z`) },
+    info: { Title: title, Author: "Russ L'HommeDieu, DPT, ATP, CFPS", Subject: a.meta || "", Creator: "Home Safety Solutions", CreationDate: new Date(`${published}T12:00:00Z`), ModDate: new Date(`${published}T12:00:00Z`) },
     lang: "en-US", displayTitle: true,
   })
   doc.registerFont("regular", join(FONTS, "OpenSans-Regular.ttf"))
@@ -260,7 +260,7 @@ async function build(a) {
   doc.moveDown(0.4)
   doc.rect(PAGE.margin, doc.y, 56, 4).fill(C.stripe)
   doc.y += 14
-  doc.font("bold").fontSize(10).fillColor(C.ink).text("By Russ L'HommeDieu, DPT, ATP", PAGE.margin, doc.y, { width: W, continued: true })
+  doc.font("bold").fontSize(10).fillColor(C.ink).text("By Russ L'HommeDieu, DPT, ATP, CFPS", PAGE.margin, doc.y, { width: W, continued: true })
   doc.font("regular").fillColor(C.soft).text(`  ·  Doctor of Physical Therapy, RESNA Assistive Technology Professional, Certified Fall Prevention Specialist  ·  ${longDate(published)}`)
   doc.moveDown(0.8)
 

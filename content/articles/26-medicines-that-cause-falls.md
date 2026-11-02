@@ -1,6 +1,6 @@
 # The medicines that make falls more likely
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Many common medicines can make a fall more likely, especially when several are taken together. The good news is that medicines are one of the easiest fall risks to change, as long as your doctor or pharmacist makes the change with you. Never stop, start or change a medicine on your own.
 

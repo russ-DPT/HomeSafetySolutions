@@ -1,6 +1,6 @@
 # Bifocals and stairs
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Bifocals and other multifocal lenses can make stairs, curbs and thresholds harder to see, because you look down through the reading part of the lens. For active people who wear multifocals, using single-lens distance glasses for walking outdoors and on stairs has been shown to reduce falls. A second pair of glasses, good lighting and contrasting step edges go a long way.
 

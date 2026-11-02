@@ -1,6 +1,6 @@
 # How do I make the kitchen safer?
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 The biggest kitchen fall risks are reaching up high, bending down low and climbing on a chair to get something. The fix is mostly about where things are stored: keep what you use every day between waist and shoulder height. Add good light, clean spills right away and keep pets out from underfoot while you cook.
 

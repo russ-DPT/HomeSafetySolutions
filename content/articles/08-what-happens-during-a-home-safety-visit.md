@@ -1,6 +1,6 @@
 # What happens during a home safety visit?
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 A home safety visit has three parts: a short phone call to plan it, a one-to-two-hour visit where we look at both the person and the home, and a written report with photos and a prioritized list of what to fix. Nothing is sold during the visit. You leave with a plan you can take to any contractor, or do yourself.
 

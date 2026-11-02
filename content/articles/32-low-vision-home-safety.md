@@ -1,6 +1,6 @@
 # Living with low vision at home
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Low vision means vision loss that glasses cannot fully correct, and it roughly doubles the chance of a fall. The good news is that lighting, contrast and organization can make a home much safer, often with simple changes. Apps, services and Florida's Division of Blind Services can help with the rest.
 

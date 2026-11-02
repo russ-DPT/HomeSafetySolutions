@@ -1,6 +1,6 @@
 # Bladder urgency, nighttime bathroom trips, and falls
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 If you often rush to the toilet, or get up two or more times a night to use the bathroom, your fall risk is higher. Urgency, leaks, and nighttime trips are treatable, and they are worth raising with your doctor. A few small changes also make each trip safer.
 

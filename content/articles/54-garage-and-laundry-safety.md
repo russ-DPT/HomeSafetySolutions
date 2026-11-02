@@ -1,6 +1,6 @@
 # How do I make trips to the garage and laundry safer?
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Garage and laundry trips combine several fall risks at once: a step down, a hard floor that may be uneven or slick, poor lighting and something heavy in your arms. The fixes are simple. Carry smaller loads, light and mark the step, put a rail or grab bar by the door and keep the floor clear.
 

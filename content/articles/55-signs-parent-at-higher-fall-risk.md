@@ -1,6 +1,6 @@
 # What are the signs my parent may be at higher fall risk?
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Watch how your parent moves, not just what they say. Holding on to furniture to get around, pushing up hard with their hands to stand, shuffling or slowing down, and avoiding stairs or outings are all signs worth noticing. Many older adults never mention a fall: fewer than half of people who fall tell their doctor.
 

@@ -1,6 +1,6 @@
 # Are throw rugs and tile floors a fall risk?
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Yes. Removing or securing throw rugs is the first item on the list of fall fixes to make today. Smooth tile floors, which are common in Florida homes, can also turn slippery when wet. The good news is that both problems are cheap and quick to fix.
 

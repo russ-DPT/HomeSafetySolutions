@@ -1,6 +1,6 @@
 # Dementia and home safety: routine, wandering, and keeping changes familiar
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Dementia and mild cognitive impairment double the risk of falling and of getting hurt in a fall. For a parent with memory changes, the safest home is predictable: the same routes, the same routines, and changes that feel familiar rather than strange. Caregivers are a key part of the plan, not an afterthought.
 

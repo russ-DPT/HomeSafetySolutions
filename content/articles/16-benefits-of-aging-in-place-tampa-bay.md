@@ -1,6 +1,6 @@
 # Aging in place in Tampa Bay: the benefits, and is the house ready?
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Ask almost any older adult where they want to live as they age, and the answer is the same: right here, at home. An AARP survey in 2024 found that 75 percent of adults 50 and older want to stay in their current home for as long as possible. Aging in place means living in your own home safely, independently and comfortably. The wish is nearly universal. Whether the house can support it is a separate question, and it deserves an honest answer.
 

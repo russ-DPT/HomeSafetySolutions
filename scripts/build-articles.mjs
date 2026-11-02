@@ -10,7 +10,7 @@
 // public/articles.html (between BEGIN/END markers), the ItemList schema there,
 // and the article URLs in public/sitemap.xml and public/llms.txt.
 // Rules: no prices in article text (the pricing link points to /services),
-// no em dashes, credential line "Russ L'HommeDieu, DPT, ATP".
+// no em dashes, credential line "Russ L'HommeDieu, DPT, ATP, CFPS".
 
 import { readFileSync, writeFileSync, existsSync, readdirSync } from "node:fs"
 import { join, dirname } from "node:path"
@@ -234,7 +234,7 @@ for (const a of ARTICLES) {
   <img src="${imgSrc}" alt="${esc(a.alt)}" width="1280" height="720">
 </figure>
 
-<p class="article-byline"><span class="author">By Russ L'HommeDieu, DPT, ATP</span> <span>Doctor of Physical Therapy, RESNA Assistive Technology Professional, Certified Fall Prevention Specialist</span> <span><time datetime="${PUBLISHED}">${longDate(PUBLISHED)}</time></span> <span>${mins} min read</span></p>
+<p class="article-byline"><span class="author">By Russ L'HommeDieu, DPT, ATP, CFPS</span> <span>Doctor of Physical Therapy, RESNA Assistive Technology Professional, Certified Fall Prevention Specialist</span> <span><time datetime="${PUBLISHED}">${longDate(PUBLISHED)}</time></span> <span>${mins} min read</span></p>
 
 ${pdfButton(a.slug)}
 
@@ -275,7 +275,7 @@ ${pagerFor(a)}
         <h3><a href="/${a.slug}">${esc(title)}</a></h3>
         <p>${esc(a.card)}</p>
         <p class="media-meta">
-          <span><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/img/icons.svg#i-person"></use></svg>Russ L'HommeDieu, DPT, ATP</span>
+          <span><svg class="icon" aria-hidden="true" focusable="false"><use href="/assets/img/icons.svg#i-person"></use></svg>Russ L'HommeDieu, DPT, ATP, CFPS</span>
           <span><time datetime="${PUBLISHED}">${longDate(PUBLISHED)}</time> &middot; ${mins} min read</span>
         </p>
       </div>

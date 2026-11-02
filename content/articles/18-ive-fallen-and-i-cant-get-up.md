@@ -1,6 +1,6 @@
 # I've fallen and I can't get up
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 "I've fallen and I can't get up."
 

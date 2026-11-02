@@ -1,6 +1,6 @@
 # Medical alert devices and fall detection: what to know
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 A medical alert device can get help to you faster after a fall. It does not stop the fall from happening. The device is optional; the plan for what happens after a fall is not.
 

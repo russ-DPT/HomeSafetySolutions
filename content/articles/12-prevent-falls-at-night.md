@@ -1,6 +1,6 @@
 # How do I prevent falls at night?
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Most night falls happen on the way to the bathroom, so fix that trip first. Light the path automatically, set up the bed so standing is easy, get up in stages, and review with a doctor or pharmacist any medicine that causes drowsiness, dizziness or extra urination at night. Those four steps address the main reasons older adults fall after dark.
 

@@ -1,6 +1,6 @@
 # Bathroom Grab Bars: Placement, Anchoring and Blocking
 
-*By Russ L'HommeDieu, DPT, ATP | October 13, 2026*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | October 13, 2026*
 
 A grab bar is only as strong as what is behind the wall. The bar you can see, shiny and well placed, does nothing if its screws are holding onto half an inch of drywall. The best grab bar installation starts before the wall is closed: solid wood blocking, set at the right height, with a written record of exactly where it is.
 

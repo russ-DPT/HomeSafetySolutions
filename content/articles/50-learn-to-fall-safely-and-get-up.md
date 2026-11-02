@@ -1,6 +1,6 @@
 # Can you learn to fall safely and get up again?
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Yes, but only with hands-on training from a physical therapist (PT) or occupational therapist (OT) first. A therapist can teach you how to land in a way that protects your bones and a step-by-step way to get up from the floor. The most important skill after any fall is checking yourself for injury and knowing when to stay down and call 911.
 

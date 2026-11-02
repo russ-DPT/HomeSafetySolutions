@@ -1,6 +1,6 @@
 # Is a free contractor home safety check really free?
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 The visit costs nothing, but it is usually a sales appointment. A company that sells stair lifts, walk-in tubs or grab bar installation offers a free safety check because it leads to jobs. That does not make the advice wrong. It does mean you should know who benefits from each recommendation before you sign anything.
 
