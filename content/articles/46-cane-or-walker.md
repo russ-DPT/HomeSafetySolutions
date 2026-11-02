@@ -1,6 +1,6 @@
 # Cane or walker? Choosing the right one and the right height
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 The right mobility aid, sized correctly and taught well, helps prevent falls. The wrong one, a damaged one, or one you were never shown how to use can cause them. The best choice is the least restrictive device that keeps you safe, and the best person to help you pick it and set its height is a physical or occupational therapist.
 

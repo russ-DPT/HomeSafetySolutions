@@ -1,6 +1,6 @@
 # How do I pay for home modifications in Florida?
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Original Medicare generally does not pay for grab bars, raised toilet seats, shower chairs, ramps or stair lifts. Help does exist, though. Veterans benefits, Area Agencies on Aging, state programs and nonprofits can cover some or all of the cost, and many of the most important fixes cost little or nothing.
 

@@ -1,6 +1,6 @@
 # Bone health after 65: vitamin D, calcium, and osteoporosis screening
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Fall prevention has two jobs: fewer falls, and less harm when a fall still happens. Strong bones handle the second job. Ask your doctor whether you need a bone density test, and whether vitamin D or calcium makes sense for you.
 

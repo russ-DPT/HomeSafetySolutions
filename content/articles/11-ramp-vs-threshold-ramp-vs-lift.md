@@ -1,6 +1,6 @@
 # What's the difference between a ramp, a threshold ramp and a lift?
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 A threshold ramp smooths a lip of an inch or two, such as a door sill. A full ramp replaces one or more steps and needs a lot of length. A lift carries the person up vertically or along the stairs and fits where a ramp will not. The right choice depends on how high the rise is, how much space you have, and how the person moves.
 

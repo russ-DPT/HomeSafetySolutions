@@ -1,6 +1,6 @@
 # Safety squad: getting grandkids involved in keeping a grandparent's home safe
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 If you are caring for an aging parent while raising kids, you already know how thin the day can get. Here is some good news: your children can help, and home safety is one of the best places for them to start. The jobs are concrete, the kids can see the results, and grandparents usually love the company.
 

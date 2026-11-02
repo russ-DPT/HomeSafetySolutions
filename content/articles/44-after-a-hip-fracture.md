@@ -1,6 +1,6 @@
 # After a hip fracture: recovering at home and preventing the next fall
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Recovery at home depends on three things: a house that is ready, exercise that keeps progressing, and a plan to prevent the next fall. People who have broken a hip are at high risk of falling and breaking a bone again, so prevention starts now.
 

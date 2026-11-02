@@ -1,6 +1,6 @@
 # Your feet, your shoes, and your balance
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Your feet are part of your balance system. When they lose feeling, hurt, or sit in loose or slippery shoes, your brain gets poor information about the ground, and a fall becomes more likely. The good news: footwear is one of the easiest fall risks to fix.
 

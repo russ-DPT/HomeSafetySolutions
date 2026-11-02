@@ -1,6 +1,6 @@
 # What Medicare does and doesn't pay for in fall prevention
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Medicare pays for much of the medical side of fall prevention: checkups, therapy, and equipment like walkers. It generally does not pay for changes to the house, such as grab bars or ramps. Knowing the difference helps you plan and find other help where Medicare stops.
 

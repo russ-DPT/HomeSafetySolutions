@@ -1,6 +1,6 @@
 # Should we buy a one-story home before retiring in Florida?
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 A one-story home is a good start, but it is not enough on its own. Many one-story Florida homes still have steps at every entrance, a raised garage step, a tall sliding door sill, a sunken room or a tub you have to climb into. If you plan to stay for 20 years, look for a home you can enter without steps and live in fully on one level, with a bathroom that can adapt.
 

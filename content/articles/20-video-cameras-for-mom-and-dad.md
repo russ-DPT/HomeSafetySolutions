@@ -1,6 +1,6 @@
 # Video Cameras for Mom & Dad: A Move Toward Safety and Independence, or a Nanny State?
 
-*By Russ L'HommeDieu, DPT, ATP | October 13, 2026*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | October 13, 2026*
 
 **Video cameras can help an older parent stay home longer and safer, but only when the family decides, out loud and in advance, what the cameras are for and what they are not for.**
 
@@ -118,7 +118,7 @@ The difference between protection and control is rarely the technology. It is th
 
 At Home Safety Solutions, our [Remote Caregiving Plan](/remote-caregiving) helps families make these choices thoughtfully. We look at your parent's home, routines, and fall risks, then recommend what to monitor, where, and how, along with privacy-respecting alternatives for the spaces cameras should not go. The plan is built around a compassionate use agreement your family can actually live with. We do not sell cameras, and we take no payments from device makers or installers, so our only interest is what works for your parent.
 
-**About the author.** Russ L'HommeDieu, DPT, ATP, is a physical therapist with more than 35 years of clinical experience, including a long tenure as a VA Home Safety Coordinator, and the founder of Home Safety Solutions.
+**About the author.** Russ L'HommeDieu, DPT, ATP, CFPS, is a physical therapist with more than 35 years of clinical experience, including a long tenure as a VA Home Safety Coordinator, and the founder of Home Safety Solutions.
 
 *This article is educational and is not medical or legal advice. In an emergency, call 911.*
 

@@ -1,6 +1,6 @@
 # Home safety after a stroke: setting up for one-sided weakness
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 After a stroke, the home has to fit a body that now works differently on one side. The safest setup is built around how the person actually moves today, not how they moved before. A therapist watching real transfers in the real home is the best guide.
 

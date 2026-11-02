@@ -1,6 +1,6 @@
 # Dizzy when you stand up? Orthostatic hypotension and falls
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 If you feel lightheaded, woozy or "gray" for a moment when you stand up, your blood pressure may be dropping too far as you rise. This is called orthostatic (or postural) hypotension, and it is a common, treatable cause of falls. A slow-rise routine, enough fluids and a medicine review with your doctor can make a real difference.
 

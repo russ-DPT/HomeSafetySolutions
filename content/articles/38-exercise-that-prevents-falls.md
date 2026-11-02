@@ -1,6 +1,6 @@
 # The exercise that actually prevents falls
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 The exercise that prevents falls combines strength training with balance work that truly challenges you, done standing, several times a week, for months. Walking is great for your heart, but walking alone does not reliably prevent falls. Done right, exercise is the single most effective fall prevention strategy there is.
 

@@ -1,6 +1,6 @@
 # Tai chi, Otago, and A Matter of Balance: finding a fall prevention program in Tampa Bay
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Several fall prevention programs have strong research behind them, including tai chi, the Otago Exercise Program, Stepping On, and A Matter of Balance. In Tampa Bay, the quickest way to find a class is to call your local Area Agency on Aging or the Florida Elder Helpline at 1-800-963-5337. Your doctor or physical therapist can help you choose.
 

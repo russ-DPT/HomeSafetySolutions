@@ -1,6 +1,6 @@
 # Five ways your home can help a parent stay independent
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Most advice about staying independent focuses on the person: exercise more, eat better, stay social. Those things matter. But after 35 years as a physical therapist, much of it in people's homes, I have learned that independence is a fit between a person and a place. When the home stops fitting, independence shrinks, even if nothing about the person has changed.
 

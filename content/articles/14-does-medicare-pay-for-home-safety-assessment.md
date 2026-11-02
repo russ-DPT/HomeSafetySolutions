@@ -1,6 +1,6 @@
 # Does Medicare pay for a home safety assessment?
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Usually not, at least not as a stand-alone service. Original Medicare does not list an independent home safety assessment as a covered benefit, and it does not pay for grab bars, ramps or stair lifts. Medicare may cover some home safety work when it is part of a home health or therapy plan of care. Some Medicare Advantage plans and other programs help with devices and changes.
 

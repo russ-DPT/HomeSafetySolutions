@@ -1,6 +1,6 @@
 # Pets underfoot: loving your pet without tripping over it
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 You do not have to give up your dog or cat to stay safe. Pets are a real trip hazard, and leashes can pull people off balance, but a few habits and small changes to the home can lower the risk. The goal is a home where you always know where your pet is and where you are stepping.
 

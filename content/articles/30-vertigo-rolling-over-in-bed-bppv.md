@@ -1,6 +1,6 @@
 # Vertigo when you roll over in bed: BPPV
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 If the room spins for a few seconds when you roll over in bed, lie down or tip your head back, the cause is often BPPV (benign paroxysmal positional vertigo). It is an inner ear problem, and it is usually treated with a simple series of head movements done by a trained clinician. Because it can strike when you roll over in bed at night, it is also a fall risk worth taking seriously.
 

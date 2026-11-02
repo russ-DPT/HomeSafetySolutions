@@ -1,6 +1,6 @@
 # How do I talk to my parent about falls without a fight?
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Start with what your parent wants, not with what scares you. Talk about staying independent and doing the things they love, rather than about "falls." Use the word "concern" instead of "fear," offer choices instead of orders, and expect this to be several conversations, not one.
 

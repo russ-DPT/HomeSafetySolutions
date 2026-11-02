@@ -1,6 +1,6 @@
 # Three 5-minute tests to check your fall risk at home
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Three short tests used by doctors and therapists can give you a quick picture of your strength and balance: the 30-Second Chair Stand, the 4-Stage Balance Test and the Timed Up and Go. You can try them at home in about five minutes each, as long as a helper stands beside you. They do not diagnose anything, but a low score is a good reason to talk with your doctor or a physical therapist.
 

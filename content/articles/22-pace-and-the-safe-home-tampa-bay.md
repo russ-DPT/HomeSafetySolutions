@@ -1,6 +1,6 @@
 # PACE and the Safe Home: How Tampa Bay Families Can Make Staying Home Work
 
-*By Russ L'HommeDieu, DPT, ATP | October 13, 2026*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | October 13, 2026*
 
 PACE can bring nursing home level care into an older adult's life without the move to a nursing home. What it cannot do is change the house that care arrives in.
 

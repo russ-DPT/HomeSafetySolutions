@@ -1,6 +1,6 @@
 # What grab bars do I actually need in the bathroom?
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Most people need two to four grab bars: one or two at the tub or shower, and one beside the toilet. The exact number and placement depend on how the person moves, not on a kit. A bar in the wrong spot will not be used, and a bar that is not anchored will fail when it matters most.
 

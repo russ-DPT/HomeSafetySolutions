@@ -1,6 +1,6 @@
 # How can I check on a parent's safety from another state?
 
-*By Russ L'HommeDieu, DPT, ATP | Home Safety Solutions*
+*By Russ L'HommeDieu, DPT, ATP, CFPS | Home Safety Solutions*
 
 Combine three things: regular video visits where you actually look at the house, a small amount of technology your parent agrees to, and a local team you can call. No sensor replaces a neighbor with a key. But the right mix can tell you early when something is changing, and get help there fast when something goes wrong.
 
