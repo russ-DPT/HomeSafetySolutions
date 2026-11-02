@@ -520,6 +520,17 @@ legend { font-weight: 700; font-size: 1.25rem; padding: 0 .4rem; color: var(--gu
 .qc-item { display: grid; grid-template-columns: 1fr auto; gap: 1rem; align-items: center; padding: .8rem 1rem; background: #fff; border: 1px solid var(--line); border-radius: var(--radius-s); }
 .qc-item .radio-row label { min-height: 3rem; padding: .25rem .9rem; }
 .qc-result { margin-top: var(--space-3); }
+.qc-result ul { margin: .4rem 0 .8rem; padding-left: 1.2rem; }
+.qc-result p { margin: 0 0 .6rem; }
+.qc-result .btn { margin-top: .6rem; }
+.qc-step { border: 0; padding: 0; margin: 0 0 var(--space-3); min-width: 0; }
+.qc-step legend { padding: 0; margin-bottom: .4rem; font-size: 1.35rem; font-weight: 700; }
+.qc-step legend:focus { outline: none; }
+.qc-step legend:focus-visible { outline: 2px solid var(--gulf); outline-offset: 4px; }
+.qc-step-num { display: block; font-size: .85rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--gulf); }
+.qc-step-intro { margin: 0 0 .8rem; }
+.qc-step .btn-row { margin-top: var(--space-2, 1rem); }
+.qc-why { display: block; margin-top: .2rem; font-size: .9rem; color: var(--muted, #555); }
 
 /* ---------- FAQ ---------- */
 .faq details { border-bottom: 1px solid var(--line); }
