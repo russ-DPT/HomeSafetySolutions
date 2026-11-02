@@ -234,7 +234,7 @@ for (const a of ARTICLES) {
   <img src="${imgSrc}" alt="${esc(a.alt)}" width="1280" height="720">
 </figure>
 
-<p class="article-byline"><span class="author">By Russ L'HommeDieu, DPT, ATP</span> <span>Doctor of Physical Therapy, RESNA Assistive Technology Professional, fall prevention specialist training (PESI)</span> <span><time datetime="${PUBLISHED}">${longDate(PUBLISHED)}</time></span> <span>${mins} min read</span></p>
+<p class="article-byline"><span class="author">By Russ L'HommeDieu, DPT, ATP</span> <span>Doctor of Physical Therapy, RESNA Assistive Technology Professional, Certified Fall Prevention Specialist</span> <span><time datetime="${PUBLISHED}">${longDate(PUBLISHED)}</time></span> <span>${mins} min read</span></p>
 
 ${pdfButton(a.slug)}
 
