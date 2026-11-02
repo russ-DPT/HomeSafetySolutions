@@ -1,7 +1,7 @@
 {
   "house-ready-before-hospital-discharge": {
     "pages": 5,
-    "kb": 212
+    "kb": 213
   },
   "who-does-a-home-safety-assessment": {
     "pages": 4,
@@ -125,11 +125,11 @@
   },
   "low-vision-home-safety": {
     "pages": 5,
-    "kb": 254
+    "kb": 255
   },
   "feet-shoes-and-balance": {
     "pages": 4,
-    "kb": 230
+    "kb": 231
   },
   "hearing-loss-and-falls": {
     "pages": 4,
@@ -197,7 +197,7 @@
   },
   "learn-to-fall-safely-and-get-up": {
     "pages": 4,
-    "kb": 267
+    "kb": 268
   },
   "stairs-and-railings": {
     "pages": 4,
@@ -209,7 +209,7 @@
   },
   "throw-rugs-and-tile-floors": {
     "pages": 4,
-    "kb": 273
+    "kb": 274
   },
   "garage-and-laundry-safety": {
     "pages": 4,

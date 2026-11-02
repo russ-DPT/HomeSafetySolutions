@@ -261,7 +261,7 @@ async function build(a) {
   doc.rect(PAGE.margin, doc.y, 56, 4).fill(C.stripe)
   doc.y += 14
   doc.font("bold").fontSize(10).fillColor(C.ink).text("By Russ L'HommeDieu, DPT, ATP", PAGE.margin, doc.y, { width: W, continued: true })
-  doc.font("regular").fillColor(C.soft).text(`  ·  Doctor of Physical Therapy and RESNA Assistive Technology Professional  ·  ${longDate(published)}`)
+  doc.font("regular").fillColor(C.soft).text(`  ·  Doctor of Physical Therapy, RESNA Assistive Technology Professional, fall prevention specialist training (PESI)  ·  ${longDate(published)}`)
   doc.moveDown(0.8)
 
   const img = await heroImage(a)
