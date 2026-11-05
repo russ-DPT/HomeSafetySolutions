@@ -676,6 +676,19 @@
       "alt": "A daughter and her elderly father talking over coffee on a screened lanai.",
       "published": "2026-11-02",
       "category": "For families"
+    },
+    {
+      "n": 57,
+      "slug": "robot-vacuum-fall-detection",
+      "kicker": "Technology",
+      "card": "A robot vacuum with a camera can find someone who has fallen and open a two-way call. It cannot catch every fall, so it works best as one part of a bigger safety plan.",
+      "meta": "Can a robot vacuum detect a fall? What camera robots, radar, Wi-Fi sensing and watches can do today, and what to use for a parent at home.",
+      "abstract": "Yes, a robot vacuum can help find someone who has fallen, and Samsung already sells this feature through SmartThings Family Care. But a vacuum is a responder, not a lookout: it sits low, runs on a schedule, and spends most of the day docked. This article explains why finding someone fast matters (30% of people over 90 who fell lay on the floor an hour or more), what the first robot vacuum safety patrol can and can't do, and how radar, cameras, thermal, Wi-Fi sensing, listening devices and wearables compare. It describes the ideal team of devices that detects falls and tracks walking speed to flag rising fall risk before a fall, then gives families a practical, privacy-first setup they can use today.",
+      "thumb": "A sleek round robot vacuum on a light wood floor in a bright Florida living room, its small front camera facing a comfortable armchair where an older man sits safely reading; faint concentric sensing waves ripple out from a small wall sensor. Warm, reassuring, no one on the floor. Palette: Deep Blue #0B3D62 with Sky Blue and Sun Yellow accents. 16:9, no text.",
+      "alt": "A robot vacuum on a living room floor near an older man reading in an armchair.",
+      "published": "2026-11-05",
+      "category": "Equipment and technology",
+      "toc": true
     }
   ],
   "categories": [
