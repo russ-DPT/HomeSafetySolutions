@@ -222,5 +222,9 @@
   "talk-to-parent-about-falls": {
     "pages": 4,
     "kb": 356
+  },
+  "robot-vacuum-fall-detection": {
+    "pages": 7,
+    "kb": 292
   }
 }
