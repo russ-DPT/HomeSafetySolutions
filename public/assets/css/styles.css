@@ -1071,3 +1071,13 @@ legend { font-weight: 700; font-size: 1.25rem; padding: 0 .4rem; color: var(--gu
 .pager-label { font-size: .95rem; font-weight: 700; color: var(--ink-soft); }
 .pager-title { font-size: 1.1rem; font-weight: 700; line-height: 1.35; text-wrap: pretty; }
 .article-pager a:hover .pager-title { text-decoration: underline; }
+
+/* Homepage: "Who are you here for?" follows the hero in the HTML so phones reach it
+   sooner (and screen-reader order matches what is seen). Wide screens keep the
+   original order: hero, "Why the home often gets missed", then the chooser. */
+@media (min-width: 901px) {
+  .home-main { display: flex; flex-direction: column; }
+  .home-main > * { min-width: 0; }
+  .home-main > .home-hero { order: -2; }
+  .home-main > .home-gap { order: -1; }
+}
