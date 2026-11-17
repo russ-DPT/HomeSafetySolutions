@@ -77,19 +77,23 @@ These suggestions draw on tubing safety guidance from The MEMIC Group and on wha
 
 ## Motorized oxygen tubing reels: O2 Remote and Buddy / ReelMate
 
-A motorized reel sits near the oxygen source and takes up slack in a long, continuous tubing run. O2 Remote and Buddy / ReelMate Remote are competing products with different included equipment and terms. Both retract only when the user presses a remote button; neither automatically senses slack. Neither company publishes clinical evidence that its reel prevents falls.
+A motorized reel sits near the oxygen source and manages slack in a long, continuous tubing run. It is a different approach from coiled tubing such as Tidy Tubing: the user walks with the regular line, then presses a remote when they want the reel to take up extra slack. These products do not automatically detect how much tubing is on the floor, and neither company has published clinical evidence that its reel prevents falls.
 
-| | O2 Remote | Buddy / ReelMate Remote |
-| --- | --- | --- |
-| Product page | [oxygenmgmtsystems.com/oxygen-tubing-reel](https://www.oxygenmgmtsystems.com/oxygen-tubing-reel) | [reelfree.co/buy](https://reelfree.co/buy) |
-| Tubing | One continuous run in 25-, 35- or 50-foot lengths; tubing is not listed as included | 50 feet of green tubing and 7 feet of clear tubing are listed as included |
-| Remote and mechanism | RF remote; the company lists operation without line of sight and range up to 300 feet. The product page does not explain how tubing is collected. | One-button, pre-paired remote; the patent describes tubing winding onto a motorized drum. |
-| Warranty and returns | 3-year limited warranty; 30-day money-back guarantee | 1-year warranty included, with an optional paid extension listed; 30-day returns, with return shipping paid by the buyer |
-| Price checked Nov. 17, 2026 | About $140 | About $298 sale price / $350 list price |
+### O2 Remote
 
-Prices, included items, warranty terms and return policies can change; check the seller's current page before ordering. Product pages do not establish oxygen flow-rate limits or noise levels. Confirm those specifications with the manufacturer and your oxygen supplier before connecting a reel. Reel Free advises against inline connectors, chained tubing and 100-foot setups; do not extend or modify a run unless your supplier approves it. Ask O2 Remote how the line is collected and whether a container or other accessory is needed.
+[O2 Remote’s product page](https://www.oxygenmgmtsystems.com/oxygen-tubing-reel) describes a compact reel used with one continuous run of oxygen tubing in 25-, 35- or 50-foot lengths. The tubing is not listed as included, so ask whether you need to purchase it separately and which type the unit accepts. When the user presses its radio-frequency remote, the system retracts excess tubing. The company says the remote can work without a direct line of sight and lists a range of up to 300 feet; an additional remote is sold separately.
 
-Before choosing a reel, consider whether the user can operate the remote, whether retracting tension could pull on the cannula or affect balance, where the tubing will travel, and what happens if the device jams or loses power. Test the setup while seated and with a caregiver present. Stop using it if tubing kinks, oxygen flow is interrupted, or the line pulls uncomfortably. These products may help manage slack, but they do not eliminate trip hazards or replace a home fall-risk assessment.
+The product page lists a 3-year limited warranty and a 30-day money-back guarantee. The price was about $140 when checked on Nov. 17, 2026; verify current pricing and terms on the [O2 Remote site (oxygenmgmtsystems.com)](https://www.oxygenmgmtsystems.com/). The company does not clearly explain on its product page how the extra tubing is collected, or state flow-rate limits or noise levels. Ask what accessories or collection container are needed and whether the reel is suitable for your prescribed flow before ordering.
+
+### Buddy / ReelMate Remote
+
+[Reel Free’s Buddy buy page (reelfree.co/buy)](https://reelfree.co/buy) describes a motorized reel that winds the tubing onto a drum. The listed kit includes 50 feet of green tubing and 7 feet of clear tubing, plus a one-button remote that arrives paired with the unit. The device uses a 120-volt AC adapter. Reel Free says its reel is designed not to retract while the line is under tension; the remote is used to take up slack when the user is ready.
+
+The price was about $298 on sale ($350 list price) when checked on Nov. 17, 2026. The listed included warranty is one year, with an optional paid extension; returns are accepted within 30 days, with return shipping paid by the buyer. Check the [current Buddy listing](https://reelfree.co/buy) for current price, shipping, warranty and return terms. Reel Free advises against inline connectors, chaining tubing, and 100-foot setups. Do not extend or modify the included run unless the manufacturer and your oxygen supplier approve it.
+
+### Before choosing either motorized reel
+
+Neither product page establishes oxygen flow-rate limits or noise levels. Ask both the manufacturer and your oxygen supplier to confirm compatibility with your concentrator, tubing, and prescription. Consider whether the user can operate the remote, whether retracting tension could pull on the cannula or affect balance, where the tubing will travel, and what to do if the device jams or loses power. Test the setup while seated and with a caregiver present. Stop using it if tubing kinks, oxygen flow is interrupted, or the line pulls uncomfortably. A reel may help manage slack, but it does not eliminate trip hazards or replace a home fall-risk assessment.
 
 ## Tidy Tubing: a line that picks itself up
 
