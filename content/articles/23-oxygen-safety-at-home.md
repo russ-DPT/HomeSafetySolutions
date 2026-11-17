@@ -146,6 +146,16 @@ The tubing that lets someone move around the house is also one of the most commo
 - **Check for kinks.** A kinked or pinched line can cut off oxygen without you noticing, and many concentrators will alarm.
 - **Protect your skin.** Pressure from the cannula can cause sores over the ears and nose; foam ear covers and water-based moisturizer help.
 
+### Oxygen tubing reels and management systems
+
+A tubing reel or self-coiling line can keep some excess oxygen tubing off the floor and reduce tangles. These products may help manage slack, but they do not remove every trip hazard: tubing can still cross a walkway, catch on furniture or mobility equipment, or kink. Keep using the safety habits above, and ask your oxygen supplier or prescriber whether a particular product is compatible with your equipment and prescribed flow before connecting it.
+
+**Motorized, remote-controlled reels** sit near the oxygen source and manage slack in a long line. Depending on the model, tubing may dispense as you move and a wireless remote retracts the excess when you want to tidy it. Some systems are designed for longer runs (up to about 50 feet); details such as included tubing, high-flow compatibility, tension and operating range vary by model. See the [Reel Free Buddy](https://www.reelfree.co/) and [O2 Remote Oxygen Management System](https://www.oxygenmgmtsystems.com/) for product and setup information.
+
+**Coiled self-retracting tubing** stretches as you move away and springs back into a coil as you return, without a motor or electricity. [Tidy Tubing from Captive Technologies](https://www.captivetechnologies.com/products/p/tidy-tubing-retractable-oxygen-tubing) is offered in short lengths, including 5-, 10- and 15-foot options. Its [Oxygen Plus Medical listing](https://www.oxygenplusmedical.com/products/coiled-self-storing-oxygen-hose) provides another place to review product details. A clothing clip and swivel connector can help reduce pulling and twisting; confirm exactly what comes with the kit and whether linked sections meet your supplier's specifications.
+
+These products are not substitutes for a safe tubing route or a home fall-risk assessment. For more on managing tubing, see [Living safely with oxygen tubing](/oxygen-tubing-safety).
+
 ### The bigger picture
 
 Tubing management works best as part of a **full fall-risk assessment**: clutter and rug removal, grab bars, bathroom setup, footwear, lighting, medications and strength and balance training. A physical or occupational therapist can assess how a person actually moves through their home on oxygen and tailor the setup to them.
