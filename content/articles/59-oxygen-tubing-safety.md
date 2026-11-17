@@ -75,6 +75,22 @@ A swivel connector is a small, inexpensive fitting that sits between two pieces 
 
 These suggestions draw on tubing safety guidance from The MEMIC Group and on what we see during home visits. For more on clearing the floor itself, see [Are throw rugs and tile floors a fall risk?](/throw-rugs-and-tile-floors).
 
+## Motorized oxygen tubing reels: O2 Remote and Buddy / ReelMate
+
+A motorized reel sits near the oxygen source and takes up slack in a long, continuous tubing run. O2 Remote and Buddy / ReelMate Remote are competing products with different included equipment and terms. Both retract only when the user presses a remote button; neither automatically senses slack. Neither company publishes clinical evidence that its reel prevents falls.
+
+| | O2 Remote | Buddy / ReelMate Remote |
+| --- | --- | --- |
+| Product page | [oxygenmgmtsystems.com/oxygen-tubing-reel](https://www.oxygenmgmtsystems.com/oxygen-tubing-reel) | [reelfree.co/buy](https://reelfree.co/buy) |
+| Tubing | One continuous run in 25-, 35- or 50-foot lengths; tubing is not listed as included | 50 feet of green tubing and 7 feet of clear tubing are listed as included |
+| Remote and mechanism | RF remote; the company lists operation without line of sight and range up to 300 feet. The product page does not explain how tubing is collected. | One-button, pre-paired remote; the patent describes tubing winding onto a motorized drum. |
+| Warranty and returns | 3-year limited warranty; 30-day money-back guarantee | 1-year warranty included, with an optional paid extension listed; 30-day returns, with return shipping paid by the buyer |
+| Price checked Nov. 17, 2026 | About $140 | About $298 sale price / $350 list price |
+
+Prices, included items, warranty terms and return policies can change; check the seller's current page before ordering. Product pages do not establish oxygen flow-rate limits or noise levels. Confirm those specifications with the manufacturer and your oxygen supplier before connecting a reel. Reel Free advises against inline connectors, chained tubing and 100-foot setups; do not extend or modify a run unless your supplier approves it. Ask O2 Remote how the line is collected and whether a container or other accessory is needed.
+
+Before choosing a reel, consider whether the user can operate the remote, whether retracting tension could pull on the cannula or affect balance, where the tubing will travel, and what happens if the device jams or loses power. Test the setup while seated and with a caregiver present. Stop using it if tubing kinks, oxygen flow is interrupted, or the line pulls uncomfortably. These products may help manage slack, but they do not eliminate trip hazards or replace a home fall-risk assessment.
+
 ## Tidy Tubing: a line that picks itself up
 
 Tidy Tubing is a coiled oxygen line that stretches when you walk away from your oxygen source and springs back into a compact coil when you return. Think of the curly cord on an old telephone. Because the slack retracts on its own, there is far less loose tubing lying on the floor.
@@ -86,7 +102,7 @@ Tidy Tubing is a coiled oxygen line that stretches when you walk away from your 
 - A clothing clip at waist level takes the pull of the coil, which is meant to keep it from tugging at your nose and ears.
 - As you move, the coil lengthens. When you come back, it shortens.
 
-It comes in three sizes that extend to 5, 10, or 15 feet. The kit includes a short cannula, a short extension tube, and a connector. You can see the sizes and details on the maker's page, Captive Technologies' Tidy Tubing Retractable Oxygen Tubing.
+It comes in three sizes that extend to 5, 10, or 15 feet. The kit includes a short cannula, a short extension tube, and a connector. See the maker's [Tidy Tubing product page](https://www.captivetechnologies.com/products/p/tidy-tubing-retractable-oxygen-tubing) or the [Oxygen Plus Medical listing](https://www.oxygenplusmedical.com/products/coiled-self-storing-oxygen-hose) for current product details and availability.
 
 ### Pros and cons
 
