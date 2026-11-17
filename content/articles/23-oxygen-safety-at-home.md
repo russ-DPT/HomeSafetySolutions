@@ -146,26 +146,6 @@ The tubing that lets someone move around the house is also one of the most commo
 - **Check for kinks.** A kinked or pinched line can cut off oxygen without you noticing, and many concentrators will alarm.
 - **Protect your skin.** Pressure from the cannula can cause sores over the ears and nose; foam ear covers and water-based moisturizer help.
 
-### Oxygen tubing reels and management systems
-
-A tubing reel or self-coiling line can keep some excess oxygen tubing off the floor and reduce tangles. These products may help manage slack, but they do not remove every trip hazard: tubing can still cross a walkway, catch on furniture or mobility equipment, or kink. Keep using the safety habits above, and ask your oxygen supplier or prescriber whether a particular product is compatible with your equipment and prescribed flow before connecting it.
-
-**Motorized, remote-controlled reels** sit near the oxygen source and take up slack in a long continuous line. The two products below are competitors, but differ in what comes with the unit and how they manage tubing. Both retract only when the user presses a remote button; neither automatically senses slack. Neither company publishes clinical evidence that its reel prevents falls.
-
-| | O2 Remote | Buddy / ReelMate Remote |
-| --- | --- | --- |
-| Product page | [oxygenmgmtsystems.com/oxygen-tubing-reel](https://www.oxygenmgmtsystems.com/oxygen-tubing-reel) | [reelfree.co/buy](https://reelfree.co/buy) |
-| Tubing | One continuous run in 25-, 35- or 50-foot lengths; tubing is not listed as included | 50 feet of green tubing and 7 feet of clear tubing are listed as included |
-| Retraction | RF remote; the company lists operation without line of sight and range up to 300 feet | One-button, pre-paired remote; the patent describes tubing winding onto a motorized drum |
-| Warranty and returns | 3-year limited warranty; 30-day money-back guarantee | 1-year warranty included, with an optional paid extension listed; 30-day returns, with return shipping paid by the buyer |
-| Price checked Nov. 17, 2026 | About $140 | About $298 sale price / $350 list price |
-
-Prices, included items, warranty terms and return policies can change; check the seller's current page before ordering. The product pages do not establish oxygen flow-rate limits or noise levels. Confirm those specifications with the manufacturer and your oxygen supplier before connecting a reel. Reel Free advises against inline connectors, chained tubing and 100-foot setups; do not extend or modify a run unless your supplier approves it. The O2 Remote product page does not explain its internal tubing-management mechanism, so ask the company how the line is collected and what container or accessories are needed.
-
-**Coiled self-retracting tubing** works differently: it stretches as you move away and recoils as you return, without a motor or electricity. [Tidy Tubing from Captive Technologies](https://www.captivetechnologies.com/products/p/tidy-tubing-retractable-oxygen-tubing) comes in short lengths such as 5, 10 and 15 feet. Review the [Oxygen Plus Medical listing](https://www.oxygenplusmedical.com/products/coiled-self-storing-oxygen-hose) for additional product details. A clothing clip and swivel connector may reduce pulling and twisting; confirm what is included and whether connecting sections is approved for your equipment and prescription.
-
-Before choosing any reel, consider whether the person can operate the remote, whether retracting tension could pull on the cannula or affect balance, where the tubing will travel, and what happens if the device jams or loses power. Trial the setup while seated and with a caregiver present, and stop using it if tubing kinks, flow is interrupted, or the line pulls uncomfortably. These products are not substitutes for a safe tubing route or a home fall-risk assessment. For more on managing tubing, see [Living safely with oxygen tubing](/oxygen-tubing-safety).
-
 ### The bigger picture
 
 Tubing management works best as part of a **full fall-risk assessment**: clutter and rug removal, grab bars, bathroom setup, footwear, lighting, medications and strength and balance training. A physical or occupational therapist can assess how a person actually moves through their home on oxygen and tailor the setup to them.
